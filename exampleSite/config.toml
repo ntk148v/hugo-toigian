@@ -1,0 +1,5 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Hugo Toigian Example Site'
+theme = "hugo-toigian"
+themesDir = "../.."
