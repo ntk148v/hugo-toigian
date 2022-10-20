@@ -1,0 +1,14 @@
+<head>
+  <meta charset="utf-8" />
+  <title>
+    {{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{
+    end }}{{ end }}
+  </title>
+  <meta name="author" content="{{ .Site.Params.author }}" />
+  <meta name="description" content="{{ .Site.Params.description }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {{ $style := resources.Get "base.css" }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" {{ template "integrity" $style }}> {{- define "integrity" -}} {{- if (urls.Parse
+  .Permalink).Host -}} integrity="{{ .Data.Integrity }}" crossorigin="anonymous"
+  {{- end -}} {{- end -}}
+</head>
