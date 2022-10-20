@@ -8,5 +8,5 @@
   <meta name="description" content="{{ .Site.Params.description }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {{ $style := resources.Get "base.css" }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" {{ template "integrity" $styles }}>
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" {{ template "integrity" $style }}>
 </head>
