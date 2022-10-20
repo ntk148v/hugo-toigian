@@ -8,5 +8,7 @@
   <meta name="description" content="{{ .Site.Params.description }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {{ $style := resources.Get "base.css" }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}" {{ template "integrity" $style }}>
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" {{ template "integrity" $style }}> {{- define "integrity" -}} {{- if (urls.Parse
+  .Permalink).Host -}} integrity="{{ .Data.Integrity }}" crossorigin="anonymous"
+  {{- end -}} {{- end -}}
 </head>
