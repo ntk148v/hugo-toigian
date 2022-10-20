@@ -4,7 +4,7 @@
   "description": "A minimal Hugo theme",
   "main": "",
   "scripts": {
-    "build": "npx tailwindcss -i ./assets/prebuild.css -o ./assets/base.css"
+    "build": "npx tailwindcss -i ./assets/prebuild.css -o ./assets/base.css --minify"
   },
   "repository": {
     "type": "git",
