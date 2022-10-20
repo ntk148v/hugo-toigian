@@ -1,0 +1,23 @@
+{
+  "name": "hugo-toigian",
+  "version": "0.0.1",
+  "description": "A minimal Hugo theme",
+  "main": "",
+  "scripts": {
+    "build": "npx tailwindcss -i ./assets/prebuild.css -o ./assets/base.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntk148v/hugo-toigian.git"
+  },
+  "keywords": [],
+  "author": "Kien Nguyen-Tuan <kiennt2609@gmail.com>",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/ntk148v/hugo-toigian/issues"
+  },
+  "homepage": "https://github.com/ntk148v/hugo-toigian#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.0"
+  }
+}
