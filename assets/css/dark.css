@@ -1,3 +1,5 @@
+@import "assets/css/chroma/monokailight.css";
+
 :root {
   --b-low-a: hsl(333deg 5% 9% / 0.9);
   --b-low: hsl(333deg 5% 9%);
