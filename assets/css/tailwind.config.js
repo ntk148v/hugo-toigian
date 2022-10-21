@@ -12,8 +12,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"M Plus Code"'],
-        mono: ['"M Plus Code"'],
+        sans: ['"M PLUS Code Latin"'],
+        mono: ['"M PLUS Code Latin"'],
       },
       spacing: {
         "page-top": "var(--page-top)",
