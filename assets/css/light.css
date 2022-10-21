@@ -1,0 +1,9 @@
+@import "assets/css/chroma/monokai.css";
+
+:root {
+  --b-low-a: hsl(32deg 57% 95% / 0.8);
+  --b-low: hsl(32deg 57% 95%);
+  --b-med: hsl(32deg 57% 92%);
+  --f-med: hsl(206deg 23% 31%);
+  --f-high: hsl(206deg 23% 3%);
+}

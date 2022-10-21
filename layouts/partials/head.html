@@ -7,11 +7,31 @@
   <meta name="author" content="{{ .Site.Params.author }}" />
   <meta name="description" content="{{ .Site.Params.description }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-{{ $styles := resources.Get "css/prebuild.css" | postCSS (dict "config" "./assets/css/postcss.config.js") }}
-{{ if .Site.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
-{{ else }}
-  {{ $styles := $styles| minify | fingerprint | resources.PostProcess }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
-{{ end }}
+
+{{/* Site CSS  */}}
+{{- $styles := resources.Get "css/toigian.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
+{{- $light_theme := resources.Get "css/light.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
+{{- $dark_theme := resources.Get "css/dark.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
+
+{{- if not .Site.IsServer }}
+  {{- $styles = $styles | minify | fingerprint | resources.PostProcess -}}
+  {{- $light_theme = $light_theme | minify | fingerprint | resources.PostProcess -}}
+  {{- $dark_theme = $dark_theme | minify | fingerprint | resources.PostProcess -}}
+{{ end -}}
+
+  <link rel="preload" type="text/css" href="{{ $styles.RelPermalink }}"
+      integrity="{{ $styles.Data.Integrity }}"
+      as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+      <link rel="stylesheet" type="text/css" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+  </noscript>
+
+{{/* Light and dark themes */}}
+  <link rel="stylesheet" type="text/css" href="{{- relURL $light_theme.RelPermalink -}}"
+      integrity="{{ $light_theme.Data.Integrity }}" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" type="text/css" href="{{- relURL $dark_theme.RelPermalink -}}"
+      integrity="{{ $dark_theme.Data.Integrity }}" media="(prefers-color-scheme: dark)">
+
+{{ $toggleTheme := resources.Get "js/theme-toggle.js" | minify | fingerprint }}
+  <script async src="{{- $toggleTheme.RelPermalink -}}" integrity="{{- $toggleTheme.Data.Integrity -}}"></script>
 </head>

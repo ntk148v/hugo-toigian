@@ -16,7 +16,8 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 
 module.exports = {
   plugins: {
-      'tailwindcss/nesting': {},
+    'postcss-import': { path: [themeDir] },
+    'tailwindcss/nesting': {},
     tailwindcss: { config:  themeDir + 'assets/css/tailwind.config.js' },
     autoprefixer: { path: [themeDir] },
     ...(process.env.HUGO_ENVIRONMENT === 'production' ? [purgecss] : [])

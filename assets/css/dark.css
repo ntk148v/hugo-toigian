@@ -1,0 +1,7 @@
+:root {
+  --b-low-a: hsl(333deg 5% 9% / 0.9);
+  --b-low: hsl(333deg 5% 9%);
+  --b-med: hsl(333deg 5% 14%);
+  --f-med: hsl(60deg 5% 62%);
+  --f-high: hsl(60deg 5% 94%);
+}
