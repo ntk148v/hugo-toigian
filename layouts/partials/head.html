@@ -8,6 +8,15 @@
   <meta name="description" content="{{ .Site.Params.description }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+{{/* Rose pine */}}
+{{- $rosepine := resources.Get "css/rose-pine.min.css" -}}
+  <link rel="preload" type="text/css" href="{{ $rosepine.RelPermalink }}"
+    integrity="{{ $rosepine.Data.Integrity }}"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="{{ $rosepine.RelPermalink }}" integrity="{{ $rosepine.Data.Integrity }}">
+  </noscript>
+
 {{/* Site CSS  */}}
 {{- $styles := resources.Get "css/toigian.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
 {{- $light_theme := resources.Get "css/light.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}

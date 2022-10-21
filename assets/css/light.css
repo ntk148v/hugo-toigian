@@ -1,9 +1,19 @@
 @import "assets/css/chroma/monokai.css";
 
 :root {
-  --b-low-a: hsl(32deg 57% 95% / 0.8);
-  --b-low: hsl(32deg 57% 95%);
-  --b-med: hsl(32deg 57% 92%);
-  --f-med: hsl(206deg 23% 31%);
-  --f-high: hsl(206deg 23% 3%);
+  --base: var(--rp-dawn-base);
+  --surface: var(--rp-dawn-surface);
+  --overlay: var(--rp-dawn-overlay);
+  --muted: var(--rp-dawn-muted);
+  --subtle: var(--rp-dawn-subtle);
+  --text: var(--rp-dawn-text);
+  --highlight-low: var(--rp-dawn-hightlight-low);
+  --highlight-med: var(--rp-dawn-hightlight-med);
+  --highlight-high: var(--rp-dawn-hightlight-high);
+  --love: var(--rp-dawn-love);
+  --gold: var(--rp-dawn-gold);
+  --rose: var(--rp-dawn-rose);
+  --pine: var(--rp-dawn-pine);
+  --foam: var(--rp-dawn-foam);
+  --iris: var(--rp-dawn-iris);
 }
