@@ -34,7 +34,7 @@ html {
 
 body {
   background-color: var(--base);
-  @apply text-text antialiased;
+  @apply text-text text-sm antialiased;
 }
 
 /* ################################# */
@@ -50,13 +50,13 @@ h6 {
   @apply pt-4 pb-2;
 }
 h1 {
-  @apply text-4xl;
-}
-h2 {
   @apply text-3xl;
 }
-h3 {
+h2 {
   @apply text-2xl;
+}
+h3 {
+  @apply text-xl;
 }
 h4 {
   @apply text-xl;
@@ -108,7 +108,7 @@ section > h6 {
 /* Code block */
 code {
   /* Inline code style */
-  @apply rounded p-1 bg-subtle text-base font-mono;
+  @apply rounded p-1 bg-subtle text-base font-mono text-sm;
 }
 
 pre {
