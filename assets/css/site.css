@@ -11,8 +11,8 @@
 :root {
   --page-top: 64px;
   --page-gutter: 24px;
-  --header-height: 40px;
-  --footer-height: 40px;
+  --header-height: 48px;
+  --footer-height: 96px;
 
   @media (min-width: 640px) {
     --page-top: 192px;
@@ -20,7 +20,7 @@
     --footer-height: 48px;
   }
 
-  --content-width: 50rem;
+  --content-width: 40rem;
   --content-height: calc(100vh - (var(--page-top) * 2) - var(--footer-height));
 }
 
