@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const themeDir = __dirname + "/../../";
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: [
     themeDir + "layouts/**/*.html",
@@ -12,8 +13,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"M PLUS Code Latin"'],
-        mono: ['"M PLUS Code Latin"'],
+        sans: ['"M PLUS Code Latin"', ...defaultTheme.fontFamily.sans],
+        mono: ['"M PLUS Code Latin"', ...defaultTheme.fontFamily.mono],
       },
       spacing: {
         "page-top": "var(--page-top)",
