@@ -1,12 +1,36 @@
-<div class="mx-auto flex w-full max-w-content items-center justify-between">
+<script>
+    $: crumbs = [{
+        text: '{{ .Site.Title }}',
+        href: '/'
+    }, ];
+</script>
+
+
+<div class="lowercase italic mx-auto flex w-full max-w-content items-center justify-between">
     <nav>
-        {{ .Site.Title }}
+        <ol class="flex items-center">
+            {{ if .IsHome }}
+                <li class="text-md lowercase after:text-muted font-bold">
+                    <a href="/" class="focus:underline focus:outline-none">{{ .Site.Title }}</a>
+                </li>
+            {{ else }}
+            <li class="text-md lowercase after:text-muted">
+                <a href="/" class="focus:underline focus:outline-none">{{ .Site.Title }}</a>
+            </li>
+            <li class="text-md lowercase after:text-muted">
+                ..
+            </li>
+            <li class="text-md lowercase after:text-muted font-bold">
+                <a href="{{ .Page.RelPermalink }}" class="focus:underline focus:outline-none">{{ .Page.Title }}</a>
+            </li>
+            {{ end }}
+        </ol>
     </nav>
     <nav>
         <ul class="flex items-center space-x-3 sm:space-x-6">
             {{ range $.Site.Menus.nav }}
             <li>
-                <a href="{{ .URL | relURL }}" class="text-sm tracking-wide text-f-med hover:text-f-high">{{ .Name }}</a>
+                <a href="{{ .URL | relURL }}" class="tracking-wide hover:underline">{{ .Name }}</a>
             </li>
             {{ end }}
         </ul>
