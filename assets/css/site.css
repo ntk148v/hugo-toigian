@@ -108,7 +108,7 @@ section > h6 {
 /* Code block */
 code {
   /* Inline code style */
-  @apply rounded p-1 bg-subtle text-base font-mono text-sm;
+  @apply rounded p-1 bg-iris text-base font-mono text-sm;
 }
 
 pre {

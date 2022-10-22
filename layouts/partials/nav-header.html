@@ -2,17 +2,17 @@
     <nav>
         <ol class="flex items-center">
             {{ if .IsHome }}
-            <li class="text-md lowercase after:text-muted font-bold">
+            <li class="text-md text-pine font-bold">
                 <a href="/" class="focus:underline focus:outline-none">{{ .Site.Title }}</a>
             </li>
             {{ else }}
-            <li class="text-md lowercase after:text-muted after:mx-[1ch] after:content-['/']">
+            <li class="text-md text-foam after:mx-[1ch] after:content-['/']">
                 <a href="/" class="focus:underline focus:outline-none">{{ .Site.Title }}</a>
             </li>
-            <li class="text-md lowercase after:text-muted after:mx-[1ch] after:content-['/']">
+            <li class="text-md text-foam after:mx-[1ch] after:content-['/']">
                 ...
             </li>
-            <li class="text-md lowercase after:text-muted font-bold">
+            <li class="text-md text-pine font-bold">
                 <a href="{{ .Page.RelPermalink }}" class="focus:underline focus:outline-none">{{ .Page.Title }}</a>
             </li>
             {{ end }}
@@ -21,7 +21,7 @@
     <nav>
         <ul class="flex items-center space-x-3 sm:space-x-6">
             {{ range $.Site.Menus.nav }}
-            <li>
+            <li class="text-gold">
                 <a href="{{ .URL | relURL }}" class="tracking-wide hover:underline">{{ .Name }}</a>
             </li>
             {{ end }}

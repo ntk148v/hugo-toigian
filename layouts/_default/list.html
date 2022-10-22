@@ -10,14 +10,14 @@
 <div class="flex space-x-10">
     {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
     {{ if $.Params.groupByYear | default ($.Site.Params.list.groupByYear | default true) }}
-    <div class="text-2xl font-bold text-subtle dark:text-base">
+    <div class="text-2xl font-bold text-rose dark:text-base">
         {{ .Key }}
     </div>
     {{ end }}
     <ol class="flex-grow">
         {{ range .Pages }}
         <li>
-            <time class="text-sm tabular-nums text-muted">{{ .Date | time.Format ":date_medium" }}&nbsp;</time>
+            <time class="text-sm tabular-nums text-iris">{{ .Date | time.Format ":date_medium" }}&nbsp;</time>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </li>
         {{ end }}
