@@ -10,7 +10,7 @@
 <div class="flex space-x-10">
     {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
     {{ if $.Params.groupByYear | default ($.Site.Params.list.groupByYear | default true) }}
-    <div class="text-2xl font-bold text-subtle dark:text-base">
+    <div class="text-2xl font-bold">
         {{ .Key }}
     </div>
     {{ end }}
