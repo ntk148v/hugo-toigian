@@ -1,12 +1,10 @@
 <header style="--layer: 10">
-  <div
-    aria-hidden="true"
-    class="absolute top-[-1000px] left-0 z-[calc(var(--layer)+1)] h-[calc(1000px+var(--page-top))] w-full bg-base"
-  />
+  <div aria-hidden="true"
+    class="absolute top-[-1000px] left-0 z-[calc(var(--layer)+1)] h-[calc(1000px+var(--page-top))] w-full bg-base">
+  </div>
 
   <div
-    class="fixed top-0 left-0 z-[var(--layer)] flex h-header-height w-full items-center border-base px-page-gutter before:absolute before:inset-0 before:z-[-1] before:bg-base [@supports(backdrop-filter:blur(0))]:before:bg-base [@supports(backdrop-filter:blur(0))]:before:backdrop-blur-md"
-  >
-    <div class="mx-auto flex w-full max-w-content items-center"></div>
+    class="fixed top-0 left-0 z-[var(--layer)] flex h-header-height w-full items-center border-b px-page-gutter before:absolute before:inset-0 before:z-[-1] before:bg-surface [@supports(backdrop-filter:blur(0))]:before:bg-surface [@supports(backdrop-filter:blur(0))]:before:backdrop-blur-md">
+    {{- partial "nav-header.html" . -}}
   </div>
 </header>

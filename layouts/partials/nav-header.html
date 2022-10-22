@@ -1,0 +1,14 @@
+<div class="mx-auto flex w-full max-w-content items-center justify-between">
+    <nav>
+        {{ .Site.Title }}
+    </nav>
+    <nav>
+        <ul class="flex items-center space-x-3 sm:space-x-6">
+            {{ range $.Site.Menus.nav }}
+            <li>
+                <a href="{{ .URL | relURL }}" class="text-sm tracking-wide text-f-med hover:text-f-high">{{ .Name }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
+</div>

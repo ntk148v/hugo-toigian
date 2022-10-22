@@ -1,9 +1,11 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'Hugo Toigian Example Site'
+title = 'Toigian'
 theme = "hugo-toigian"
 themesDir = "../.."
 
+[author]
+name = "Kien Nguyen-Tuan"
 
 [markup]
   defaultMarkdownHandler = "goldmark"
@@ -20,3 +22,14 @@ themesDir = "../.."
     startLevel = 1
     endLevel = 3
     ordered = true
+
+[menu]
+  [[menu.nav]]
+  name = "About"
+  url = "/about"
+  weight = 2
+
+  [[menu.nav]]
+  name = "Posts"
+  url = "/posts"
+  weight = 3
