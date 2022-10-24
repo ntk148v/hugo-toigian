@@ -33,8 +33,7 @@ html {
 }
 
 body {
-  background-color: var(--base);
-  @apply text-text text-sm antialiased;
+  @apply bg-base text-text text-sm antialiased selection:bg-subtle selection:text-surface;
 }
 
 /* ################################# */
