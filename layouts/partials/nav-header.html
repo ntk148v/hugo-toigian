@@ -1,30 +1,35 @@
-<div class="lowercase italic mx-auto flex w-full max-w-content items-center justify-between">
-    <nav>
-        <ol class="flex items-center">
-            {{ if .IsHome }}
-            <li class="text-md text-text font-bold">
-                <a href="/" class="focus:underline focus:outline-none">{{ .Site.Title }}</a>
-            </li>
-            {{ else }}
-            <li class="text-md text-muted after:mx-[1ch] after:content-['/']">
-                <a href="/" class="focus:underline focus:outline-none">{{ .Site.Title }}</a>
-            </li>
-            <li class="text-md text-muted after:mx-[1ch] after:content-['/']">
-                ...
-            </li>
-            <li class="text-md text-text font-bold">
-                <a href="{{ .Page.RelPermalink }}" class="focus:underline focus:outline-none">{{ .Page.Title }}</a>
-            </li>
-            {{ end }}
-        </ol>
-    </nav>
-    <nav>
-        <ul class="flex items-center space-x-3 sm:space-x-6">
-            {{ range $.Site.Menus.nav }}
-            <li class="text-text">
-                <a href="{{ .URL | relURL }}" class="tracking-wide hover:underline">{{ .Name }}</a>
-            </li>
-            {{ end }}
-        </ul>
-    </nav>
+<div
+  class="lowercase italic mx-auto flex w-full max-w-content items-center justify-between"
+>
+  <nav>
+    <ol class="flex text-md items-center">
+      {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+    </ol>
+  </nav>
+  <nav>
+    <ul class="flex text-md items-center space-x-3 sm:space-x-6">
+      {{ range $.Site.Menus.nav }}
+      <li class="text-text">
+        <a href="{{ .URL | relURL }}" class="tracking-wide hover:underline"
+          >{{ .Name }}</a
+        >
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
 </div>
+
+{{ define "breadcrumbnav" }} {{ if .p1.Parent }} {{ template "breadcrumbnav"
+(dict "p1" .p1.Parent "p2" .p2 )}} {{ else if not .p1.IsHome }} {{ template
+"breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )}} {{ end }} {{ $attr :=
+"text-muted focus:underline focus:outline-none after:mx-[1ch]" }} {{ if eq .p1
+.p2 }} {{ $attr = "focus:underline focus:outline-none font-bold after:mx-[1ch]"
+}} {{ end }}
+<li>
+  {{ $title := .p1.Title }} {{ if .p1.IsHome }} {{ $title = .p1.Site.Title }} {{
+  end }}
+  <a href="{{ .p1.RelPermalink }}" class="{{ $attr }}">{{ $title }}</a>
+</li>
+{{ if ne .p1 .p2 }}
+<li class="{{ $attr }}">/</li>
+{{ end }} {{ end }}
