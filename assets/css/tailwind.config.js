@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const themeDir = __dirname + "/../../";
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
     themeDir + "layouts/**/*.html",

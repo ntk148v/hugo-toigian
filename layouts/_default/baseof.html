@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
-{{- partial "head.html" . -}}
+  {{- partial "head.html" . -}}
 
-<body>
-  {{- partial "header.html" . -}}
-  <main class="flex justify-center px-page-gutter py-page-top">
-    <div class="min-h-content w-full max-w-content space-y-10 sm:space-y-20">
-      {{- partial "nav-header.html" . -}}
-      <article>{{- block "main" . }}{{- end }}</article>
-    </div>
-  </main>
-  {{- partial "footer.html" . -}}
-</body>
-
+  <body>
+    {{- partial "header.html" . -}}
+    <main class="flex justify-center px-page-gutter py-page-top">
+      <div class="min-h-content w-full max-w-content space-y-10 sm:space-y-20">
+        {{- partial "nav-header.html" . -}}
+        <article>{{- block "main" . }}{{- end }}</article>
+      </div>
+    </main>
+    {{- partial "footer.html" . -}}
+  </body>
 </html>
