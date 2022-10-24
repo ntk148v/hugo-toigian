@@ -1,26 +1,40 @@
-<footer class="flex h-footer-height items-center justify-center border-t px-page-gutter">
-  <div class="flex w-full max-w-content flex-col-reverse items-center justify-between gap-3 sm:flex-row sm:gap-0">
+<footer
+  class="flex h-footer-height items-center justify-center border-t px-page-gutter"
+>
+  <div
+    class="flex w-full max-w-content flex-col-reverse items-center justify-between gap-3 sm:flex-row sm:gap-0"
+  >
     <p class="text-sm">
       <em>Keep it simple.</em>
     </p>
-    {{/* Copyright */}}
-    {{ if .Site.Params.footer.showCopyright | default true }}
-    <p class="text-sm text-neutral-500 dark:text-neutral-400">
-      {{- with .Site.Params.copyright }}
-      {{ . | emojify | markdownify }}
-      {{- else }}
-      &copy;
-      {{ now.Format "2006" }}
-      <a href="https://ntk148v.github.io/blog" class="hover:underline">Kien Nguyen-Tuan</a>
-      . All Rights Reserved.
-      {{- end }}
+    {{/* Copyright */}} {{ if .Site.Params.footer.showCopyright | default true
+    }}
+    <p class="text-sm text-muted">
+      {{- with .Site.Params.copyright }} {{ . | emojify | markdownify }} {{-
+      else }} &copy; {{ now.Format "2006" }}
+      <a href="https://ntk148v.github.io/blog" class="hover:underline"
+        >Kien Nguyen-Tuan</a
+      >
+      . All Rights Reserved. {{- end }}
     </p>
     {{ end }}
     <div id="header-theme-button">
-      <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+      <svg
+        id="dark_mode_btn"
+        class="hidden toolbox-btn"
+        width="18px"
+        height="18px"
+        viewBox="0 0 24 24"
+      >
         {{- partial "svg/sun.html" -}}
       </svg>
-      <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+      <svg
+        id="light_mode_btn"
+        class="hidden toolbox-btn"
+        width="18px"
+        height="18px"
+        viewBox="0 0 24 24"
+      >
         {{- partial "svg/moon.html" -}}
       </svg>
     </div>
