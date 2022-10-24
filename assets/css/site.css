@@ -13,9 +13,11 @@
   --page-gutter: 24px;
   --header-height: 48px;
   --footer-height: 96px;
+  --sidebar-top: 70px;
 
   @media (min-width: 640px) {
     --page-top: 192px;
+    --sidebar-top: 350px;
     --page-gutter: 48px;
     --footer-height: 48px;
   }
@@ -117,4 +119,43 @@ pre {
 pre > code {
   /* Disable inline code style */
   @apply rounded-none p-0 bg-transparent font-mono;
+}
+
+/* ################################# */
+/* #       Table of contents       # */
+/* ################################# */
+#toc-list ol {
+  @apply pl-3 m-1 border-l-2 text-xs text-muted;
+  counter-reset: tocitem;
+}
+
+#toc-top-divider::after {
+  content: "Table of Contents";
+  @apply inline-block font-bold pr-2 transform -translate-y-4;
+}
+
+#toc-list > #TableOfContents > ol {
+  @apply border-0;
+}
+
+#toc-list a {
+  @apply inline-block w-full rounded px-3 leading-relaxed transition-none;
+}
+
+#toc-list ol > li {
+  @apply block my-1;
+  counter-increment: tocitem;
+}
+
+#toc-list li > a::before {
+  @apply mr-2 -ml-3 font-semibold;
+  content: counters(tocitem, ".");
+}
+
+#toc-list li > a {
+  @apply hover:text-text;
+}
+
+#toc-list li > a > code {
+  @apply text-xs;
 }

@@ -21,6 +21,7 @@ module.exports = {
         "page-gutter": "var(--page-gutter)",
         "header-height": "var(--header-height)",
         "footer-height": "var(--footer-height)",
+        "sidebar-top": "var(--sidebar-top)",
       },
       maxWidth: {
         content: "var(--content-width)",
