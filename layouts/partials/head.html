@@ -7,6 +7,9 @@
   <meta name="author" content="{{ .Site.Params.author }}" />
   <meta name="description" content="{{ .Site.Params.description }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {{/* favicon */}}
+  <link rel="icon" href='{{ "favicon_io/favicon.ico" | relURL }}' type="image/x-icon">
+  <link rel="icon" href='{{ "favicon_io/favicon-16x16.png" | relURL }}' type="image/png">
 
   {{/* Rose pine */}}
   {{- $rosepine := resources.Get "css/rose-pine.min.css" -}}
