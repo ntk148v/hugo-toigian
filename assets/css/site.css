@@ -125,7 +125,7 @@ pre > code {
 /* #       Table of contents       # */
 /* ################################# */
 #toc-list {
-  @apply overflow-auto h-screen z-[-1];
+  @apply overflow-auto h-full z-[-1];
 }
 
 #toc-list ol {
