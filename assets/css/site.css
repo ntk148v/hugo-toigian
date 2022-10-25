@@ -158,3 +158,23 @@ pre > code {
 #toc-list li > a > code {
   @apply text-xs;
 }
+
+/* ################### */
+/* #       Tag       # */
+/* ################### */
+#tag{
+  @apply text-muted italic underline;
+}
+
+#tag:before,
+#tag:after {
+  @apply text-muted;
+}
+
+#tag:before {
+  content: "[#";
+}
+
+#tag:after {
+  content: "]";
+}

@@ -1,0 +1,9 @@
+{{ range $taxonomy, $_ := .Site.Taxonomies }}
+{{ with $terms := $.GetTerms $taxonomy }}
+<div class="section">
+    {{ range $n, $term := $terms }}{{ if $n }} {{ end }}
+    <a href="{{ $term.RelPermalink }}" id="tag">{{ $term.Title }}</a>
+    {{ end }}
+</div>
+{{ end }}
+{{ end }}

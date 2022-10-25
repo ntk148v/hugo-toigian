@@ -17,7 +17,7 @@
     <ol class="flex-grow">
         {{ range .Pages }}
         <li>
-            <time class="text-sm tabular-nums text-muted">{{ .Date | time.Format ":date_medium" }}&nbsp;</time>
+            {{- partial "date" . -}}
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </li>
         {{ end }}
