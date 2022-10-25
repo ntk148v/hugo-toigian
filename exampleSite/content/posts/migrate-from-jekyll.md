@@ -2,6 +2,7 @@
 title = "Migrate to Hugo from Jekyll"
 date = 2022-10-22T17:12:11+07:00
 comment = true
+tags = ["hugo"]
 +++
 
 ## Move static content to `static`
