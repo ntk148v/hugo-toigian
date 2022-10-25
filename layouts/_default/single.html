@@ -7,4 +7,11 @@
 </aside>
 {{ end }}
 <h1>{{ .Title | emojify }}</h1>
-{{ .Content | emojify }} {{ end }}
+{{ .Content | emojify }}
+<!-- Comments block -->
+{{ if and .Content (default true (default .Site.Params.comments .Params.comments)) }}
+<div class="mt-16">
+{{- partial "comments" . -}}
+</div>
+{{ end }}
+{{ end }}
