@@ -1,17 +1,12 @@
 {{ define "main" }} {{ if default true .Site.Params.toc }}
 <aside class="fixed flex inset-y-0 right-0 py-sidebar-top px-page-gutter">
-  <div id="toc-list">
-    <strong>Table of Contents</strong>
-    {{ .TableOfContents }}
-  </div>
+  <div id="toc-list">{{ .TableOfContents }}</div>
 </aside>
 {{ end }}
 <h1>{{ .Title | emojify }}</h1>
 {{ .Content | emojify }}
 <!-- Comments block -->
-{{ if and .Content (default true (default .Site.Params.comments .Params.comments)) }}
-<div class="mt-16">
-{{- partial "comments" . -}}
-</div>
-{{ end }}
-{{ end }}
+{{ if and .Content (default true (default .Site.Params.comments
+.Params.comments)) }}
+<div class="mt-16">{{- partial "comments" . -}}</div>
+{{ end }} {{ end }}
