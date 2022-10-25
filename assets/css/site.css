@@ -17,7 +17,7 @@
 
   @media (min-width: 640px) {
     --page-top: 192px;
-    --sidebar-top: 350px;
+    --sidebar-top: 300px;
     --page-gutter: 48px;
     --footer-height: 48px;
   }
