@@ -3,10 +3,15 @@ languageCode = 'en-us'
 title = 'Toigian'
 theme = "hugo-toigian"
 themesDir = "../.."
+
+[params]
+# (Optional, default true): Controls table of contents visibility on right side of pages.
+# Start and end levels can be controlled with markup.tableOfContents setting.
 toc = true
 
-[author]
+[params.author]
 name = "Kien Nguyen-Tuan"
+email = "kiennt2609@gmail.com"
 
 [markup]
   defaultMarkdownHandler = "goldmark"

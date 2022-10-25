@@ -1,7 +1,9 @@
 {{ define "main" }}
+{{ if default true .Site.Params.toc }}
 <aside class="absolute inset-y-0 right-0 py-sidebar-top px-page-gutter">
   <div id="toc-top-divider" class="block relative"></div>
   <div id="toc-list">{{ .TableOfContents }}</div>
 </aside>
+{{ end }}
 <h1>{{ .Title | emojify }}</h1>
 {{ .Content | emojify }} {{ end }}
