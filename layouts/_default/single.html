@@ -4,20 +4,12 @@
 {{- partial "date" . -}} {{- partial "tag" . -}}
 <!-- Table of contents -->
 {{ if default true .Site.Params.toc }}
-<aside id="toc" data-accordion="collapse">
-  <button
-    id="toc-heading"
-    type="button"
-    class="flex"
-    data-accordion-target="#toc-list"
-    aria-expanded="true"
-    aria-controls="toc-list"
-  >
-    <span>Table of contents</span>
-    {{- partial "svg/accordion" -}}
-  </button>
-  <div id="toc-list" aria-labelledby="toc-heading">{{ .TableOfContents }}</div>
-</aside>
+{{ if gt (.TableOfContents | countwords) 0 }}
+<details>
+  <summary>Table of contents</summary>
+  <div id="toc-list">{{ .TableOfContents }}</div>
+</details>
+{{ end }}
 {{ end }}
 <!-- Content -->
 <div class="content">{{ .Content | emojify }}</div>
