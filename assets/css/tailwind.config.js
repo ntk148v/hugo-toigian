@@ -2,6 +2,7 @@
 const themeDir = __dirname + "/../../";
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
+  darkMode: 'class',
   content: [
     themeDir + "layouts/**/*.html",
     themeDir + "content/**/*.html",
