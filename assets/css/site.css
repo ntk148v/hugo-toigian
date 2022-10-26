@@ -162,13 +162,13 @@ pre > code {
 /* ################### */
 /* #       Tag       # */
 /* ################### */
-#tag{
+#tag {
   @apply text-muted italic underline;
 }
 
 #tag:before,
 #tag:after {
-  @apply text-muted;
+  @apply text-muted no-underline;
 }
 
 #tag:before {
@@ -177,4 +177,23 @@ pre > code {
 
 #tag:after {
   content: "]";
+}
+
+/* ##################### */
+/* #       Links       # */
+/* ##################### */
+.content a {
+  @apply italic;
+}
+
+.content a::before {
+  content: "{";
+}
+
+.content a::after {
+  content: "}";
+}
+
+.content a:hover {
+  @apply underline underline-offset-2;
 }

@@ -7,7 +7,7 @@
 </div>
 {{ end }}
 {{ if gt .Pages 0 }}
-<div class="flex space-x-10">
+<div class="content flex space-x-10">
     {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
     {{ if $.Params.groupByYear | default ($.Site.Params.list.groupByYear | default true) }}
     <div class="text-2xl font-bold">

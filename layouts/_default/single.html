@@ -5,9 +5,9 @@
 {{ end }}
 <h1>{{ .Title | emojify }}</h1>
 <!-- Post meta -->
-{{- partial "date" . -}}
-{{- partial "tag" . -}}
-{{ .Content | emojify }}
+{{- partial "date" . -}} {{- partial "tag" . -}}
+<!-- Content -->
+<div class="content">{{ .Content | emojify }}</div>
 <!-- Comments block -->
 {{ if and .Content (default true (default .Site.Params.comments
 .Params.comments)) }}
