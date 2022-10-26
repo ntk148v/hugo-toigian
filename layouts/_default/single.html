@@ -1,11 +1,24 @@
-{{ define "main" }} {{ if default true .Site.Params.toc }}
-<aside class="fixed flex inset-y-0 right-0 py-sidebar-top px-page-gutter">
-  <div id="toc-list">{{ .TableOfContents }}</div>
-</aside>
-{{ end }}
+{{ define "main" }} {{ if default true .Site.Params.toc }} {{ end }}
 <h1>{{ .Title | emojify }}</h1>
 <!-- Post meta -->
 {{- partial "date" . -}} {{- partial "tag" . -}}
+<!-- Table of contents -->
+{{ if default true .Site.Params.toc }}
+<aside id="toc" data-accordion="collapse">
+  <button
+    id="toc-heading"
+    type="button"
+    class="flex"
+    data-accordion-target="#toc-list"
+    aria-expanded="true"
+    aria-controls="toc-list"
+  >
+    <span>Table of contents</span>
+    {{- partial "svg/accordion" -}}
+  </button>
+  <div id="toc-list" aria-labelledby="toc-heading">{{ .TableOfContents }}</div>
+</aside>
+{{ end }}
 <!-- Content -->
 <div class="content">{{ .Content | emojify }}</div>
 <!-- Comments block -->
