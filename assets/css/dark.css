@@ -1,6 +1,6 @@
 @import "assets/css/chroma/rose-pine-dawn.css";
 
-:root {
+:root.dark {
   --base: var(--rp-main-base);
   --surface: var(--rp-main-surface);
   --overlay: var(--rp-main-overlay);

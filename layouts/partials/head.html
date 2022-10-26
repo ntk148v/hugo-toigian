@@ -8,51 +8,103 @@
   <meta name="description" content="{{ .Site.Params.description }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {{/* favicon */}}
-  <link rel="icon" href='{{ "favicon_io/favicon.ico" | relURL }}' type="image/x-icon">
-  <link rel="icon" href='{{ "favicon_io/favicon-16x16.png" | relURL }}' size="16x16" type="image/png">
-  <link rel="icon" href='{{ "favicon_io/favicon-32x32.png" | relURL }}' size="32x32" type="image/png">
+  <link
+    rel="icon"
+    href='{{ "favicon_io/favicon.ico" | relURL }}'
+    type="image/x-icon"
+  />
+  <link
+    rel="icon"
+    href='{{ "favicon_io/favicon-16x16.png" | relURL }}'
+    size="16x16"
+    type="image/png"
+  />
+  <link
+    rel="icon"
+    href='{{ "favicon_io/favicon-32x32.png" | relURL }}'
+    size="32x32"
+    type="image/png"
+  />
 
-  {{/* Rose pine */}}
-  {{- $rosepine := resources.Get "css/rose-pine.min.css" -}}
-  <link rel="preload" type="text/css" href="{{ $rosepine.RelPermalink }}" integrity="{{ $rosepine.Data.Integrity }}"
-    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  {{/* Rose pine */}} {{- $rosepine := resources.Get "css/rose-pine.min.css" -}}
+  <link
+    rel="preload"
+    type="text/css"
+    href="{{ $rosepine.RelPermalink }}"
+    integrity="{{ $rosepine.Data.Integrity }}"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
   <noscript>
-    <link rel="stylesheet" type="text/css" href="{{ $rosepine.RelPermalink }}"
-      integrity="{{ $rosepine.Data.Integrity }}">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ $rosepine.RelPermalink }}"
+      integrity="{{ $rosepine.Data.Integrity }}"
+    />
   </noscript>
 
-  {{/* Site CSS  */}}
-  {{- $styles := resources.Get "css/toigian.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
-  {{- $light_theme := resources.Get "css/light.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
-  {{- $dark_theme := resources.Get "css/dark.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
+  {{/* Site CSS */}} {{- $styles := resources.Get "css/toigian.css" | postCSS
+  (dict "config" "./assets/css/postcss.config.js") -}} {{- $light_theme :=
+  resources.Get "css/light.css" | postCSS (dict "config"
+  "./assets/css/postcss.config.js") -}} {{- $dark_theme := resources.Get
+  "css/dark.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
+  {{- if not .Site.IsServer }} {{- $styles = $styles | minify | fingerprint |
+  resources.PostProcess -}} {{- $light_theme = $light_theme | minify |
+  fingerprint | resources.PostProcess -}} {{- $dark_theme = $dark_theme | minify
+  | fingerprint | resources.PostProcess -}} {{ end -}}
 
-  {{- if not .Site.IsServer }}
-  {{- $styles = $styles | minify | fingerprint | resources.PostProcess -}}
-  {{- $light_theme = $light_theme | minify | fingerprint | resources.PostProcess -}}
-  {{- $dark_theme = $dark_theme | minify | fingerprint | resources.PostProcess -}}
-  {{ end -}}
-
-  <link rel="preload" type="text/css" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"
-    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link
+    rel="preload"
+    type="text/css"
+    href="{{ $styles.RelPermalink }}"
+    integrity="{{ $styles.Data.Integrity }}"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
   <noscript>
-    <link rel="stylesheet" type="text/css" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ $styles.RelPermalink }}"
+      integrity="{{ $styles.Data.Integrity }}"
+    />
   </noscript>
 
   {{/* Light and dark themes */}}
-  <link rel="stylesheet" type="text/css" href="{{- relURL $light_theme.RelPermalink -}}"
-    integrity="{{ $light_theme.Data.Integrity }}" media="(prefers-color-scheme: light)">
-  <link rel="stylesheet" type="text/css" href="{{- relURL $dark_theme.RelPermalink -}}"
-    integrity="{{ $dark_theme.Data.Integrity }}" media="(prefers-color-scheme: dark)">
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{{- relURL $light_theme.RelPermalink -}}"
+    integrity="{{ $light_theme.Data.Integrity }}"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{{- relURL $dark_theme.RelPermalink -}}"
+    integrity="{{ $dark_theme.Data.Integrity }}"
+  />
 
-  {{ $toggleTheme := resources.Get "js/theme-toggle.js" | minify | fingerprint }}
-  <script async src="{{- $toggleTheme.RelPermalink -}}" integrity="{{- $toggleTheme.Data.Integrity -}}"></script>
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script>
 
-  {{/*  Main  */}}
-  {{ $main_js := resources.Get "js/main.js" }}
-  {{- if hugo.IsProduction -}}
-  {{ $main_js = $main_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
-  {{- else -}}
-  {{ $main_js = $main_js | js.Build -}}
-  {{- end -}}
-  <script defer src="{{ $main_js.RelPermalink }}" integrity="{{- $main_js.Data.Integrity -}}"></script>
+  {{/* Main */}} {{ $main_js := resources.Get "js/main.js" }} {{- if
+  hugo.IsProduction -}} {{ $main_js = $main_js | js.Build (dict "minify" true) |
+  resources.Fingerprint "sha512" -}} {{- else -}} {{ $main_js = $main_js |
+  js.Build -}} {{- end -}}
+  <script
+    defer
+    src="{{ $main_js.RelPermalink }}"
+    integrity="{{- $main_js.Data.Integrity -}}"
+  ></script>
 </head>
