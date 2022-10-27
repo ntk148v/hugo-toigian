@@ -28,11 +28,9 @@ jobs:
         with:
           node-version: "18"
 
-      - name: Composite package.json
-        run: hugo -s exampleSite --themesDir=../.. mod npm pack
-
       - name: Setup Dependency
-        run: npm install --prefix exampleSite
+        run: |
+          npm install -g postcss postcss-cli autoprefixer tailwindcss @fullhuman/postcss-purgecss
 
       - name: Build
         working-directory: ./exampleSite
