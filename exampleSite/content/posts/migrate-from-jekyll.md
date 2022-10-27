@@ -1,11 +1,12 @@
 +++
 title = "Migrate to Hugo from Jekyll"
-date = 2022-10-22T17:12:11+07:00
+date = 2021-10-22T17:12:11+07:00
 comment = true
 tags = ["hugo"]
 +++
 
 ## Move static content to `static`
+
 Jekyll has a rule that any directory not starting with `_` will be copied as-is to the `_site` output. Hugo keeps all static content under `static`. You should therefore move it all there.
 With Jekyll, something that looked like
 
