@@ -1,28 +1,19 @@
-{{ define "main" }}
-{{ if .Content }}
+{{ define "main" }} {{ if .Content }}
 <div class="mt-10">
-    <p class="py-8 border-t">
-        <em>{{ .Content | emojify }}</em>
-    </p>
+  <p class="py-8 border-t">
+    <em>{{ .Content | emojify }}</em>
+  </p>
 </div>
-{{ end }}
-{{ if gt .Pages 0 }}
-<div class="content flex space-x-10">
-    {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
-    {{ if $.Params.groupByYear | default ($.Site.Params.list.groupByYear | default true) }}
-    <div class="text-2xl font-bold">
-        {{ .Key }}
-    </div>
+{{ end }} {{ range .Pages.GroupByDate "2006" }}
+<div class="flex content space-x-10">
+  <div class="text-2xl font-bold">{{ .Key }}</div>
+  <ol class="flex-grow">
+    {{ range .Pages }}
+    <li class="flex justify-between">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{- partial "date" . -}}
+    </li>
     {{ end }}
-    <ol class="flex-grow">
-        {{ range .Pages }}
-        <li>
-            {{- partial "date" . -}}
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </li>
-        {{ end }}
-    </ol>
-    {{ end }}
+  </ol>
 </div>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}
