@@ -33,14 +33,15 @@ jobs:
         run: hugo -s exampleSite --themesDir=../.. mod npm pack
 
       - name: Setup Dependency
-        run: |
-          npm i --loglevel verbose -g postcss postcss-cli autoprefixer tailwindcss postcss-import
+        run: npm install --prefix exampleSite --loglevel verbose
 
       - name: Clean public
         run: rm -rf ./exampleSite/public/*
 
+      - run: ls -la exampleSite/  
+      
       - name: Build
-        run: hugo -s exampleSite --themesDir=../.. --minify -b https://ntk148v.github.io/hugo-toigian
+        run: hugo -s exampleSite --themesDir=../.. --minify --environment production -b https://ntk148v.github.io/hugo-toigian
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
