@@ -51,3 +51,6 @@ email = "kiennt2609@gmail.com"
   name = "Posts"
   url = "/posts"
   weight = 3
+
+[build]
+  writeStats = true

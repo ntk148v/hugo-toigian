@@ -28,13 +28,16 @@ jobs:
         with:
           node-version: "18"
 
+      # - name: Setup Dependency
+      #   run: |
+      #     npm install -g postcss postcss-cli autoprefixer tailwindcss @fullhuman/postcss-purgecss
+
       - name: Setup Dependency
         run: |
-          npm install -g postcss postcss-cli autoprefixer tailwindcss @fullhuman/postcss-purgecss
+          npm install
 
       - name: Build
-        working-directory: ./exampleSite
-        run: hugo --themesDir=../.. --minify --environment production -b https://ntk148v.github.io/hugo-toigian
+        run: hugo -s exampleSite --themesDir=../.. --minify --environment production -b https://ntk148v.github.io/hugo-toigian
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
