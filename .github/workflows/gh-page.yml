@@ -30,18 +30,20 @@ jobs:
           cache: "npm"
 
       - name: Composite package.json
-        run: hugo -s exampleSite --themesDir=../.. mod npm pack
-
-      - name: Setup Dependency
-        run: npm install --prefix exampleSite --loglevel verbose
+        working-directory: exampleSite
+        run: hugo --themesDir=../.. mod npm pack
 
       - name: Clean public
-        run: rm -rf ./exampleSite/public/*
+        working-directory: exampleSite
+        run: rm -rf ./public/*
 
-      - run: ls -la exampleSite/  
-      
+      - name: Setup Dependency
+        working-directory: exampleSite
+        run: npm install --prefix postcss postcss-cli autoprefixer tailwindcss @fullhuman/postcss-purgecss postcss-import
+
       - name: Build
-        run: hugo -s exampleSite --themesDir=../.. --minify --environment production -b https://ntk148v.github.io/hugo-toigian
+        working-directory: exampleSite
+        run: hugo --themesDir=../.. --minify --environment production -b https://ntk148v.github.io/hugo-toigian
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
