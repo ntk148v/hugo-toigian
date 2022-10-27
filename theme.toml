@@ -6,9 +6,9 @@ license = "Apache 2"
 licenselink = "https://github.com/ntk148v/hugo-toigian/blob/master/LICENSE"
 description = ""
 homepage = ""
-tags = []
+tags = ["minimal"]
 features = []
-min_version = "0.41.0"
+min_version = "0.93.0"
 
 [author]
   name = "Kien Nguyen-Tuan"
