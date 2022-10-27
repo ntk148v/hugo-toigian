@@ -39,7 +39,7 @@ jobs:
 
       - name: Setup Dependency
         working-directory: exampleSite
-        run: npm install --prefix postcss postcss-cli autoprefixer tailwindcss @fullhuman/postcss-purgecss postcss-import
+        run: npm install postcss postcss-cli autoprefixer tailwindcss @fullhuman/postcss-purgecss postcss-import
 
       - name: Build
         working-directory: exampleSite
