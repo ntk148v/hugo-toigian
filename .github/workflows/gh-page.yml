@@ -1,17 +1,14 @@
-
 name: GitHub Pages
 
 on:
   push:
     branches:
-      - stable
+      - master
 
 jobs:
   build-deploy:
     name: Build and Deploy
-    runs-on: ubuntu-20.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -23,10 +20,28 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "latest"
+          extended: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Composite package.json
+        run: hugo -s exampleSite --themesDir=../.. mod npm pack
+
+      - name: Setup Dependency
+        run: npm install --prefix exampleSite
+
+      - name: Setup public
+        run: git worktree add -B gh-pages ./exampleSite/public origin/gh-pages
+
+      - name: Clean public
+        run: rm -rf ./exampleSite/public/*
 
       - name: Build
         working-directory: ./exampleSite
-        run: hugo --minify --themesDir ../.. --buildDrafts --baseURL https://ntk148v.github.io/hugo-toigian
+        run: hugo -s exampleSite --themesDir=../.. --minify --environment production -b https://ntk148v.github.io/hugo-toigian
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
