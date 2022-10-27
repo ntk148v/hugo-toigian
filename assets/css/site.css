@@ -192,10 +192,3 @@ pre > code {
 .content a:hover {
   @apply underline underline-offset-2;
 }
-
-/* ####################### */
-/* #       Details       # */
-/* ####################### */
-#detail h2 {
-  @apply mt-0 text-subtle;
-}

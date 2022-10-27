@@ -2,7 +2,7 @@
 const themeDir = __dirname + "/../../";
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-  darkMode: 'class',
+  darkMode: "class",
   content: [
     themeDir + "layouts/**/*.html",
     themeDir + "content/**/*.html",
@@ -43,6 +43,12 @@ module.exports = {
         "highlight-low": "var(--hightlight-low)",
         "highlight-med": "var(--hightlight-med)",
         "highlight-high": "var(--hightlight-high)",
+        love: "var(--love)",
+        gold: "var(--gold)",
+        rose: "var(--rose)",
+        pine: "var(--pine)",
+        foam: "var(--foam)",
+        iris: "var(--iris)",
       },
       borderColor: (theme) => ({
         DEFAULT: theme("colors.overlay", "currentColor"),
