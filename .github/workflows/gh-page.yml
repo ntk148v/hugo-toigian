@@ -34,7 +34,7 @@ jobs:
 
       - name: Setup Dependency
         run: |
-          npm ci --loglevel verbose
+          npm i --loglevel verbose -g postcss postcss-cli autoprefixer tailwindcss @fullhuman/postcss-purgecss postcss-import
 
       - name: Clean public
         run: rm -rf ./exampleSite/public/*
