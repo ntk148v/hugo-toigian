@@ -33,13 +33,8 @@ jobs:
         run: hugo -s exampleSite --themesDir=../.. mod npm pack
 
       - name: Setup Dependency
-        run:
-          npm clean
-          npm install --prefix exampleSite
-
-      # - name: Setup Dependency
-      #   run: |
-      #     npm i -g postcss postcss-cli autoprefixer tailwindcss @fullhuman/postcss-purgecss postcss-import
+        run: |
+          npm ci --loglevel verbose
 
       - name: Clean public
         run: rm -rf ./exampleSite/public/*
