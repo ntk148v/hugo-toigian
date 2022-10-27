@@ -33,7 +33,7 @@ jobs:
           npm install -g postcss postcss-cli autoprefixer tailwindcss @fullhuman/postcss-purgecss postcss-import
 
       - name: Build
-        run: hugo -s exampleSite --themesDir=../.. --minify --environment production -b https://ntk148v.github.io/hugo-toigian
+        run: hugo -s exampleSite --themesDir=../.. --minify -b https://ntk148v.github.io/hugo-toigian
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
