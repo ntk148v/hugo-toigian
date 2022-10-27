@@ -4,10 +4,19 @@ title = 'Toigian'
 theme = "hugo-toigian"
 themesDir = "../.."
 
+# (Optional) If you provide a Disqus shortname, comments will be enabled on
+# all pages.
+# disqusShortname = "my-site"
+
 [params]
 # (Optional, default true): Controls table of contents visibility on right side of pages.
 # Start and end levels can be controlled with markup.tableOfContents setting.
 toc = true
+# (Optional, default true) Enables comments template on pages
+# By default partials/docs/comments.html includes Disqus template
+# See https://gohugo.io/content-management/comments/#configure-disqus
+# Can be overwritten by same param in page frontmatter
+comments = true
 
 [params.author]
 name = "Kien Nguyen-Tuan"
@@ -15,6 +24,8 @@ email = "kiennt2609@gmail.com"
 
 [markup]
   defaultMarkdownHandler = "goldmark"
+  # By default, Goldmark trims unsafe outputs which might prevent some shortcodes from rendering.
+  # It is recommended to set markup.goldmark.renderer.unsafe=true if you encounter problems.
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true  # Enable user to embed HTML snippets in Markdown content.
@@ -29,6 +40,7 @@ email = "kiennt2609@gmail.com"
     endLevel = 4
     ordered = true
 
+# The left side navbar at the top
 [menu]
   [[menu.nav]]
   name = "About"
