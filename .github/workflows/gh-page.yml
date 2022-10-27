@@ -33,7 +33,7 @@ jobs:
         run: hugo -s exampleSite --themesDir=../.. mod npm pack
 
       - name: Setup Dependency
-        run: npm ci --prefix exampleSite
+        run: npm ci
 
       # - name: Setup Dependency
       #   run: |
