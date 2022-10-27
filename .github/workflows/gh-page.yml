@@ -29,7 +29,8 @@ jobs:
           node-version: "18"
 
       - name: Setup Dependency
-        run: npm install
+        run: |
+          npm install -g postcss postcss-cli autoprefixer tailwindcss
 
       - name: Build
         working-directory: ./exampleSite
