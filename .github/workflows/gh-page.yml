@@ -27,10 +27,20 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18"
+          cache: "npm"
+
+      - name: Composite package.json
+        run: hugo -s exampleSite --themesDir=../.. mod npm pack
 
       - name: Setup Dependency
-        run: |
-          npm install -g postcss postcss-cli autoprefixer tailwindcss @fullhuman/postcss-purgecss postcss-import
+        run: npm ci --prefix exampleSite
+
+      # - name: Setup Dependency
+      #   run: |
+      #     npm i -g postcss postcss-cli autoprefixer tailwindcss @fullhuman/postcss-purgecss postcss-import
+
+      - name: Clean public
+        run: rm -rf ./exampleSite/public/*
 
       - name: Build
         run: hugo -s exampleSite --themesDir=../.. --minify -b https://ntk148v.github.io/hugo-toigian
