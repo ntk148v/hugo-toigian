@@ -3,14 +3,13 @@
 <!-- Post meta -->
 {{- partial "date" . -}} {{- partial "tag" . -}}
 <!-- Table of contents -->
-{{ if default true .Site.Params.toc }}
-{{ if gt (.TableOfContents | countwords) 0 }}
+{{ if default true .Site.Params.toc }} {{ if gt (.TableOfContents | countwords)
+0 }}
 <details>
   <summary>Table of contents</summary>
   <div id="toc-list">{{ .TableOfContents }}</div>
 </details>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}
 <!-- Content -->
 <div class="content">{{ .Content | emojify }}</div>
 <!-- Comments block -->
