@@ -2,7 +2,7 @@
 title = "Hugo Diagrams"
 date = 2022-10-25T17:12:11+07:00
 comment = true
-tags = ["hugo"]
+tags = ["hugo", "tech", "diagrams"]
 +++
 
 Hugo version >= 0.93.0

@@ -1,0 +1,7 @@
+<details {{ if or (.Get "open") (in .Params "open") }}open{{ end }}>
+    {{- $summary := cond .IsNamedParams (.Get "title") (.Get 0) -}}
+    <summary>{{ $summary | .Page.RenderString }}</summary>
+    <div id="detail">
+      {{ .Inner | .Page.RenderString }}
+    </div>
+</details>
