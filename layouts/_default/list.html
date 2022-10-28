@@ -1,10 +1,7 @@
 {{ define "main" }}
   {{ if .Content }}
-    <div class="mt-10">
-      <p class="py-8 border-t">
-        <em>{{ .Content | emojify }}</em>
-      </p>
-    </div>
+  <!-- Content -->
+  <div class="content">{{ .Content | emojify }}</div>
   {{ end }}
   {{ range .Pages.GroupByDate "2006" }}
     <div class="flex content space-x-10">
