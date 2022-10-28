@@ -1,6 +1,10 @@
-{{ $level := .Get 0 }} {{ $style := "border-iris" }} {{ if eq $level "info" }}
-{{ $style = "border-foam" }} {{ else if eq $level "warn" }} {{ $style =
-"border-gold" }} {{ else if eq $level "critical" }} {{ $style = "border-love" }}
+{{ $level := .Get 0 }} {{ $style := "border-iris" }}
+{{ if eq $level "info" }}
+  {{ $style = "border-foam" }}
+{{ else if eq $level "warn" }}
+  {{ $style = "border-gold" }}
+{{ else if eq $level "critical" }}
+  {{ $style = "border-love" }}
 {{ end }}
 <blockquote class="my-5 p-4 rounded border-solid border-2 {{ $style }}">
   {{ .Inner | .Page.RenderString }}

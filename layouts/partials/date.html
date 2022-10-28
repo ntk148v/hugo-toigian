@@ -1,3 +1,5 @@
 {{ with .Date }}
-<time class="text-sm italic tabular-nums text-muted">{{ . | time.Format ":date_medium" }}&nbsp;</time>
+  <time class="text-sm italic tabular-nums text-muted"
+    >{{ . | time.Format ":date_medium" }}&nbsp;</time
+  >
 {{ end }}

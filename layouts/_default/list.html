@@ -1,19 +1,22 @@
-{{ define "main" }} {{ if .Content }}
-<div class="mt-10">
-  <p class="py-8 border-t">
-    <em>{{ .Content | emojify }}</em>
-  </p>
-</div>
-{{ end }} {{ range .Pages.GroupByDate "2006" }}
-<div class="flex content space-x-10">
-  <div class="text-2xl font-bold">{{ .Key }}</div>
-  <ol class="flex-grow">
-    {{ range .Pages }}
-    <li class="flex justify-between">
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      {{- partial "date" . -}}
-    </li>
-    {{ end }}
-  </ol>
-</div>
-{{ end }} {{ end }}
+{{ define "main" }}
+  {{ if .Content }}
+    <div class="mt-10">
+      <p class="py-8 border-t">
+        <em>{{ .Content | emojify }}</em>
+      </p>
+    </div>
+  {{ end }}
+  {{ range .Pages.GroupByDate "2006" }}
+    <div class="flex content space-x-10">
+      <div class="text-2xl font-bold">{{ .Key }}</div>
+      <ol class="flex-grow">
+        {{ range .Pages }}
+          <li class="flex justify-between">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{- partial "date" . -}}
+          </li>
+        {{ end }}
+      </ol>
+    </div>
+  {{ end }}
+{{ end }}
