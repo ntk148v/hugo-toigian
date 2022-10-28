@@ -192,3 +192,7 @@ pre > code {
 .content a:hover {
   @apply underline underline-offset-2;
 }
+
+.content ul li::before {
+  content: "- "
+}

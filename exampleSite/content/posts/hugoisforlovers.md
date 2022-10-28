@@ -84,3 +84,11 @@ Having nearly instant feedback enables you to have your creativity flow without 
 ## Step 4. Have fun
 
 The best way to learn something is to play with it.
+
+- Minimalist (`tối giản`) design. Highly inspired by [mellow.dev](https://mellow.dev/).
+- Use the classy minimalist [Rosé Pine](https://github.com/rose-pine/palette) color palette.
+- Customizable.
+- Support light/dark mode.
+- Useful shortcodes.
+- Comments support.
+- Syntax highlighting: use server-side solution (Chroma, hugo built-in), I've added [Rosé Pine styles to Chroma](https://github.com/alecthomas/chroma/pull/689), so everything is the same vibe.
