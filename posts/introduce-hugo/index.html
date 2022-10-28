@@ -1,0 +1,602 @@
+<!doctype html><html><head><meta charset=utf-8><title>Toigian | Introduce Hugo</title><meta name=author content="map[email:kiennt2609@gmail.com name:Kien Nguyen-Tuan]"><meta name=description content><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/hugo-toigian/favicon_io/favicon.ico type=image/x-icon><link rel=icon href=/hugo-toigian/favicon_io/favicon-16x16.png size=16x16 type=image/png><link rel=icon href=/hugo-toigian/favicon_io/favicon-32x32.png size=32x32 type=image/png><link rel=preload type=text/css href=/hugo-toigian/css/rose-pine.min.css integrity as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet type=text/css href=/hugo-toigian/css/rose-pine.min.css integrity></noscript><link rel=preload type=text/css href="/hugo-toigian/css/toigian.min.c0879f0cb385325ad66cf5a603d5209ca02067d442636a58eb2660071552d934.css" integrity="sha256-wIefDLOFMlrWbPWmA9UgnKAgZ9RCY2pY6yZgBxVS2TQ=" as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet type=text/css href="/hugo-toigian/css/toigian.min.c0879f0cb385325ad66cf5a603d5209ca02067d442636a58eb2660071552d934.css" integrity="sha256-wIefDLOFMlrWbPWmA9UgnKAgZ9RCY2pY6yZgBxVS2TQ="></noscript><link rel=stylesheet type=text/css href="/hugo-toigian/css/light.min.1d60ea369917d5564b27366a7efe129321b9658af7d3a1d2f338dd355f98ad16.css" integrity="sha256-HWDqNpkX1VZLJzZqfv4SkyG5ZYr306HS8zjdNV+YrRY="><link rel=stylesheet type=text/css href="/hugo-toigian/css/dark.min.a9851fdfbd88e6f24173cbebc929913c732d677051084da063ae64379b46322c.css" integrity="sha256-qYUf372I5vJBc8vrySmRPHMtZ3BRCE2gY65kN5tGMiw="><script>localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")</script><script defer src=/hugo-toigian/js/main.dfa968b06ebe7fb755eb156f7296445f20bd5ca0c82aa2eb755b1bfac4e2f294676471cf7670590073c364901a0dd5dc4b4c7b83f7a4a3c3b081f085c78fa1de.js integrity="sha512-36losG6+f7dV6xVvcpZEXyC9XKDIKqLrdVsb+sTi8pRnZHHPdnBZAHPDZJAaDdXcS0x7g/eko8OwgfCFx4+h3g=="></script></head><body><header style=--layer:10><div aria-hidden=true class="absolute top-[-1000px] left-0 z-[calc(var(--layer)+1)] h-[calc(1000px+var(--page-top))] w-full bg-base"></div><div class="fixed top-0 left-0 z-[var(--layer)] flex h-header-height w-full items-center border-b px-page-gutter before:absolute before:inset-0 before:z-[-1] before:bg-base [@supports(backdrop-filter:blur(0))]:before:bg-base [@supports(backdrop-filter:blur(0))]:before:backdrop-blur-md"><div class="lowercase italic mx-auto flex w-full max-w-content items-center justify-between"><nav><ol class="flex text-md items-center"><li><a href=/hugo-toigian/ class="text-muted focus:underline focus:outline-none after:mx-[1ch]">Toigian</a></li><li class="text-muted focus:underline focus:outline-none after:mx-[1ch]">/</li><li><a href=/hugo-toigian/posts/ class="text-muted focus:underline focus:outline-none after:mx-[1ch]">Posts</a></li><li class="text-muted focus:underline focus:outline-none after:mx-[1ch]">/</li><li><a href=/hugo-toigian/posts/introduce-hugo/ class="focus:underline focus:outline-none font-bold after:mx-[1ch]">Introduce Hugo</a></li></ol></nav><nav><ul class="flex text-md items-center space-x-3 sm:space-x-6"><li class=text-text><a href=/hugo-toigian/about class="tracking-wide hover:underline">About</a></li><li class=text-text><a href=/hugo-toigian/posts class="tracking-wide hover:underline">Posts</a></li></ul></nav></div></div></header><main class="flex justify-center px-page-gutter py-page-top"><div class="min-h-content w-full max-w-content space-y-10 sm:space-y-20"><div class="lowercase italic mx-auto flex w-full max-w-content items-center justify-between"><nav><ol class="flex text-md items-center"><li><a href=/hugo-toigian/ class="text-muted focus:underline focus:outline-none after:mx-[1ch]">Toigian</a></li><li class="text-muted focus:underline focus:outline-none after:mx-[1ch]">/</li><li><a href=/hugo-toigian/posts/ class="text-muted focus:underline focus:outline-none after:mx-[1ch]">Posts</a></li><li class="text-muted focus:underline focus:outline-none after:mx-[1ch]">/</li><li><a href=/hugo-toigian/posts/introduce-hugo/ class="focus:underline focus:outline-none font-bold after:mx-[1ch]">Introduce Hugo</a></li></ol></nav><nav><ul class="flex text-md items-center space-x-3 sm:space-x-6"><li class=text-text><a href=/hugo-toigian/about class="tracking-wide hover:underline">About</a></li><li class=text-text><a href=/hugo-toigian/posts class="tracking-wide hover:underline">Posts</a></li></ul></nav></div><article><h1>Introduce Hugo</h1><time class="text-sm italic tabular-nums text-muted">Oct 20, 2022&nbsp;</time><div class=section><a href=/hugo-toigian/tags/hugo/ id=tag>hugo</a>
+<a href=/hugo-toigian/tags/tech/ id=tag>tech</a></div><details><summary>Table of contents</summary><div id=toc-list><nav id=TableOfContents><ol><li><a href=#introduction>Introduction</a></li><li><a href=#some-definitions>Some Definitions</a><ol><li><a href=#skins>Skins</a></li><li><a href=#the-home-page>The Home Page</a></li><li><a href=#site-configuration-file>Site Configuration File</a></li><li><a href=#content>Content</a><ol><li><a href=#front-matter>Front Matter</a></li><li><a href=#markdown>Markdown</a></li></ol></li><li><a href=#template-files>Template Files</a><ol><li><a href=#single-template>Single Template</a></li><li><a href=#list-template>List Template</a></li><li><a href=#partial-template>Partial Template</a></li></ol></li></ol></li><li><a href=#create-a-new-site>Create a New Site</a><ol><li><a href=#generate-the-html-for-the-new-site>Generate the HTML For the New Site</a></li><li><a href=#test-the-new-site>Test the New Site</a></li></ol></li><li><a href=#create-a-new-theme>Create a New Theme</a><ol><li><a href=#create-a-skeleton>Create a Skeleton</a></li><li><a href=#update-the-configuration-file-to-use-the-theme>Update the Configuration File to Use the Theme</a></li><li><a href=#generate-the-site>Generate the Site</a><ol><li><a href=#the-home-page-1>The Home Page</a></li><li><a href=#the-magic-of-static>The Magic of Static</a></li></ol></li></ol></li><li><a href=#the-theme-development-cycle>The Theme Development Cycle</a><ol><li><a href=#purge-the-public-directory>Purge the public/ Directory</a></li><li><a href=#hugos-watch-option>Hugo&rsquo;s Watch Option</a></li><li><a href=#live-reload>Live Reload</a></li><li><a href=#development-commands>Development Commands</a></li></ol></li><li><a href=#update-the-home-page-template>Update the Home Page Template</a><ol><li><a href=#make-a-static-home-page>Make a Static Home Page</a><ol><li><a href=#live-reload-1>Live Reload</a></li></ol></li><li><a href=#build-a-dynamic-home-page>Build a &ldquo;Dynamic&rdquo; Home Page</a><ol><li><a href=#create-new-posts>Create New Posts</a></li></ol></li><li><a href=#list-and-single-templates>List and Single Templates</a></li><li><a href=#add-content-to-the-homepage>Add Content to the Homepage</a></li><li><a href=#add-content-to-the-posts>Add Content to the Posts</a><ol><li><a href=#update-the-template-file>Update the Template File</a></li></ol></li><li><a href=#linking-to-content>Linking to Content</a></li><li><a href=#create-a-post-listing>Create a Post Listing</a></li></ol></li><li><a href=#creating-top-level-pages>Creating Top Level Pages</a></li><li><a href=#sharing-templates>Sharing Templates</a><ol><li><a href=#create-the-header-and-footer-partials>Create the Header and Footer Partials</a></li><li><a href=#update-the-home-page-template-to-use-the-partials>Update the Home Page Template to Use the Partials</a></li><li><a href=#update-the-default-single-template-to-use-the-partials>Update the Default Single Template to Use the Partials</a></li></ol></li><li><a href=#add-date-published-to-posts>Add “Date Published” to Posts</a><ol><li><a href=#add-date-published-to-the-template>Add “Date Published” to the Template</a></li><li><a href=#dont-repeat-yourself>Don&rsquo;t Repeat Yourself</a></li></ol></li></ol></nav></div></details><div class=content><h2 id=introduction>Introduction</h2><p>This tutorial will show you how to create a simple theme in <a href=https://github.com/gohugoio/hugo>Hugo</a>. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.</p><p>We&rsquo;ll start with creating a new site with a very basic template. Then we&rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.</p><p>In this tutorial, commands that you enter will start with the &ldquo;$&rdquo; prompt. The output will follow. Lines that start with &ldquo;#&rdquo; are comments that I&rsquo;ve added to explain a point. When I show updates to a file, the &ldquo;:wq&rdquo; on the last line means to save the file.</p><p>Here&rsquo;s an example:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>## this is a comment
+</span></span><span class=line><span class=cl>$ echo this is a command
+</span></span><span class=line><span class=cl>this is a command
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>## edit the file
+</span></span><span class=line><span class=cl>$ vi foo.md
+</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl>date = &#34;2014-09-28&#34;
+</span></span><span class=line><span class=cl>title = &#34;creating a new theme&#34;
+</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>bah and humbug
+</span></span><span class=line><span class=cl>:wq
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>## show it
+</span></span><span class=line><span class=cl>$ cat foo.md
+</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl>date = &#34;2014-09-28&#34;
+</span></span><span class=line><span class=cl>title = &#34;creating a new theme&#34;
+</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>bah and humbug
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><h2 id=some-definitions>Some Definitions</h2><p>There are a few concepts that you need to understand before creating a theme.</p><h3 id=skins>Skins</h3><p>Skins are the files responsible for the look and feel of your site. It’s the CSS that controls colors and fonts, it’s the Javascript that determines actions and reactions. It’s also the rules that Hugo uses to transform your content into the HTML that the site will serve to visitors.</p><p>You have two ways to create a skin. The simplest way is to create it in the <code>layouts/</code> directory. If you do, then you don’t have to worry about configuring Hugo to recognize it. The first place that Hugo will look for rules and files is in the <code>layouts/</code> directory so it will always find the skin.</p><p>Your second choice is to create it in a sub-directory of the <code>themes/</code> directory. If you do, then you must always tell Hugo where to search for the skin. It’s extra work, though, so why bother with it?</p><p>The difference between creating a skin in <code>layouts/</code> and creating it in <code>themes/</code> is very subtle. A skin in <code>layouts/</code> can’t be customized without updating the templates and static files that it is built from. A skin created in <code>themes/</code>, on the other hand, can be and that makes it easier for other people to use it.</p><p>The rest of this tutorial will call a skin created in the <code>themes/</code> directory a theme.</p><p>Note that you can use this tutorial to create a skin in the <code>layouts/</code> directory if you wish to. The main difference will be that you won’t need to update the site’s configuration file to use a theme.</p><h3 id=the-home-page>The Home Page</h3><p>The home page, or landing page, is the first page that many visitors to a site see. It is the index.html file in the root directory of the web site. Since Hugo writes files to the public/ directory, our home page is public/index.html.</p><h3 id=site-configuration-file>Site Configuration File</h3><p>When Hugo runs, it looks for a configuration file that contains settings that override default values for the entire site. The file can use TOML, YAML, or JSON. I prefer to use TOML for my configuration files. If you prefer to use JSON or YAML, you’ll need to translate my examples. You’ll also need to change the name of the file since Hugo uses the extension to determine how to process it.</p><p>Hugo translates Markdown files into HTML. By default, Hugo expects to find Markdown files in your <code>content/</code> directory and template files in your <code>themes/</code> directory. It will create HTML files in your <code>public/</code> directory. You can change this by specifying alternate locations in the configuration file.</p><h3 id=content>Content</h3><p>Content is stored in text files that contain two sections. The first section is the “front matter,” which is the meta-information on the content. The second section contains Markdown that will be converted to HTML.</p><h4 id=front-matter>Front Matter</h4><p>The front matter is information about the content. Like the configuration file, it can be written in TOML, YAML, or JSON. Unlike the configuration file, Hugo doesn’t use the file’s extension to know the format. It looks for markers to signal the type. TOML is surrounded by “<code>+++</code>”, YAML by “<code>---</code>”, and JSON is enclosed in curly braces. I prefer to use TOML, so you’ll need to translate my examples if you prefer YAML or JSON.</p><p>The information in the front matter is passed into the template before the content is rendered into HTML.</p><h4 id=markdown>Markdown</h4><p>Content is written in Markdown which makes it easier to create the content. Hugo runs the content through a Markdown engine to create the HTML which will be written to the output file.</p><h3 id=template-files>Template Files</h3><p>Hugo uses template files to render content into HTML. Template files are a bridge between the content and presentation. Rules in the template define what content is published, where it&rsquo;s published to, and how it will rendered to the HTML file. The template guides the presentation by specifying the style to use.</p><p>There are three types of templates: single, list, and partial. Each type takes a bit of content as input and transforms it based on the commands in the template.</p><p>Hugo uses its knowledge of the content to find the template file used to render the content. If it can’t find a template that is an exact match for the content, it will shift up a level and search from there. It will continue to do so until it finds a matching template or runs out of templates to try. If it can’t find a template, it will use the default template for the site.</p><p>Please note that you can use the front matter to influence Hugo’s choice of templates.</p><h4 id=single-template>Single Template</h4><p>A single template is used to render a single piece of content. For example, an article or post would be a single piece of content and use a single template.</p><h4 id=list-template>List Template</h4><p>A list template renders a group of related content. That could be a summary of recent postings or all articles in a category. List templates can contain multiple groups.</p><p>The homepage template is a special type of list template. Hugo assumes that the home page of your site will act as the portal for the rest of the content in the site.</p><h4 id=partial-template>Partial Template</h4><p>A partial template is a template that can be included in other templates. Partial templates must be called using the “partial” template command. They are very handy for rolling up common behavior. For example, your site may have a banner that all pages use. Instead of copying the text of the banner into every single and list template, you could create a partial with the banner in it. That way if you decide to change the banner, you only have to change the partial template.</p><h2 id=create-a-new-site>Create a New Site</h2><p>Let&rsquo;s use Hugo to create a new web site. I&rsquo;m a Mac user, so I&rsquo;ll create mine in my home directory, in the Sites folder. If you&rsquo;re using Linux, you might have to create the folder first.</p><p>The &ldquo;new site&rdquo; command will create a skeleton of a site. It will give you the basic directory structure and a useable configuration file.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ hugo new site ~/Sites/zafta
+</span></span><span class=line><span class=cl>$ <span class=nb>cd</span> ~/Sites/zafta
+</span></span><span class=line><span class=cl>$ ls -l
+</span></span><span class=line><span class=cl>total <span class=m>8</span>
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>7</span> quoha  staff  <span class=m>238</span> Sep <span class=m>29</span> 16:49 .
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>3</span> quoha  staff  <span class=m>102</span> Sep <span class=m>29</span> 16:49 ..
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 16:49 archetypes
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff   <span class=m>82</span> Sep <span class=m>29</span> 16:49 config.toml
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 16:49 content
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 16:49 layouts
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 16:49 static
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>Take a look in the content/ directory to confirm that it is empty.</p><p>The other directories (archetypes/, layouts/, and static/) are used when customizing a theme. That&rsquo;s a topic for a different tutorial, so please ignore them for now.</p><h3 id=generate-the-html-for-the-new-site>Generate the HTML For the New Site</h3><p>Running the <code>hugo</code> command with no options will read all the available content and generate the HTML files. It will also copy all static files (that&rsquo;s everything that&rsquo;s not content). Since we have an empty site, it won&rsquo;t do much, but it will do it very quickly.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ hugo --verbose
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 Using config file: config.toml
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: <span class=o>[</span>index.html _default/list.html _default/single.html<span class=o>]</span>
+</span></span><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: <span class=o>[</span>404.html<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=m>0</span> draft content
+</span></span><span class=line><span class=cl><span class=m>0</span> future content
+</span></span><span class=line><span class=cl><span class=m>0</span> pages created
+</span></span><span class=line><span class=cl><span class=m>0</span> tags created
+</span></span><span class=line><span class=cl><span class=m>0</span> categories created
+</span></span><span class=line><span class=cl>in <span class=m>2</span> ms
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>The &ldquo;<code>--verbose</code>&rdquo; flag gives extra information that will be helpful when we build the template. Every line of the output that starts with &ldquo;INFO:&rdquo; or &ldquo;WARN:&rdquo; is present because we used that flag. The lines that start with &ldquo;WARN:&rdquo; are warning messages. We&rsquo;ll go over them later.</p><p>We can verify that the command worked by looking at the directory again.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ ls -l
+</span></span><span class=line><span class=cl>total <span class=m>8</span>
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 16:49 archetypes
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff   <span class=m>82</span> Sep <span class=m>29</span> 16:49 config.toml
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 16:49 content
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 16:49 layouts
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>4</span> quoha  staff  <span class=m>136</span> Sep <span class=m>29</span> 17:02 public
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 16:49 static
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>See that new public/ directory? Hugo placed all generated content there. When you&rsquo;re ready to publish your web site, that&rsquo;s the place to start. For now, though, let&rsquo;s just confirm that we have what we&rsquo;d expect from a site with no content.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ ls -l public
+</span></span><span class=line><span class=cl>total <span class=m>16</span>
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>416</span> Sep <span class=m>29</span> 17:02 index.xml
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>262</span> Sep <span class=m>29</span> 17:02 sitemap.xml
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>Hugo created two XML files, which is standard, but there are no HTML files.</p><h3 id=test-the-new-site>Test the New Site</h3><p>Verify that you can run the built-in web server. It will dramatically shorten your development cycle if you do. Start it by running the &ldquo;server&rdquo; command. If it is successful, you will see output similar to the following:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ hugo server --verbose
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: <span class=o>[</span>index.html _default/list.html _default/single.html<span class=o>]</span>
+</span></span><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: <span class=o>[</span>404.html<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=m>0</span> draft content
+</span></span><span class=line><span class=cl><span class=m>0</span> future content
+</span></span><span class=line><span class=cl><span class=m>0</span> pages created
+</span></span><span class=line><span class=cl><span class=m>0</span> tags created
+</span></span><span class=line><span class=cl><span class=m>0</span> categories created
+</span></span><span class=line><span class=cl>in <span class=m>2</span> ms
+</span></span><span class=line><span class=cl>Serving pages from /Users/quoha/Sites/zafta/public
+</span></span><span class=line><span class=cl>Web Server is available at http://localhost:1313
+</span></span><span class=line><span class=cl>Press Ctrl+C to stop
+</span></span></code></pre></div><p>Connect to the listed URL (it&rsquo;s on the line that starts with &ldquo;Web Server&rdquo;). If everything is working correctly, you should get a page that shows the following:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>index.xml
+</span></span><span class=line><span class=cl>sitemap.xml
+</span></span></code></pre></div><p>That&rsquo;s a listing of your public/ directory. Hugo didn&rsquo;t create a home page because our site has no content. When there&rsquo;s no index.html file in a directory, the server lists the files in the directory, which is what you should see in your browser.</p><p>Let’s go back and look at those warnings again.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
+</span></span><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: [404.html]
+</span></span></code></pre></div><p>That second warning is easier to explain. We haven’t created a template to be used to generate “page not found errors.” The 404 message is a topic for a separate tutorial.</p><p>Now for the first warning. It is for the home page. You can tell because the first layout that it looked for was “index.html.” That’s only used by the home page.</p><p>I like that the verbose flag causes Hugo to list the files that it&rsquo;s searching for. For the home page, they are index.html, _default/list.html, and _default/single.html. There are some rules that we&rsquo;ll cover later that explain the names and paths. For now, just remember that Hugo couldn&rsquo;t find a template for the home page and it told you so.</p><p>At this point, you&rsquo;ve got a working installation and site that we can build upon. All that’s left is to add some content and a theme to display it.</p><h2 id=create-a-new-theme>Create a New Theme</h2><p>Hugo doesn&rsquo;t ship with a default theme. There are a few available (I counted a dozen when I first installed Hugo) and Hugo comes with a command to create new themes.</p><p>We&rsquo;re going to create a new theme called &ldquo;zafta.&rdquo; Since the goal of this tutorial is to show you how to fill out the files to pull in your content, the theme will not contain any CSS. In other words, ugly but functional.</p><p>All themes have opinions on content and layout. For example, Zafta uses &ldquo;post&rdquo; over &ldquo;blog&rdquo;. Strong opinions make for simpler templates but differing opinions make it tougher to use themes. When you build a theme, consider using the terms that other themes do.</p><h3 id=create-a-skeleton>Create a Skeleton</h3><p>Use the hugo &ldquo;new&rdquo; command to create the skeleton of a theme. This creates the directory structure and places empty files for you to fill out.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ hugo new theme zafta
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ ls -l
+</span></span><span class=line><span class=cl>total <span class=m>8</span>
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 16:49 archetypes
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff   <span class=m>82</span> Sep <span class=m>29</span> 16:49 config.toml
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 16:49 content
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 16:49 layouts
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>4</span> quoha  staff  <span class=m>136</span> Sep <span class=m>29</span> 17:02 public
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 16:49 static
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>3</span> quoha  staff  <span class=m>102</span> Sep <span class=m>29</span> 17:31 themes
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ find themes -type f <span class=p>|</span> xargs ls -l
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>1081</span> Sep <span class=m>29</span> 17:31 themes/zafta/LICENSE.md
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff     <span class=m>0</span> Sep <span class=m>29</span> 17:31 themes/zafta/archetypes/default.md
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff     <span class=m>0</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/_default/list.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff     <span class=m>0</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/_default/single.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff     <span class=m>0</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff     <span class=m>0</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/partials/footer.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff     <span class=m>0</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/partials/header.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff    <span class=m>93</span> Sep <span class=m>29</span> 17:31 themes/zafta/theme.toml
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>The skeleton includes templates (the files ending in .html), license file, a description of your theme (the theme.toml file), and an empty archetype.</p><p>Please take a minute to fill out the theme.toml and LICENSE.md files. They&rsquo;re optional, but if you&rsquo;re going to be distributing your theme, it tells the world who to praise (or blame). It&rsquo;s also nice to declare the license so that people will know how they can use the theme.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/theme.toml
+</span></span><span class=line><span class=cl><span class=nv>author</span> <span class=o>=</span> <span class=s2>&#34;michael d henderson&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>description</span> <span class=o>=</span> <span class=s2>&#34;a minimal working template&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>license</span> <span class=o>=</span> <span class=s2>&#34;MIT&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>name</span> <span class=o>=</span> <span class=s2>&#34;zafta&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>source_repo</span> <span class=o>=</span> <span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>tags</span> <span class=o>=</span> <span class=o>[</span><span class=s2>&#34;tags&#34;</span>, <span class=s2>&#34;categories&#34;</span><span class=o>]</span>
+</span></span><span class=line><span class=cl>:wq
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>## also edit themes/zafta/LICENSE.md and change</span>
+</span></span><span class=line><span class=cl><span class=c1>## the bit that says &#34;YOUR_NAME_HERE&#34;</span>
+</span></span></code></pre></div><p>Note that the the skeleton&rsquo;s template files are empty. Don&rsquo;t worry, we&rsquo;ll be changing that shortly.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ find themes/zafta -name <span class=s1>&#39;*.html&#39;</span> <span class=p>|</span> xargs ls -l
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>0</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/_default/list.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>0</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/_default/single.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>0</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>0</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/partials/footer.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>0</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/partials/header.html
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><h3 id=update-the-configuration-file-to-use-the-theme>Update the Configuration File to Use the Theme</h3><p>Now that we&rsquo;ve got a theme to work with, it&rsquo;s a good idea to add the theme name to the configuration file. This is optional, because you can always add &ldquo;-t zafta&rdquo; on all your commands. I like to put it the configuration file because I like shorter command lines. If you don&rsquo;t put it in the configuration file or specify it on the command line, you won&rsquo;t use the template that you&rsquo;re expecting to.</p><p>Edit the file to add the theme, add a title for the site, and specify that all of our content will use the TOML format.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi config.toml
+</span></span><span class=line><span class=cl><span class=nv>theme</span> <span class=o>=</span> <span class=s2>&#34;zafta&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>baseurl</span> <span class=o>=</span> <span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>languageCode</span> <span class=o>=</span> <span class=s2>&#34;en-us&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>title</span> <span class=o>=</span> <span class=s2>&#34;zafta - totally refreshing&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>MetaDataFormat</span> <span class=o>=</span> <span class=s2>&#34;toml&#34;</span>
+</span></span><span class=line><span class=cl>:wq
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><h3 id=generate-the-site>Generate the Site</h3><p>Now that we have an empty theme, let&rsquo;s generate the site again.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ hugo --verbose
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: <span class=o>[</span>404.html theme/404.html<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=m>0</span> draft content
+</span></span><span class=line><span class=cl><span class=m>0</span> future content
+</span></span><span class=line><span class=cl><span class=m>0</span> pages created
+</span></span><span class=line><span class=cl><span class=m>0</span> tags created
+</span></span><span class=line><span class=cl><span class=m>0</span> categories created
+</span></span><span class=line><span class=cl>in <span class=m>2</span> ms
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>Did you notice that the output is different? The warning message for the home page has disappeared and we have an additional information line saying that Hugo is syncing from the theme&rsquo;s directory.</p><p>Let&rsquo;s check the public/ directory to see what Hugo&rsquo;s created.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ ls -l public
+</span></span><span class=line><span class=cl>total <span class=m>16</span>
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 17:56 css
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff    <span class=m>0</span> Sep <span class=m>29</span> 17:56 index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>407</span> Sep <span class=m>29</span> 17:56 index.xml
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 17:56 js
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>243</span> Sep <span class=m>29</span> 17:56 sitemap.xml
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>Notice four things:</p><ol><li>Hugo created a home page. This is the file public/index.html.</li><li>Hugo created a css/ directory.</li><li>Hugo created a js/ directory.</li><li>Hugo claimed that it created 0 pages. It created a file and copied over static files, but didn&rsquo;t create any pages. That&rsquo;s because it considers a &ldquo;page&rdquo; to be a file created directly from a content file. It doesn&rsquo;t count things like the index.html files that it creates automatically.</li></ol><h4 id=the-home-page-1>The Home Page</h4><p>Hugo supports many different types of templates. The home page is special because it gets its own type of template and its own template file. The file, layouts/index.html, is used to generate the HTML for the home page. The Hugo documentation says that this is the only required template, but that depends. Hugo&rsquo;s warning message shows that it looks for three different templates:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
+</span></span></code></pre></div><p>If it can&rsquo;t find any of these, it completely skips creating the home page. We noticed that when we built the site without having a theme installed.</p><p>When Hugo created our theme, it created an empty home page template. Now, when we build the site, Hugo finds the template and uses it to generate the HTML for the home page. Since the template file is empty, the HTML file is empty, too. If the template had any rules in it, then Hugo would have used them to generate the home page.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ find . -name index.html <span class=p>|</span> xargs ls -l
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>0</span> Sep <span class=m>29</span> 20:21 ./public/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>0</span> Sep <span class=m>29</span> 17:31 ./themes/zafta/layouts/index.html
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><h4 id=the-magic-of-static>The Magic of Static</h4><p>Hugo does two things when generating the site. It uses templates to transform content into HTML and it copies static files into the site. Unlike content, static files are not transformed. They are copied exactly as they are.</p><p>Hugo assumes that your site will use both CSS and JavaScript, so it creates directories in your theme to hold them. Remember opinions? Well, Hugo&rsquo;s opinion is that you&rsquo;ll store your CSS in a directory named css/ and your JavaScript in a directory named js/. If you don&rsquo;t like that, you can change the directory names in your theme directory or even delete them completely. Hugo&rsquo;s nice enough to offer its opinion, then behave nicely if you disagree.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ find themes/zafta -type d <span class=p>|</span> xargs ls -ld
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>7</span> quoha  staff  <span class=m>238</span> Sep <span class=m>29</span> 17:38 themes/zafta
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>3</span> quoha  staff  <span class=m>102</span> Sep <span class=m>29</span> 17:31 themes/zafta/archetypes
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>5</span> quoha  staff  <span class=m>170</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>4</span> quoha  staff  <span class=m>136</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/_default
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>4</span> quoha  staff  <span class=m>136</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/partials
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>4</span> quoha  staff  <span class=m>136</span> Sep <span class=m>29</span> 17:31 themes/zafta/static
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 17:31 themes/zafta/static/css
+</span></span><span class=line><span class=cl>drwxr-xr-x  <span class=m>2</span> quoha  staff   <span class=m>68</span> Sep <span class=m>29</span> 17:31 themes/zafta/static/js
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><h2 id=the-theme-development-cycle>The Theme Development Cycle</h2><p>When you&rsquo;re working on a theme, you will make changes in the theme&rsquo;s directory, rebuild the site, and check your changes in the browser. Hugo makes this very easy:</p><ol><li>Purge the public/ directory.</li><li>Run the built in web server in watch mode.</li><li>Open your site in a browser.</li><li>Update the theme.</li><li>Glance at your browser window to see changes.</li><li>Return to step 4.</li></ol><p>I’ll throw in one more opinion: never work on a theme on a live site. Always work on a copy of your site. Make changes to your theme, test them, then copy them up to your site. For added safety, use a tool like Git to keep a revision history of your content and your theme. Believe me when I say that it is too easy to lose both your mind and your changes.</p><p>Check the main Hugo site for information on using Git with Hugo.</p><h3 id=purge-the-public-directory>Purge the public/ Directory</h3><p>When generating the site, Hugo will create new files and update existing ones in the <code>public/</code> directory. It will not delete files that are no longer used. For example, files that were created in the wrong directory or with the wrong title will remain. If you leave them, you might get confused by them later. I recommend cleaning out your site prior to generating it.</p><p>Note: If you&rsquo;re building on an SSD, you should ignore this. Churning on a SSD can be costly.</p><h3 id=hugos-watch-option>Hugo&rsquo;s Watch Option</h3><p>Hugo&rsquo;s &ldquo;<code>--watch</code>&rdquo; option will monitor the content/ and your theme directories for changes and rebuild the site automatically.</p><h3 id=live-reload>Live Reload</h3><p>Hugo&rsquo;s built in web server supports live reload. As pages are saved on the server, the browser is told to refresh the page. Usually, this happens faster than you can say, &ldquo;Wow, that&rsquo;s totally amazing.&rdquo;</p><h3 id=development-commands>Development Commands</h3><p>Use the following commands as the basis for your workflow.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>## purge old files. hugo will recreate the public directory.
+</span></span><span class=line><span class=cl>##
+</span></span><span class=line><span class=cl>$ rm -rf public
+</span></span><span class=line><span class=cl>##
+</span></span><span class=line><span class=cl>## run hugo in watch mode
+</span></span><span class=line><span class=cl>##
+</span></span><span class=line><span class=cl>$ hugo server --watch --verbose
+</span></span></code></pre></div><p>Here&rsquo;s sample output showing Hugo detecting a change to the template for the home page. Once generated, the web browser automatically reloaded the page. I&rsquo;ve said this before, it&rsquo;s amazing.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ rm -rf public
+</span></span><span class=line><span class=cl>$ hugo server --watch --verbose
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: <span class=o>[</span>404.html theme/404.html<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=m>0</span> draft content
+</span></span><span class=line><span class=cl><span class=m>0</span> future content
+</span></span><span class=line><span class=cl><span class=m>0</span> pages created
+</span></span><span class=line><span class=cl><span class=m>0</span> tags created
+</span></span><span class=line><span class=cl><span class=m>0</span> categories created
+</span></span><span class=line><span class=cl>in <span class=m>2</span> ms
+</span></span><span class=line><span class=cl>Watching <span class=k>for</span> changes in /Users/quoha/Sites/zafta/content
+</span></span><span class=line><span class=cl>Serving pages from /Users/quoha/Sites/zafta/public
+</span></span><span class=line><span class=cl>Web Server is available at http://localhost:1313
+</span></span><span class=line><span class=cl>Press Ctrl+C to stop
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 File System Event: <span class=o>[</span><span class=s2>&#34;/Users/quoha/Sites/zafta/themes/zafta/layouts/index.html&#34;</span>: MODIFY<span class=p>|</span>ATTRIB<span class=o>]</span>
+</span></span><span class=line><span class=cl>Change detected, rebuilding site
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: <span class=o>[</span>404.html theme/404.html<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=m>0</span> draft content
+</span></span><span class=line><span class=cl><span class=m>0</span> future content
+</span></span><span class=line><span class=cl><span class=m>0</span> pages created
+</span></span><span class=line><span class=cl><span class=m>0</span> tags created
+</span></span><span class=line><span class=cl><span class=m>0</span> categories created
+</span></span><span class=line><span class=cl>in <span class=m>1</span> ms
+</span></span></code></pre></div><h2 id=update-the-home-page-template>Update the Home Page Template</h2><p>The home page is one of a few special pages that Hugo creates automatically. As mentioned earlier, it looks for one of three files in the theme&rsquo;s layout/ directory:</p><ol><li>index.html</li><li>_default/list.html</li><li>_default/single.html</li></ol><p>We could update one of the default templates, but a good design decision is to update the most specific template available. That&rsquo;s not a hard and fast rule (in fact, we&rsquo;ll break it a few times in this tutorial), but it is a good generalization.</p><h3 id=make-a-static-home-page>Make a Static Home Page</h3><p>Right now, that page is empty because we don&rsquo;t have any content and we don&rsquo;t have any logic in the template. Let&rsquo;s change that by adding some text to the template.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/layouts/index.html
+</span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>&lt;html&gt;
+</span></span><span class=line><span class=cl>&lt;body&gt;
+</span></span><span class=line><span class=cl>  &lt;p&gt;hugo says hello!&lt;/p&gt;
+</span></span><span class=line><span class=cl>&lt;/body&gt;
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span><span class=line><span class=cl>:wq
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>Build the web site and then verify the results.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ hugo --verbose
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: <span class=o>[</span>404.html theme/404.html<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=m>0</span> draft content
+</span></span><span class=line><span class=cl><span class=m>0</span> future content
+</span></span><span class=line><span class=cl><span class=m>0</span> pages created
+</span></span><span class=line><span class=cl><span class=m>0</span> tags created
+</span></span><span class=line><span class=cl><span class=m>0</span> categories created
+</span></span><span class=line><span class=cl>in <span class=m>2</span> ms
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ find public -type f -name <span class=s1>&#39;*.html&#39;</span> <span class=p>|</span> xargs ls -l
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>78</span> Sep <span class=m>29</span> 21:26 public/index.html
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ cat public/index.html
+</span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>&lt;html&gt;
+</span></span><span class=line><span class=cl>&lt;body&gt;
+</span></span><span class=line><span class=cl>  &lt;p&gt;hugo says hello!&lt;/p&gt;
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span></code></pre></div><h4 id=live-reload-1>Live Reload</h4><p>Note: If you&rsquo;re running the server with the <code>--watch</code> option, you&rsquo;ll see different content in the file:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ cat public/index.html
+</span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>&lt;html&gt;
+</span></span><span class=line><span class=cl>&lt;body&gt;
+</span></span><span class=line><span class=cl>  &lt;p&gt;hugo says hello!&lt;/p&gt;
+</span></span><span class=line><span class=cl>&lt;script&gt;document.write<span class=o>(</span><span class=s1>&#39;&lt;script src=&#34;http://&#39;</span>
+</span></span><span class=line><span class=cl>        + <span class=o>(</span>location.host <span class=o>||</span> <span class=s1>&#39;localhost&#39;</span><span class=o>)</span>.split<span class=o>(</span><span class=s1>&#39;:&#39;</span><span class=o>)[</span>0<span class=o>]</span>
+</span></span><span class=line><span class=cl>    + <span class=s1>&#39;:1313/livereload.js?mindelay=10&#34;&gt;&lt;/&#39;</span>
+</span></span><span class=line><span class=cl>        + <span class=s1>&#39;script&gt;&#39;</span><span class=o>)</span>&lt;/script&gt;&lt;/body&gt;
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span></code></pre></div><p>When you use <code>--watch</code>, the Live Reload script is added by Hugo. Look for live reload in the documentation to see what it does and how to disable it.</p><h3 id=build-a-dynamic-home-page>Build a &ldquo;Dynamic&rdquo; Home Page</h3><p>&ldquo;Dynamic home page?&rdquo; Hugo&rsquo;s a static web site generator, so this seems an odd thing to say. I mean let&rsquo;s have the home page automatically reflect the content in the site every time Hugo builds it. We&rsquo;ll use iteration in the template to do that.</p><h4 id=create-new-posts>Create New Posts</h4><p>Now that we have the home page generating static content, let&rsquo;s add some content to the site. We&rsquo;ll display these posts as a list on the home page and on their own page, too.</p><p>Hugo has a command to generate a skeleton post, just like it does for sites and themes.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ hugo --verbose new post/first.md
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 attempting to create  post/first.md of post
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 curpath: /Users/quoha/Sites/zafta/themes/zafta/archetypes/default.md
+</span></span><span class=line><span class=cl>ERROR: 2014/09/29 Unable to Cast &lt;nil&gt; to map<span class=o>[</span>string<span class=o>]</span>interface<span class=o>{}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>That wasn&rsquo;t very nice, was it?</p><p>The &ldquo;new&rdquo; command uses an archetype to create the post file. Hugo created an empty default archetype file, but that causes an error when there&rsquo;s a theme. For me, the workaround was to create an archetypes file specifically for the post type.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/archetypes/post.md
+</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl><span class=nv>Description</span> <span class=o>=</span> <span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>Tags</span> <span class=o>=</span> <span class=o>[]</span>
+</span></span><span class=line><span class=cl><span class=nv>Categories</span> <span class=o>=</span> <span class=o>[]</span>
+</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl>:wq
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ find themes/zafta/archetypes -type f <span class=p>|</span> xargs ls -l
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff   <span class=m>0</span> Sep <span class=m>29</span> 21:53 themes/zafta/archetypes/default.md
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>51</span> Sep <span class=m>29</span> 21:54 themes/zafta/archetypes/post.md
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ hugo --verbose new post/first.md
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 attempting to create  post/first.md of post
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 curpath: /Users/quoha/Sites/zafta/themes/zafta/archetypes/post.md
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 creating /Users/quoha/Sites/zafta/content/post/first.md
+</span></span><span class=line><span class=cl>/Users/quoha/Sites/zafta/content/post/first.md created
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ hugo --verbose new post/second.md
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 attempting to create  post/second.md of post
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 curpath: /Users/quoha/Sites/zafta/themes/zafta/archetypes/post.md
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 creating /Users/quoha/Sites/zafta/content/post/second.md
+</span></span><span class=line><span class=cl>/Users/quoha/Sites/zafta/content/post/second.md created
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ ls -l content/post
+</span></span><span class=line><span class=cl>total <span class=m>16</span>
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>104</span> Sep <span class=m>29</span> 21:54 first.md
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>105</span> Sep <span class=m>29</span> 21:57 second.md
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ cat content/post/first.md
+</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl><span class=nv>Categories</span> <span class=o>=</span> <span class=o>[]</span>
+</span></span><span class=line><span class=cl><span class=nv>Description</span> <span class=o>=</span> <span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>Tags</span> <span class=o>=</span> <span class=o>[]</span>
+</span></span><span class=line><span class=cl><span class=nv>date</span> <span class=o>=</span> <span class=s2>&#34;2014-09-29T21:54:53-05:00&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>title</span> <span class=o>=</span> <span class=s2>&#34;first&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl>my first post
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ cat content/post/second.md
+</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl><span class=nv>Categories</span> <span class=o>=</span> <span class=o>[]</span>
+</span></span><span class=line><span class=cl><span class=nv>Description</span> <span class=o>=</span> <span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>Tags</span> <span class=o>=</span> <span class=o>[]</span>
+</span></span><span class=line><span class=cl><span class=nv>date</span> <span class=o>=</span> <span class=s2>&#34;2014-09-29T21:57:09-05:00&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>title</span> <span class=o>=</span> <span class=s2>&#34;second&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl>my second post
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>Build the web site and then verify the results.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ rm -rf public
+</span></span><span class=line><span class=cl>$ hugo --verbose
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 found taxonomies: map<span class=o>[</span>string<span class=o>]</span>string<span class=o>{</span><span class=s2>&#34;category&#34;</span>:<span class=s2>&#34;categories&#34;</span>, <span class=s2>&#34;tag&#34;</span>:<span class=s2>&#34;tags&#34;</span><span class=o>}</span>
+</span></span><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: <span class=o>[</span>404.html theme/404.html<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=m>0</span> draft content
+</span></span><span class=line><span class=cl><span class=m>0</span> future content
+</span></span><span class=line><span class=cl><span class=m>2</span> pages created
+</span></span><span class=line><span class=cl><span class=m>0</span> tags created
+</span></span><span class=line><span class=cl><span class=m>0</span> categories created
+</span></span><span class=line><span class=cl>in <span class=m>4</span> ms
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>The output says that it created 2 pages. Those are our new posts:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ find public -type f -name <span class=s1>&#39;*.html&#39;</span> <span class=p>|</span> xargs ls -l
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>78</span> Sep <span class=m>29</span> 22:13 public/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff   <span class=m>0</span> Sep <span class=m>29</span> 22:13 public/post/first/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff   <span class=m>0</span> Sep <span class=m>29</span> 22:13 public/post/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff   <span class=m>0</span> Sep <span class=m>29</span> 22:13 public/post/second/index.html
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>The new files are empty because because the templates used to generate the content are empty. The homepage doesn&rsquo;t show the new content, either. We have to update the templates to add the posts.</p><h3 id=list-and-single-templates>List and Single Templates</h3><p>In Hugo, we have three major kinds of templates. There&rsquo;s the home page template that we updated previously. It is used only by the home page. We also have &ldquo;single&rdquo; templates which are used to generate output for a single content file. We also have &ldquo;list&rdquo; templates that are used to group multiple pieces of content before generating output.</p><p>Generally speaking, list templates are named &ldquo;list.html&rdquo; and single templates are named &ldquo;single.html.&rdquo;</p><p>There are three other types of templates: partials, content views, and terms. We will not go into much detail on these.</p><h3 id=add-content-to-the-homepage>Add Content to the Homepage</h3><p>The home page will contain a list of posts. Let&rsquo;s update its template to add the posts that we just created. The logic in the template will run every time we build the site.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/layouts/index.html
+</span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>&lt;html&gt;
+</span></span><span class=line><span class=cl>&lt;body&gt;
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> range first <span class=m>10</span> .Data.Pages <span class=o>}}</span>
+</span></span><span class=line><span class=cl>    &lt;h1&gt;<span class=o>{{</span> .Title <span class=o>}}</span>&lt;/h1&gt;
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> end <span class=o>}}</span>
+</span></span><span class=line><span class=cl>&lt;/body&gt;
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span><span class=line><span class=cl>:wq
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>Hugo uses the Go template engine. That engine scans the template files for commands which are enclosed between &ldquo;{{&rdquo; and &ldquo;}}&rdquo;. In our template, the commands are:</p><ol><li>range</li><li>.Title</li><li>end</li></ol><p>The &ldquo;range&rdquo; command is an iterator. We&rsquo;re going to use it to go through the first ten pages. Every HTML file that Hugo creates is treated as a page, so looping through the list of pages will look at every file that will be created.</p><p>The &ldquo;.Title&rdquo; command prints the value of the &ldquo;title&rdquo; variable. Hugo pulls it from the front matter in the Markdown file.</p><p>The &ldquo;end&rdquo; command signals the end of the range iterator. The engine loops back to the top of the iteration when it finds &ldquo;end.&rdquo; Everything between the &ldquo;range&rdquo; and &ldquo;end&rdquo; is evaluated every time the engine goes through the iteration. In this file, that would cause the title from the first ten pages to be output as heading level one.</p><p>It&rsquo;s helpful to remember that some variables, like .Data, are created before any output files. Hugo loads every content file into the variable and then gives the template a chance to process before creating the HTML files.</p><p>Build the web site and then verify the results.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ rm -rf public
+</span></span><span class=line><span class=cl>$ hugo --verbose
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 found taxonomies: map<span class=o>[</span>string<span class=o>]</span>string<span class=o>{</span><span class=s2>&#34;tag&#34;</span>:<span class=s2>&#34;tags&#34;</span>, <span class=s2>&#34;category&#34;</span>:<span class=s2>&#34;categories&#34;</span><span class=o>}</span>
+</span></span><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: <span class=o>[</span>404.html theme/404.html<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=m>0</span> draft content
+</span></span><span class=line><span class=cl><span class=m>0</span> future content
+</span></span><span class=line><span class=cl><span class=m>2</span> pages created
+</span></span><span class=line><span class=cl><span class=m>0</span> tags created
+</span></span><span class=line><span class=cl><span class=m>0</span> categories created
+</span></span><span class=line><span class=cl>in <span class=m>4</span> ms
+</span></span><span class=line><span class=cl>$ find public -type f -name <span class=s1>&#39;*.html&#39;</span> <span class=p>|</span> xargs ls -l
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>94</span> Sep <span class=m>29</span> 22:23 public/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff   <span class=m>0</span> Sep <span class=m>29</span> 22:23 public/post/first/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff   <span class=m>0</span> Sep <span class=m>29</span> 22:23 public/post/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff   <span class=m>0</span> Sep <span class=m>29</span> 22:23 public/post/second/index.html
+</span></span><span class=line><span class=cl>$ cat public/index.html
+</span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>&lt;html&gt;
+</span></span><span class=line><span class=cl>&lt;body&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    &lt;h1&gt;second&lt;/h1&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    &lt;h1&gt;first&lt;/h1&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>&lt;/body&gt;
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>Congratulations, the home page shows the title of the two posts. The posts themselves are still empty, but let&rsquo;s take a moment to appreciate what we&rsquo;ve done. Your template now generates output dynamically. Believe it or not, by inserting the range command inside of those curly braces, you&rsquo;ve learned everything you need to know to build a theme. All that&rsquo;s really left is understanding which template will be used to generate each content file and becoming familiar with the commands for the template engine.</p><p>And, if that were entirely true, this tutorial would be much shorter. There are a few things to know that will make creating a new template much easier. Don&rsquo;t worry, though, that&rsquo;s all to come.</p><h3 id=add-content-to-the-posts>Add Content to the Posts</h3><p>We&rsquo;re working with posts, which are in the content/post/ directory. That means that their section is &ldquo;post&rdquo; (and if we don&rsquo;t do something weird, their type is also &ldquo;post&rdquo;).</p><p>Hugo uses the section and type to find the template file for every piece of content. Hugo will first look for a template file that matches the section or type name. If it can&rsquo;t find one, then it will look in the _default/ directory. There are some twists that we&rsquo;ll cover when we get to categories and tags, but for now we can assume that Hugo will try post/single.html, then _default/single.html.</p><p>Now that we know the search rule, let&rsquo;s see what we actually have available:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ find themes/zafta -name single.html <span class=p>|</span> xargs ls -l
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>132</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/_default/single.html
+</span></span></code></pre></div><p>We could create a new template, post/single.html, or change the default. Since we don&rsquo;t know of any other content types, let&rsquo;s start with updating the default.</p><p>Remember, any content that we haven&rsquo;t created a template for will end up using this template. That can be good or bad. Bad because I know that we&rsquo;re going to be adding different types of content and we&rsquo;re going to end up undoing some of the changes we&rsquo;ve made. It&rsquo;s good because we&rsquo;ll be able to see immediate results. It&rsquo;s also good to start here because we can start to build the basic layout for the site. As we add more content types, we&rsquo;ll refactor this file and move logic around. Hugo makes that fairly painless, so we&rsquo;ll accept the cost and proceed.</p><p>Please see the Hugo documentation on template rendering for all the details on determining which template to use. And, as the docs mention, if you&rsquo;re building a single page application (SPA) web site, you can delete all of the other templates and work with just the default single page. That&rsquo;s a refreshing amount of joy right there.</p><h4 id=update-the-template-file>Update the Template File</h4><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/layouts/_default/single.html
+</span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>&lt;html&gt;
+</span></span><span class=line><span class=cl>&lt;head&gt;
+</span></span><span class=line><span class=cl>  &lt;title&gt;<span class=o>{{</span> .Title <span class=o>}}</span>&lt;/title&gt;
+</span></span><span class=line><span class=cl>&lt;/head&gt;
+</span></span><span class=line><span class=cl>&lt;body&gt;
+</span></span><span class=line><span class=cl>  &lt;h1&gt;<span class=o>{{</span> .Title <span class=o>}}</span>&lt;/h1&gt;
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> .Content <span class=o>}}</span>
+</span></span><span class=line><span class=cl>&lt;/body&gt;
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span><span class=line><span class=cl>:wq
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>Build the web site and verify the results.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ rm -rf public
+</span></span><span class=line><span class=cl>$ hugo --verbose
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 found taxonomies: map<span class=o>[</span>string<span class=o>]</span>string<span class=o>{</span><span class=s2>&#34;tag&#34;</span>:<span class=s2>&#34;tags&#34;</span>, <span class=s2>&#34;category&#34;</span>:<span class=s2>&#34;categories&#34;</span><span class=o>}</span>
+</span></span><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: <span class=o>[</span>404.html theme/404.html<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=m>0</span> draft content
+</span></span><span class=line><span class=cl><span class=m>0</span> future content
+</span></span><span class=line><span class=cl><span class=m>2</span> pages created
+</span></span><span class=line><span class=cl><span class=m>0</span> tags created
+</span></span><span class=line><span class=cl><span class=m>0</span> categories created
+</span></span><span class=line><span class=cl>in <span class=m>4</span> ms
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ find public -type f -name <span class=s1>&#39;*.html&#39;</span> <span class=p>|</span> xargs ls -l
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff   <span class=m>94</span> Sep <span class=m>29</span> 22:40 public/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>125</span> Sep <span class=m>29</span> 22:40 public/post/first/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff    <span class=m>0</span> Sep <span class=m>29</span> 22:40 public/post/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>128</span> Sep <span class=m>29</span> 22:40 public/post/second/index.html
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ cat public/post/first/index.html
+</span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>&lt;html&gt;
+</span></span><span class=line><span class=cl>&lt;head&gt;
+</span></span><span class=line><span class=cl>  &lt;title&gt;first&lt;/title&gt;
+</span></span><span class=line><span class=cl>&lt;/head&gt;
+</span></span><span class=line><span class=cl>&lt;body&gt;
+</span></span><span class=line><span class=cl>  &lt;h1&gt;first&lt;/h1&gt;
+</span></span><span class=line><span class=cl>  &lt;p&gt;my first post&lt;/p&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>&lt;/body&gt;
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ cat public/post/second/index.html
+</span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>&lt;html&gt;
+</span></span><span class=line><span class=cl>&lt;head&gt;
+</span></span><span class=line><span class=cl>  &lt;title&gt;second&lt;/title&gt;
+</span></span><span class=line><span class=cl>&lt;/head&gt;
+</span></span><span class=line><span class=cl>&lt;body&gt;
+</span></span><span class=line><span class=cl>  &lt;h1&gt;second&lt;/h1&gt;
+</span></span><span class=line><span class=cl>  &lt;p&gt;my second post&lt;/p&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>&lt;/body&gt;
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><p>Notice that the posts now have content. You can go to localhost:1313/post/first to verify.</p><h3 id=linking-to-content>Linking to Content</h3><p>The posts are on the home page. Let&rsquo;s add a link from there to the post. Since this is the home page, we&rsquo;ll update its template.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/layouts/index.html
+</span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>&lt;html&gt;
+</span></span><span class=line><span class=cl>&lt;body&gt;
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> range first <span class=m>10</span> .Data.Pages <span class=o>}}</span>
+</span></span><span class=line><span class=cl>    &lt;h1&gt;&lt;a <span class=nv>href</span><span class=o>=</span><span class=s2>&#34;{{ .Permalink }}&#34;</span>&gt;<span class=o>{{</span> .Title <span class=o>}}</span>&lt;/a&gt;&lt;/h1&gt;
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> end <span class=o>}}</span>
+</span></span><span class=line><span class=cl>&lt;/body&gt;
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span></code></pre></div><p>Build the web site and verify the results.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ rm -rf public
+</span></span><span class=line><span class=cl>$ hugo --verbose
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
+</span></span><span class=line><span class=cl>INFO: 2014/09/29 found taxonomies: map<span class=o>[</span>string<span class=o>]</span>string<span class=o>{</span><span class=s2>&#34;tag&#34;</span>:<span class=s2>&#34;tags&#34;</span>, <span class=s2>&#34;category&#34;</span>:<span class=s2>&#34;categories&#34;</span><span class=o>}</span>
+</span></span><span class=line><span class=cl>WARN: 2014/09/29 Unable to locate layout: <span class=o>[</span>404.html theme/404.html<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=m>0</span> draft content
+</span></span><span class=line><span class=cl><span class=m>0</span> future content
+</span></span><span class=line><span class=cl><span class=m>2</span> pages created
+</span></span><span class=line><span class=cl><span class=m>0</span> tags created
+</span></span><span class=line><span class=cl><span class=m>0</span> categories created
+</span></span><span class=line><span class=cl>in <span class=m>4</span> ms
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ find public -type f -name <span class=s1>&#39;*.html&#39;</span> <span class=p>|</span> xargs ls -l
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>149</span> Sep <span class=m>29</span> 22:44 public/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>125</span> Sep <span class=m>29</span> 22:44 public/post/first/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff    <span class=m>0</span> Sep <span class=m>29</span> 22:44 public/post/index.html
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>128</span> Sep <span class=m>29</span> 22:44 public/post/second/index.html
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ cat public/index.html
+</span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>&lt;html&gt;
+</span></span><span class=line><span class=cl>&lt;body&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    &lt;h1&gt;&lt;a <span class=nv>href</span><span class=o>=</span><span class=s2>&#34;/post/second/&#34;</span>&gt;second&lt;/a&gt;&lt;/h1&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    &lt;h1&gt;&lt;a <span class=nv>href</span><span class=o>=</span><span class=s2>&#34;/post/first/&#34;</span>&gt;first&lt;/a&gt;&lt;/h1&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>&lt;/body&gt;
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$
+</span></span></code></pre></div><h3 id=create-a-post-listing>Create a Post Listing</h3><p>We have the posts displaying on the home page and on their own page. We also have a file public/post/index.html that is empty. Let&rsquo;s make it show a list of all posts (not just the first ten).</p><p>We need to decide which template to update. This will be a listing, so it should be a list template. Let&rsquo;s take a quick look and see which list templates are available.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ find themes/zafta -name list.html <span class=p>|</span> xargs ls -l
+</span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>0</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/_default/list.html
+</span></span></code></pre></div><p>As with the single post, we have to decide to update _default/list.html or create post/list.html. We still don&rsquo;t have multiple content types, so let&rsquo;s stay consistent and update the default list template.</p><h2 id=creating-top-level-pages>Creating Top Level Pages</h2><p>Let&rsquo;s add an &ldquo;about&rdquo; page and display it at the top level (as opposed to a sub-level like we did with posts).</p><p>The default in Hugo is to use the directory structure of the content/ directory to guide the location of the generated html in the public/ directory. Let&rsquo;s verify that by creating an &ldquo;about&rdquo; page at the top level:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi content/about.md
+</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl><span class=nv>title</span> <span class=o>=</span> <span class=s2>&#34;about&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>description</span> <span class=o>=</span> <span class=s2>&#34;about this site&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>date</span> <span class=o>=</span> <span class=s2>&#34;2014-09-27&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>slug</span> <span class=o>=</span> <span class=s2>&#34;about time&#34;</span>
+</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>## about us</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>i<span class=err>&#39;</span>m speechless
+</span></span><span class=line><span class=cl>:wq
+</span></span></code></pre></div><p>Generate the web site and verify the results.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ find public -name <span class=s1>&#39;*.html&#39;</span> <span class=p>|</span> xargs ls -l
+</span></span><span class=line><span class=cl>-rw-rw-r--  <span class=m>1</span> mdhender  staff   <span class=m>334</span> Sep <span class=m>27</span> 15:08 public/about-time/index.html
+</span></span><span class=line><span class=cl>-rw-rw-r--  <span class=m>1</span> mdhender  staff   <span class=m>527</span> Sep <span class=m>27</span> 15:08 public/index.html
+</span></span><span class=line><span class=cl>-rw-rw-r--  <span class=m>1</span> mdhender  staff   <span class=m>358</span> Sep <span class=m>27</span> 15:08 public/post/first-post/index.html
+</span></span><span class=line><span class=cl>-rw-rw-r--  <span class=m>1</span> mdhender  staff     <span class=m>0</span> Sep <span class=m>27</span> 15:08 public/post/index.html
+</span></span><span class=line><span class=cl>-rw-rw-r--  <span class=m>1</span> mdhender  staff   <span class=m>342</span> Sep <span class=m>27</span> 15:08 public/post/second-post/index.html
+</span></span></code></pre></div><p>Notice that the page wasn&rsquo;t created at the top level. It was created in a sub-directory named &lsquo;about-time/&rsquo;. That name came from our slug. Hugo will use the slug to name the generated content. It&rsquo;s a reasonable default, by the way, but we can learn a few things by fighting it for this file.</p><p>One other thing. Take a look at the home page.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ cat public/index.html
+</span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>&lt;html&gt;
+</span></span><span class=line><span class=cl>&lt;body&gt;
+</span></span><span class=line><span class=cl>    &lt;h1&gt;&lt;a <span class=nv>href</span><span class=o>=</span><span class=s2>&#34;http://localhost:1313/post/theme/&#34;</span>&gt;creating a new theme&lt;/a&gt;&lt;/h1&gt;
+</span></span><span class=line><span class=cl>    &lt;h1&gt;&lt;a <span class=nv>href</span><span class=o>=</span><span class=s2>&#34;http://localhost:1313/about-time/&#34;</span>&gt;about&lt;/a&gt;&lt;/h1&gt;
+</span></span><span class=line><span class=cl>    &lt;h1&gt;&lt;a <span class=nv>href</span><span class=o>=</span><span class=s2>&#34;http://localhost:1313/post/second-post/&#34;</span>&gt;second&lt;/a&gt;&lt;/h1&gt;
+</span></span><span class=line><span class=cl>    &lt;h1&gt;&lt;a <span class=nv>href</span><span class=o>=</span><span class=s2>&#34;http://localhost:1313/post/first-post/&#34;</span>&gt;first&lt;/a&gt;&lt;/h1&gt;
+</span></span><span class=line><span class=cl>&lt;script&gt;document.write<span class=o>(</span><span class=s1>&#39;&lt;script src=&#34;http://&#39;</span>
+</span></span><span class=line><span class=cl>        + <span class=o>(</span>location.host <span class=o>||</span> <span class=s1>&#39;localhost&#39;</span><span class=o>)</span>.split<span class=o>(</span><span class=s1>&#39;:&#39;</span><span class=o>)[</span>0<span class=o>]</span>
+</span></span><span class=line><span class=cl>		+ <span class=s1>&#39;:1313/livereload.js?mindelay=10&#34;&gt;&lt;/&#39;</span>
+</span></span><span class=line><span class=cl>        + <span class=s1>&#39;script&gt;&#39;</span><span class=o>)</span>&lt;/script&gt;&lt;/body&gt;
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span></code></pre></div><p>Notice that the &ldquo;about&rdquo; link is listed with the posts? That&rsquo;s not desirable, so let&rsquo;s change that first.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/layouts/index.html
+</span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>&lt;html&gt;
+</span></span><span class=line><span class=cl>&lt;body&gt;
+</span></span><span class=line><span class=cl>  &lt;h1&gt;posts&lt;/h1&gt;
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> range first <span class=m>10</span> .Data.Pages <span class=o>}}</span>
+</span></span><span class=line><span class=cl>    <span class=o>{{</span> <span class=k>if</span> eq .Type <span class=s2>&#34;post&#34;</span><span class=o>}}</span>
+</span></span><span class=line><span class=cl>      &lt;h2&gt;&lt;a <span class=nv>href</span><span class=o>=</span><span class=s2>&#34;{{ .Permalink }}&#34;</span>&gt;<span class=o>{{</span> .Title <span class=o>}}</span>&lt;/a&gt;&lt;/h2&gt;
+</span></span><span class=line><span class=cl>    <span class=o>{{</span> end <span class=o>}}</span>
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> end <span class=o>}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  &lt;h1&gt;pages&lt;/h1&gt;
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> range .Data.Pages <span class=o>}}</span>
+</span></span><span class=line><span class=cl>    <span class=o>{{</span> <span class=k>if</span> eq .Type <span class=s2>&#34;page&#34;</span> <span class=o>}}</span>
+</span></span><span class=line><span class=cl>      &lt;h2&gt;&lt;a <span class=nv>href</span><span class=o>=</span><span class=s2>&#34;{{ .Permalink }}&#34;</span>&gt;<span class=o>{{</span> .Title <span class=o>}}</span>&lt;/a&gt;&lt;/h2&gt;
+</span></span><span class=line><span class=cl>    <span class=o>{{</span> end <span class=o>}}</span>
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> end <span class=o>}}</span>
+</span></span><span class=line><span class=cl>&lt;/body&gt;
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span><span class=line><span class=cl>:wq
+</span></span></code></pre></div><p>Generate the web site and verify the results. The home page has two sections, posts and pages, and each section has the right set of headings and links in it.</p><p>But, that about page still renders to about-time/index.html.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ find public -name <span class=s1>&#39;*.html&#39;</span> <span class=p>|</span> xargs ls -l
+</span></span><span class=line><span class=cl>-rw-rw-r--  <span class=m>1</span> mdhender  staff    <span class=m>334</span> Sep <span class=m>27</span> 15:33 public/about-time/index.html
+</span></span><span class=line><span class=cl>-rw-rw-r--  <span class=m>1</span> mdhender  staff    <span class=m>645</span> Sep <span class=m>27</span> 15:33 public/index.html
+</span></span><span class=line><span class=cl>-rw-rw-r--  <span class=m>1</span> mdhender  staff    <span class=m>358</span> Sep <span class=m>27</span> 15:33 public/post/first-post/index.html
+</span></span><span class=line><span class=cl>-rw-rw-r--  <span class=m>1</span> mdhender  staff      <span class=m>0</span> Sep <span class=m>27</span> 15:33 public/post/index.html
+</span></span><span class=line><span class=cl>-rw-rw-r--  <span class=m>1</span> mdhender  staff    <span class=m>342</span> Sep <span class=m>27</span> 15:33 public/post/second-post/index.html
+</span></span></code></pre></div><p>Knowing that hugo is using the slug to generate the file name, the simplest solution is to change the slug. Let&rsquo;s do it the hard way and change the permalink in the configuration file.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi config.toml
+</span></span><span class=line><span class=cl><span class=o>[</span>permalinks<span class=o>]</span>
+</span></span><span class=line><span class=cl>	<span class=nv>page</span> <span class=o>=</span> <span class=s2>&#34;/:title/&#34;</span>
+</span></span><span class=line><span class=cl>	<span class=nv>about</span> <span class=o>=</span> <span class=s2>&#34;/:filename/&#34;</span>
+</span></span></code></pre></div><p>Generate the web site and verify that this didn&rsquo;t work. Hugo lets &ldquo;slug&rdquo; or &ldquo;URL&rdquo; override the permalinks setting in the configuration file. Go ahead and comment out the slug in content/about.md, then generate the web site to get it to be created in the right place.</p><h2 id=sharing-templates>Sharing Templates</h2><p>If you&rsquo;ve been following along, you probably noticed that posts have titles in the browser and the home page doesn&rsquo;t. That&rsquo;s because we didn&rsquo;t put the title in the home page&rsquo;s template (layouts/index.html). That&rsquo;s an easy thing to do, but let&rsquo;s look at a different option.</p><p>We can put the common bits into a shared template that&rsquo;s stored in the themes/zafta/layouts/partials/ directory.</p><h3 id=create-the-header-and-footer-partials>Create the Header and Footer Partials</h3><p>In Hugo, a partial is a sugar-coated template. Normally a template reference has a path specified. Partials are different. Hugo searches for them along a TODO defined search path. This makes it easier for end-users to override the theme&rsquo;s presentation.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/layouts/partials/header.html
+</span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
+</span></span><span class=line><span class=cl>&lt;html&gt;
+</span></span><span class=line><span class=cl>&lt;head&gt;
+</span></span><span class=line><span class=cl>	&lt;title&gt;<span class=o>{{</span> .Title <span class=o>}}</span>&lt;/title&gt;
+</span></span><span class=line><span class=cl>&lt;/head&gt;
+</span></span><span class=line><span class=cl>&lt;body&gt;
+</span></span><span class=line><span class=cl>:wq
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ vi themes/zafta/layouts/partials/footer.html
+</span></span><span class=line><span class=cl>&lt;/body&gt;
+</span></span><span class=line><span class=cl>&lt;/html&gt;
+</span></span><span class=line><span class=cl>:wq
+</span></span></code></pre></div><h3 id=update-the-home-page-template-to-use-the-partials>Update the Home Page Template to Use the Partials</h3><p>The most noticeable difference between a template call and a partials call is the lack of path:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{{ template &#34;theme/partials/header.html&#34; . }}
+</span></span></code></pre></div><p>versus</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{{ partial &#34;header.html&#34; . }}
+</span></span></code></pre></div><p>Both pass in the context.</p><p>Let&rsquo;s change the home page template to use these new partials.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/layouts/index.html
+</span></span><span class=line><span class=cl><span class=o>{{</span> partial <span class=s2>&#34;header.html&#34;</span> . <span class=o>}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  &lt;h1&gt;posts&lt;/h1&gt;
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> range first <span class=m>10</span> .Data.Pages <span class=o>}}</span>
+</span></span><span class=line><span class=cl>    <span class=o>{{</span> <span class=k>if</span> eq .Type <span class=s2>&#34;post&#34;</span><span class=o>}}</span>
+</span></span><span class=line><span class=cl>      &lt;h2&gt;&lt;a <span class=nv>href</span><span class=o>=</span><span class=s2>&#34;{{ .Permalink }}&#34;</span>&gt;<span class=o>{{</span> .Title <span class=o>}}</span>&lt;/a&gt;&lt;/h2&gt;
+</span></span><span class=line><span class=cl>    <span class=o>{{</span> end <span class=o>}}</span>
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> end <span class=o>}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  &lt;h1&gt;pages&lt;/h1&gt;
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> range .Data.Pages <span class=o>}}</span>
+</span></span><span class=line><span class=cl>    <span class=o>{{</span> <span class=k>if</span> or <span class=o>(</span>eq .Type <span class=s2>&#34;page&#34;</span><span class=o>)</span> <span class=o>(</span>eq .Type <span class=s2>&#34;about&#34;</span><span class=o>)</span> <span class=o>}}</span>
+</span></span><span class=line><span class=cl>      &lt;h2&gt;&lt;a <span class=nv>href</span><span class=o>=</span><span class=s2>&#34;{{ .Permalink }}&#34;</span>&gt;<span class=o>{{</span> .Type <span class=o>}}</span> - <span class=o>{{</span> .Title <span class=o>}}</span> - <span class=o>{{</span> .RelPermalink <span class=o>}}</span>&lt;/a&gt;&lt;/h2&gt;
+</span></span><span class=line><span class=cl>    <span class=o>{{</span> end <span class=o>}}</span>
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> end <span class=o>}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>{{</span> partial <span class=s2>&#34;footer.html&#34;</span> . <span class=o>}}</span>
+</span></span><span class=line><span class=cl>:wq
+</span></span></code></pre></div><p>Generate the web site and verify the results. The title on the home page is now &ldquo;your title here&rdquo;, which comes from the &ldquo;title&rdquo; variable in the config.toml file.</p><h3 id=update-the-default-single-template-to-use-the-partials>Update the Default Single Template to Use the Partials</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/layouts/_default/single.html
+</span></span><span class=line><span class=cl><span class=o>{{</span> partial <span class=s2>&#34;header.html&#34;</span> . <span class=o>}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  &lt;h1&gt;<span class=o>{{</span> .Title <span class=o>}}</span>&lt;/h1&gt;
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> .Content <span class=o>}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>{{</span> partial <span class=s2>&#34;footer.html&#34;</span> . <span class=o>}}</span>
+</span></span><span class=line><span class=cl>:wq
+</span></span></code></pre></div><p>Generate the web site and verify the results. The title on the posts and the about page should both reflect the value in the markdown file.</p><h2 id=add-date-published-to-posts>Add “Date Published” to Posts</h2><p>It&rsquo;s common to have posts display the date that they were written or published, so let&rsquo;s add that. The front matter of our posts has a variable named &ldquo;date.&rdquo; It&rsquo;s usually the date the content was created, but let&rsquo;s pretend that&rsquo;s the value we want to display.</p><h3 id=add-date-published-to-the-template>Add “Date Published” to the Template</h3><p>We&rsquo;ll start by updating the template used to render the posts. The template code will look like:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{{ .Date.Format &#34;Mon, Jan 2, 2006&#34; }}
+</span></span></code></pre></div><p>Posts use the default single template, so we&rsquo;ll change that file.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/layouts/_default/single.html
+</span></span><span class=line><span class=cl><span class=o>{{</span> partial <span class=s2>&#34;header.html&#34;</span> . <span class=o>}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  &lt;h1&gt;<span class=o>{{</span> .Title <span class=o>}}</span>&lt;/h1&gt;
+</span></span><span class=line><span class=cl>  &lt;h2&gt;<span class=o>{{</span> .Date.Format <span class=s2>&#34;Mon, Jan 2, 2006&#34;</span> <span class=o>}}</span>&lt;/h2&gt;
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> .Content <span class=o>}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>{{</span> partial <span class=s2>&#34;footer.html&#34;</span> . <span class=o>}}</span>
+</span></span><span class=line><span class=cl>:wq
+</span></span></code></pre></div><p>Generate the web site and verify the results. The posts now have the date displayed in them. There&rsquo;s a problem, though. The &ldquo;about&rdquo; page also has the date displayed.</p><p>As usual, there are a couple of ways to make the date display only on posts. We could do an &ldquo;if&rdquo; statement like we did on the home page. Another way would be to create a separate template for posts.</p><p>The &ldquo;if&rdquo; solution works for sites that have just a couple of content types. It aligns with the principle of &ldquo;code for today,&rdquo; too.</p><p>Let&rsquo;s assume, though, that we&rsquo;ve made our site so complex that we feel we have to create a new template type. In Hugo-speak, we&rsquo;re going to create a section template.</p><p>Let&rsquo;s restore the default single template before we forget.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ mkdir themes/zafta/layouts/post
+</span></span><span class=line><span class=cl>$ vi themes/zafta/layouts/_default/single.html
+</span></span><span class=line><span class=cl><span class=o>{{</span> partial <span class=s2>&#34;header.html&#34;</span> . <span class=o>}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  &lt;h1&gt;<span class=o>{{</span> .Title <span class=o>}}</span>&lt;/h1&gt;
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> .Content <span class=o>}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>{{</span> partial <span class=s2>&#34;footer.html&#34;</span> . <span class=o>}}</span>
+</span></span><span class=line><span class=cl>:wq
+</span></span></code></pre></div><p>Now we&rsquo;ll update the post&rsquo;s version of the single template. If you remember Hugo&rsquo;s rules, the template engine will use this version over the default.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/layouts/post/single.html
+</span></span><span class=line><span class=cl><span class=o>{{</span> partial <span class=s2>&#34;header.html&#34;</span> . <span class=o>}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  &lt;h1&gt;<span class=o>{{</span> .Title <span class=o>}}</span>&lt;/h1&gt;
+</span></span><span class=line><span class=cl>  &lt;h2&gt;<span class=o>{{</span> .Date.Format <span class=s2>&#34;Mon, Jan 2, 2006&#34;</span> <span class=o>}}</span>&lt;/h2&gt;
+</span></span><span class=line><span class=cl>  <span class=o>{{</span> .Content <span class=o>}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>{{</span> partial <span class=s2>&#34;footer.html&#34;</span> . <span class=o>}}</span>
+</span></span><span class=line><span class=cl>:wq
+</span></span></code></pre></div><p>Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&rsquo;t.</p><h3 id=dont-repeat-yourself>Don&rsquo;t Repeat Yourself</h3><p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&rsquo;re figuring that out, accept that you&rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&rsquo;s okay to delay splitting up a template.</p></div><div class=mt-16></div></article></div></main><footer class="flex h-footer-height items-center justify-center border-t px-page-gutter"><div class="flex w-full max-w-content flex-col-reverse items-center justify-between gap-3 sm:flex-row sm:gap-0"><p class=text-sm><em>Keep it simple.</em></p><p class="text-sm text-muted">&copy;
+2022
+<a href=https://ntk148v.github.io/blog class=hover:underline>Kien Nguyen-Tuan</a>
+. All Rights Reserved.</p><div id=header-theme-button><svg id="dark_mode_btn" class="hidden toolbox-btn" width="18" height="18" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></svg><svg id="light_mode_btn" class="hidden toolbox-btn" width="18" height="18" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></svg></div></div></footer></body></html>
