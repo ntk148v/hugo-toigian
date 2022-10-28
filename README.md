@@ -35,9 +35,9 @@ Take a look at [demo site](https://ntk148v.github.io/hugo-toigian).
 
 | Dark                                                                       | Light                                                                        |
 | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| <img src="screenshots/dark-post.png" alt="dark" style="border-radius:1%"/> | <img src="screenshots/light-post.png" alt="dark" style="border-radius:1%" /> |
-| <img src="screenshots/dark-home.png" alt="dark" style="border-radius:1%"/> | <img src="screenshots/light-home.png" alt="dark" style="border-radius:1%"/>  |
-| <img src="screenshots/dark-list.png" alt="dark" style="border-radius:1%"/> | <img src="screenshots/light-list.png" alt="dark" style="border-radius:1%"/>  |
+| <img src="images/dark-post.png" alt="dark" style="border-radius:1%"/> | <img src="images/light-post.png" alt="dark" style="border-radius:1%" /> |
+| <img src="images/dark-home.png" alt="dark" style="border-radius:1%"/> | <img src="images/light-home.png" alt="dark" style="border-radius:1%"/>  |
+| <img src="images/dark-list.png" alt="dark" style="border-radius:1%"/> | <img src="images/light-list.png" alt="dark" style="border-radius:1%"/>  |
 
 ## 1. Features
 

@@ -17,9 +17,9 @@ Take a look at [demo site](https://ntk148v.github.io/hugo-toigian).
 
 | Dark                                                                                                                        | Light                                                                                                                        |
 | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/screenshots/dark-home.png" class="figure" >}} | {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/screenshots/light-home.png" class="figure" >}} |
-| {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/screenshots/dark-list.png" class="figure" >}} | {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/screenshots/light-list.png" class="figure" >}} |
-| {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/screenshots/dark-post.png" class="figure" >}} | {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/screenshots/light-post.png" class="figure" >}} |
+| {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-home.png" class="figure" >}} | {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-home.png" class="figure" >}} |
+| {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-list.png" class="figure" >}} | {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-list.png" class="figure" >}} |
+| {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-post.png" class="figure" >}} | {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-post.png" class="figure" >}} |
 
 ## 1. Features
 
