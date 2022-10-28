@@ -1,8 +1,9 @@
 +++
 title = "Welcome to Hugo Toigian"
+date = 2022-10-25T18:12:11+07:00
+comment = true
+tags = ["hugo", "tech", "toigian"]
 +++
-
-# Welcome to Hugo Toigian
 
 {{< quote info >}}
 `Toigian` - `Tối giản` (vietnamese): Minimalist (english)

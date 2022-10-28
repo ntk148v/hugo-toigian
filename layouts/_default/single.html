@@ -1,5 +1,4 @@
 {{ define "main" }}
-  {{ if default true .Site.Params.toc }}{{ end }}
   <h1>{{ .Title | emojify }}</h1>
   <!-- Post meta -->
   {{- partial "date" . -}}
