@@ -38,8 +38,7 @@ jobs:
         run: rm -rf ./public/*
 
       - name: Setup Dependency
-        working-directory: exampleSite
-        run: npm install postcss postcss-cli autoprefixer tailwindcss @fullhuman/postcss-purgecss postcss-import
+        run: npm install
 
       - name: Build
         working-directory: exampleSite
