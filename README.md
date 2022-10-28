@@ -9,7 +9,7 @@
             <img alt="GitHub stars" src="https://img.shields.io/github/stars/ntk148v/hugo-toigian?style=for-the-badge">
         </a>
         <a href="https://gohugo.io">
-            <img alt="Hugo" src="https://img.shields.io/badge/hugo-0.68-blue.svg?style=for-the-badge">
+            <img alt="Hugo" src="https://img.shields.io/badge/hugo-0.93.0-blue.svg?style=for-the-badge">
         </a>
  </p><br>
 </div>
@@ -18,6 +18,7 @@
 >
 > **Disclaimer**: I'm not a front-end developer, just a guy who like tweaking stuff, so my code may not be pretty/clean. I attempt to learn [Tailwind CSS](https://tailwindcss.com/), and hugo-toigian is the result.
 
+- [0. Showcase](#0-showcase)
 - [1. Features](#1-features)
 - [2. Prerequisites](#2-prerequisites)
 - [3. Installation](#3-installation)
@@ -27,6 +28,16 @@
 - [4. Shortcodes](#4-shortcodes)
 - [5. Contributing](#5-contributing)
 - [6. Credits](#6-credits)
+
+## 0. Showcase
+
+Take a look at [demo site](https://ntk148v.github.io/hugo-toigian).
+
+| Dark                                                                       | Light                                                                        |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| <img src="screenshots/dark-post.png" alt="dark" style="border-radius:1%"/> | <img src="screenshots/light-post.png" alt="dark" style="border-radius:1%" /> |
+| <img src="screenshots/dark-home.png" alt="dark" style="border-radius:1%"/> | <img src="screenshots/light-home.png" alt="dark" style="border-radius:1%"/>  |
+| <img src="screenshots/dark-list.png" alt="dark" style="border-radius:1%"/> | <img src="screenshots/light-list.png" alt="dark" style="border-radius:1%"/>  |
 
 ## 1. Features
 
