@@ -24,8 +24,5 @@
     "postcss-import": "^15.0.0",
     "prettier-plugin-go-template": "^0.0.13",
     "tailwindcss": "^3.2.0"
-  },
-  "dependencies": {
-    "@fullhuman/postcss-purgecss": "^5.0.0"
   }
 }
