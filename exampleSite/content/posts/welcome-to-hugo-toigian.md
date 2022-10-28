@@ -11,6 +11,16 @@ tags = ["hugo", "tech", "toigian"]
 **Disclaimer**: I'm not a front-end developer, just a guy who like tweaking stuff, so my code may not be pretty/clean. I attempt to learn [Tailwind CSS](https://tailwindcss.com/), and hugo-toigian is the result.
 {{< /quote >}}
 
+## 0. Showcase
+
+Take a look at [demo site](https://ntk148v.github.io/hugo-toigian).
+
+| Dark                                                                                                                        | Light                                                                                                                        |
+| --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/screenshots/dark-home.png" class="figure" >}} | {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/screenshots/light-home.png" class="figure" >}} |
+| {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/screenshots/dark-list.png" class="figure" >}} | {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/screenshots/light-list.png" class="figure" >}} |
+| {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/screenshots/dark-post.png" class="figure" >}} | {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/screenshots/light-post.png" class="figure" >}} |
+
 ## 1. Features
 
 - Minimalist (`tối giản`) design. Highly inspired by [mellow.dev](https://mellow.dev/).

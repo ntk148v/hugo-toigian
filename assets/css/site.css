@@ -194,5 +194,14 @@ pre > code {
 }
 
 .content ul li::before {
-  content: "- "
+  content: "- ";
+}
+
+.content table {
+  @apply overflow-auto block border-spacing-0 border-collapse my-4;
+}
+
+.content tr th,
+.content tr td {
+  @apply p-3 border-2 border-solid border-muted;
 }
