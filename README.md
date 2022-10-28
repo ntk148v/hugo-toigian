@@ -15,7 +15,7 @@
 </div>
 
 > `Toigian` - `Tối giản` (vietnamese): Minimalist (english)
-> 
+>
 > **Disclaimer**: I'm not a front-end developer, just a guy who like tweaking stuff, so my code may not be pretty/clean. I attempt to learn [Tailwind CSS](https://tailwindcss.com/), and hugo-toigian is the result.
 
 - [1. Features](#1-features)
@@ -83,7 +83,7 @@ hugo server -DF --disableFastRender
 ```
 
 - Build static pages
-  
+
 ```shell
 hugo --environment production --minify
 ```
@@ -162,7 +162,7 @@ comment = true
 
 ## 4. Shortcodes
 
-Check out [https://ntk148v.github.io/hugo-toigian/posts/shortcodes].
+Check out [shortcodes](https://ntk148v.github.io/hugo-toigian/posts/shortcodes).
 
 ## 5. Contributing
 
