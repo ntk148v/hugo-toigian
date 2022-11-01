@@ -6,17 +6,6 @@
       {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
     </ol>
   </nav>
-  <nav>
-    <ul class="flex text-md items-center space-x-3 sm:space-x-6">
-      {{ range $.Site.Menus.nav }}
-        <li class="text-text">
-          <a href="{{ .URL | relURL }}" class="tracking-wide hover:underline"
-            >{{ .Name }}</a
-          >
-        </li>
-      {{ end }}
-    </ul>
-  </nav>
 </div>
 
 {{ define "breadcrumbnav" }}
