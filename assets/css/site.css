@@ -194,7 +194,7 @@ pre > code {
 }
 
 .content ul li::before {
-  content: "- ";
+  content: "* ";
 }
 
 .content table {
