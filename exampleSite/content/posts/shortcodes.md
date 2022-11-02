@@ -61,3 +61,29 @@ stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 {{< /quote >}}
+
+## Mermaid
+
+[Mermaid](https://mermaidjs.github.io/) is a library helping you to generate diagram and flowcharts from text, in a similar manner as Markdown.
+
+```tpl
+{{</* mermaid */>}}
+
+{{</* /mermaid */>}}
+```
+
+### Example
+
+{{< mermaid >}}
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+{{< /mermaid >}}
