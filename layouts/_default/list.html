@@ -8,14 +8,14 @@
       >
         {{ .Key }}
       </div>
-      <ol class="flex-grow">
+      <div class="flex-grow">
         {{ range .Pages }}
-          <li class="flex justify-between">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{- partial "date" . -}}
-          </li>
+          <div class="grid grid-cols-3 gap-4 my-2">
+            <a href="{{ .RelPermalink }}" class="col-span-2">{{ .Title }}</a>
+            <div class="flex justify-end">{{- partial "date" . -}}</div>
+          </div>
         {{ end }}
-      </ol>
+        </div>
     </div>
   {{ end }}
 {{ end }}
