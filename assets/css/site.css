@@ -84,7 +84,7 @@ ol {
 
 nav ul,
 nav ol {
-  /* @apply space-y-0; */
+  @apply space-y-0;
 }
 
 article > *,
