@@ -178,16 +178,19 @@ Check out [shortcodes](https://ntk148v.github.io/hugo-toigian/posts/shortcodes).
 
 ## 5. Customization
 
-- Partials:
-  - There are layout partials available for you to easily override components of the theme in `layouts/partials/`.
+- Partials: There are layout partials available for you to easily override components of the theme in `layouts/partials/`.
 
-  | Empty partial                                 | Placement                   | Usage             |
-  | --------------------------------------------- | --------------------------- | ----------------- |
-  | `layouts/partials/custom/head.html`           | Before closing `<head>` tag | Add custom css/js |
-  | `layouts/partials/custom/content-before.html` | Before page content         |                   |
-  | `layouts/partials/custom/content-after.html`  | After page content          |                   |
+| Empty partial                                 | Placement                   | Usage             |
+| --------------------------------------------- | --------------------------- | ----------------- |
+| `layouts/partials/custom/head.html`           | Before closing `<head>` tag | Add custom css/js |
+| `layouts/partials/custom/content-before.html` | Before page content         |                   |
+| `layouts/partials/custom/content-after.html`  | After page content          |                   |
 
-- Custom css:
+- Extra customization:
+
+| File                    | Description                      |
+| ----------------------- | -------------------------------- |
+| `assets/css/custom.css` | Customize or override css styles |
 
 ## 6. Contributing
 

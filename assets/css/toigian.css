@@ -9,3 +9,5 @@
 
 /* Site Specific */
 @import "assets/css/site";
+/* Custom defined styles */
+@import "assets/css/custom";
