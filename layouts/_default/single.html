@@ -15,7 +15,9 @@
     {{ end }}
   {{ end }}
   <!-- Content -->
+  {{- partial "custom/content-before.html" . -}}
   <div class="content">{{ .Content | emojify }}</div>
+  {{- partial "custom/content-after.html" . -}}
   <!-- Comments block -->
   {{ if and .Content (default true (default .Site.Params.comments
     .Params.comments))

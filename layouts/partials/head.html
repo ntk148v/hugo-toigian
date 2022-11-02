@@ -108,6 +108,8 @@
   {{- else -}}
     {{ $main_js = $main_js | js.Build -}}
   {{- end -}}
+
+  <!-- mermaid -->
   <script
     defer
     src="{{ $main_js.RelPermalink }}"
@@ -115,4 +117,6 @@
   ></script>
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+  <!-- Put your custom head here, any external css/js -->
+  {{ partial "custom/head.html" . }}
 </head>

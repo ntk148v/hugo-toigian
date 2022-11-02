@@ -26,15 +26,16 @@
   - [3.1. Site configuration](#31-site-configuration)
   - [3.2. Page configuration](#32-page-configuration)
 - [4. Shortcodes](#4-shortcodes)
-- [5. Contributing](#5-contributing)
-- [6. Credits](#6-credits)
+- [5. Customization](#5-customization)
+- [6. Contributing](#6-contributing)
+- [7. Credits](#7-credits)
 
 ## 0. Showcase
 
 Take a look at [demo site](https://ntk148v.github.io/hugo-toigian).
 
-| Dark                                                                       | Light                                                                        |
-| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Dark                                                                  | Light                                                                   |
+| --------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | <img src="images/dark-post.png" alt="dark" style="border-radius:1%"/> | <img src="images/light-post.png" alt="dark" style="border-radius:1%" /> |
 | <img src="images/dark-home.png" alt="dark" style="border-radius:1%"/> | <img src="images/light-home.png" alt="dark" style="border-radius:1%"/>  |
 | <img src="images/dark-list.png" alt="dark" style="border-radius:1%"/> | <img src="images/light-list.png" alt="dark" style="border-radius:1%"/>  |
@@ -175,7 +176,20 @@ comment = true
 
 Check out [shortcodes](https://ntk148v.github.io/hugo-toigian/posts/shortcodes).
 
-## 5. Contributing
+## 5. Customization
+
+- Partials:
+  - There are layout partials available for you to easily override components of the theme in `layouts/partials/`.
+
+  | Empty partial                                 | Placement                   | Usage             |
+  | --------------------------------------------- | --------------------------- | ----------------- |
+  | `layouts/partials/custom/head.html`           | Before closing `<head>` tag | Add custom css/js |
+  | `layouts/partials/custom/content-before.html` | Before page content         |                   |
+  | `layouts/partials/custom/content-after.html`  | After page content          |                   |
+
+- Custom css:
+
+## 6. Contributing
 
 As you already known, I'm not front-end developer. Therefore, if you find anything wrong or want to make improvement, don't hesitate to open an issue/pull request.
 
@@ -186,7 +200,7 @@ Primary goals are:
 
 Feel free to open issues if you find missing configuration or customization options.
 
-## 6. Credits
+## 7. Credits
 
 - [hugo-book](https://github.com/alex-shpak/hugo-book)
 - [dirkolbrich/hugo-tailwindcss-starter-theme](https://github.com/dirkolbrich/hugo-tailwindcss-starter-theme)
