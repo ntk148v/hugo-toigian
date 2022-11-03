@@ -1,5 +1,5 @@
 <footer
-  class="fixed left-0 bottom-0 w-full bg-base h-footer-height px-page-gutter"
+  class="fixed left-0 bottom-0 w-full bg-base px-page-gutter"
 >
   <div class="flex justify-center items-center h-footer-height">
     <div
@@ -18,6 +18,9 @@
           {{ end }}
         </ul>
       </nav>
+      <span class="text-muted hidden md:block">
+        &copy; {{ now.Year }} <a href="https://github.com/ntk148v/hugo-toigian" class="font-bold hover:underline">hugo-toigian</a>
+      </span>
       <div id="header-theme-button">
         <svg
           id="dark_mode_btn"

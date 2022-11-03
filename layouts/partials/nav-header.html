@@ -14,9 +14,9 @@
   {{ else if not .p1.IsHome }}
     {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 ) }}
   {{ end }}
-  {{ $attr := "text-muted focus:underline focus:outline-none after:mx-[1ch]" }}
+  {{ $attr := "text-muted focus:underline focus:outline-none after:md:mx-2 after:mx-0.5"}}
   {{ if eq .p1 .p2 }}
-    {{ $attr = "focus:underline focus:outline-none font-bold after:mx-[1ch]" }}
+    {{ $attr = "focus:underline focus:outline-none font-bold after:md:mx-2 after:mx-0.5" }}
   {{ end }}
   <li>
     {{ $title := .p1.Title }}
