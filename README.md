@@ -32,7 +32,7 @@
 
 ## 0. Showcase
 
-Take a look at [demo site](https://ntk148v.github.io/hugo-toigian).
+These screenshots may be outdated. Take a look at [demo site](https://ntk148v.github.io/hugo-toigian) for newest.
 
 | Dark                                                                  | Light                                                                   |
 | --------------------------------------------------------------------- | ----------------------------------------------------------------------- |
