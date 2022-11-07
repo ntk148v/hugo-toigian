@@ -102,7 +102,7 @@ section h6 {
 /* Code block */
 code {
   /* Inline code style */
-  @apply rounded p-1 bg-muted text-base font-mono text-xs;
+  @apply rounded p-1 bg-muted text-base font-mono text-sm;
 }
 
 pre {
