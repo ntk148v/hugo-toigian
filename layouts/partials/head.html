@@ -28,6 +28,14 @@
     type="image/png"
   />
 
+  {{/* RSS */}}
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    href="{{ .Site.BaseURL }}/index.xml"
+    title="{{ .Site.Title }}"
+  />
+
   {{/* Rose pine */}}
   {{- $rosepine := resources.Get "css/rose-pine.min.css" -}}
   <link
