@@ -59,6 +59,8 @@ These screenshots may be outdated. Take a look at [demo site](https://ntk148v.gi
 snap install hugo --channel=extended
 ```
 
+- Hugo Pipe’s PostCSS requires the `postcss-cli` JavaScript package to be installed in the environment (`npm install -g postcss postcss-cli`) along with any PostCSS plugin(s) used (e.g., `npm install -g autoprefixer`). If you are using the Hugo Snap package, PostCSS and plugin(s) need to be installed locally within your Hugo site directory, e.g., `npm install postcss-cli` without the -g flag.
+
 ## 3. Installation
 
 - Go to root directory of your Hugo website, or create a new site with:
