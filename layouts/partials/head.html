@@ -55,13 +55,7 @@
     />
   </noscript>
 
-  {{/* M Plus Code Latin Font */}}
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@400;500;700&display=swap"
-    rel="stylesheet"
-  />
+  {{- partial "font.html" . -}}
 
   {{/* Site CSS */}}
   {{- $styles := resources.Get "css/toigian.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}

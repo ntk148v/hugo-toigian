@@ -1,8 +1,6 @@
-/* ######################## */
-/* #         Fonts        # */
-/* ######################## */
-
 :root {
+  --font-sans: "Barlow";
+  --font-mono: "JetBrains Mono";
   --page-top: 64px;
   --page-gutter: 24px;
   --header-height: 48px;
@@ -28,7 +26,7 @@ html {
 }
 
 body {
-  @apply bg-base text-text text-sm antialiased selection:bg-subtle selection:text-surface;
+  @apply bg-base text-text text-md antialiased selection:bg-subtle selection:text-surface;
 }
 
 /* ################################# */
@@ -105,6 +103,10 @@ code {
   @apply rounded p-1 bg-muted text-base font-mono text-sm;
 }
 
+code > pre {
+  @apply font-mono;
+}
+
 pre {
   @apply overflow-auto p-4 my-5 rounded-lg;
 }
@@ -118,7 +120,7 @@ pre > code {
 /* #       Table of contents       # */
 /* ################################# */
 #toc-list ol {
-  @apply pl-3 m-1 border-l-2 text-xs text-muted;
+  @apply pl-3 m-1 border-l-2 text-sm text-muted;
   counter-reset: tocitem;
 }
 
