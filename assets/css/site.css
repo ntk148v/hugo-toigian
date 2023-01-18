@@ -181,7 +181,7 @@ figure, img {
 /* #       Links       # */
 /* ##################### */
 .content a {
-  @apply italic border-b border-dashed;
+  @apply italic;
 }
 
 .content a::before {
@@ -193,7 +193,7 @@ figure, img {
 }
 
 .content a:hover {
-  @apply underline underline-offset-2 decoration-dotted;
+  @apply underline underline-offset-2;
 }
 
 .content ul {
