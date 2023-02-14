@@ -182,17 +182,41 @@ Check out [shortcodes](https://ntk148v.github.io/hugo-toigian/posts/shortcodes).
 
 - Partials: There are layout partials available for you to easily override components of the theme in `layouts/partials/`.
 
-| Empty partial                                 | Placement                   | Usage             |
-| --------------------------------------------- | --------------------------- | ----------------- |
-| `layouts/partials/custom/head.html`           | Before closing `<head>` tag | Add custom css/js |
-| `layouts/partials/custom/content-before.html` | Before page content         |                   |
-| `layouts/partials/custom/content-after.html`  | After page content          |                   |
+| Empty partial                                 | Placement                   | Usage               |
+| --------------------------------------------- | --------------------------- | ------------------- |
+| `layouts/partials/custom/head.html`           | Before closing `<head>` tag | Add custom css/js   |
+| `layouts/partials/custom/content-before.html` | Before page content         |                     |
+| `layouts/partials/custom/content-after.html`  | After page content          |                     |
+| `layouts/partials/font.html`                  |                             | Import custom fonts |
 
 - Extra customization:
 
 | File                    | Description                      |
 | ----------------------- | -------------------------------- |
 | `assets/css/custom.css` | Customize or override css styles |
+
+- For example, you don't like the chosen fonts (Roboto Mono and Barlow fonts), and you want to use your own choice, follow these steps:
+  - Create `layouts/partials/font.html` to import your fonts:
+
+  ```html
+  <!-- load Inter and Overpass fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Overpass:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  ```
+
+  - Create `assets/css/custom.css`:
+
+  ```scss
+  // change the default mono font to Overpass
+  :root {
+      --font-mono: "Overpass";
+      --font-serif: "Inter";
+  }
+  ```
 
 ## 6. Contributing
 
