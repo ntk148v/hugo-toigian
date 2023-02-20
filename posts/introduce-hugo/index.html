@@ -8,24 +8,24 @@
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>## edit the file
 </span></span><span class=line><span class=cl>$ vi foo.md
-</span></span><span class=line><span class=cl>+++
-</span></span><span class=line><span class=cl>date = &#34;2014-09-28&#34;
-</span></span><span class=line><span class=cl>title = &#34;creating a new theme&#34;
-</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>date: &#34;2014-09-28&#34;
+</span></span><span class=line><span class=cl>title: &#34;creating a new theme&#34;
+</span></span><span class=line><span class=cl>---
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>bah and humbug
 </span></span><span class=line><span class=cl>:wq
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>## show it
 </span></span><span class=line><span class=cl>$ cat foo.md
-</span></span><span class=line><span class=cl>+++
-</span></span><span class=line><span class=cl>date = &#34;2014-09-28&#34;
-</span></span><span class=line><span class=cl>title = &#34;creating a new theme&#34;
-</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>date: &#34;2014-09-28&#34;
+</span></span><span class=line><span class=cl>title: &#34;creating a new theme&#34;
+</span></span><span class=line><span class=cl>---
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>bah and humbug
 </span></span><span class=line><span class=cl>$
-</span></span></code></pre></div><h2 id=some-definitions>Some Definitions</h2><p>There are a few concepts that you need to understand before creating a theme.</p><h3 id=skins>Skins</h3><p>Skins are the files responsible for the look and feel of your site. It’s the CSS that controls colors and fonts, it’s the Javascript that determines actions and reactions. It’s also the rules that Hugo uses to transform your content into the HTML that the site will serve to visitors.</p><p>You have two ways to create a skin. The simplest way is to create it in the <code>layouts/</code> directory. If you do, then you don’t have to worry about configuring Hugo to recognize it. The first place that Hugo will look for rules and files is in the <code>layouts/</code> directory so it will always find the skin.</p><p>Your second choice is to create it in a sub-directory of the <code>themes/</code> directory. If you do, then you must always tell Hugo where to search for the skin. It’s extra work, though, so why bother with it?</p><p>The difference between creating a skin in <code>layouts/</code> and creating it in <code>themes/</code> is very subtle. A skin in <code>layouts/</code> can’t be customized without updating the templates and static files that it is built from. A skin created in <code>themes/</code>, on the other hand, can be and that makes it easier for other people to use it.</p><p>The rest of this tutorial will call a skin created in the <code>themes/</code> directory a theme.</p><p>Note that you can use this tutorial to create a skin in the <code>layouts/</code> directory if you wish to. The main difference will be that you won’t need to update the site’s configuration file to use a theme.</p><h3 id=the-home-page>The Home Page</h3><p>The home page, or landing page, is the first page that many visitors to a site see. It is the index.html file in the root directory of the web site. Since Hugo writes files to the public/ directory, our home page is public/index.html.</p><h3 id=site-configuration-file>Site Configuration File</h3><p>When Hugo runs, it looks for a configuration file that contains settings that override default values for the entire site. The file can use TOML, YAML, or JSON. I prefer to use TOML for my configuration files. If you prefer to use JSON or YAML, you’ll need to translate my examples. You’ll also need to change the name of the file since Hugo uses the extension to determine how to process it.</p><p>Hugo translates Markdown files into HTML. By default, Hugo expects to find Markdown files in your <code>content/</code> directory and template files in your <code>themes/</code> directory. It will create HTML files in your <code>public/</code> directory. You can change this by specifying alternate locations in the configuration file.</p><h3 id=content>Content</h3><p>Content is stored in text files that contain two sections. The first section is the “front matter,” which is the meta-information on the content. The second section contains Markdown that will be converted to HTML.</p><h4 id=front-matter>Front Matter</h4><p>The front matter is information about the content. Like the configuration file, it can be written in TOML, YAML, or JSON. Unlike the configuration file, Hugo doesn’t use the file’s extension to know the format. It looks for markers to signal the type. TOML is surrounded by “<code>+++</code>”, YAML by “<code>---</code>”, and JSON is enclosed in curly braces. I prefer to use TOML, so you’ll need to translate my examples if you prefer YAML or JSON.</p><p>The information in the front matter is passed into the template before the content is rendered into HTML.</p><h4 id=markdown>Markdown</h4><p>Content is written in Markdown which makes it easier to create the content. Hugo runs the content through a Markdown engine to create the HTML which will be written to the output file.</p><h3 id=template-files>Template Files</h3><p>Hugo uses template files to render content into HTML. Template files are a bridge between the content and presentation. Rules in the template define what content is published, where it&rsquo;s published to, and how it will rendered to the HTML file. The template guides the presentation by specifying the style to use.</p><p>There are three types of templates: single, list, and partial. Each type takes a bit of content as input and transforms it based on the commands in the template.</p><p>Hugo uses its knowledge of the content to find the template file used to render the content. If it can’t find a template that is an exact match for the content, it will shift up a level and search from there. It will continue to do so until it finds a matching template or runs out of templates to try. If it can’t find a template, it will use the default template for the site.</p><p>Please note that you can use the front matter to influence Hugo’s choice of templates.</p><h4 id=single-template>Single Template</h4><p>A single template is used to render a single piece of content. For example, an article or post would be a single piece of content and use a single template.</p><h4 id=list-template>List Template</h4><p>A list template renders a group of related content. That could be a summary of recent postings or all articles in a category. List templates can contain multiple groups.</p><p>The homepage template is a special type of list template. Hugo assumes that the home page of your site will act as the portal for the rest of the content in the site.</p><h4 id=partial-template>Partial Template</h4><p>A partial template is a template that can be included in other templates. Partial templates must be called using the “partial” template command. They are very handy for rolling up common behavior. For example, your site may have a banner that all pages use. Instead of copying the text of the banner into every single and list template, you could create a partial with the banner in it. That way if you decide to change the banner, you only have to change the partial template.</p><h2 id=create-a-new-site>Create a New Site</h2><p>Let&rsquo;s use Hugo to create a new web site. I&rsquo;m a Mac user, so I&rsquo;ll create mine in my home directory, in the Sites folder. If you&rsquo;re using Linux, you might have to create the folder first.</p><p>The &ldquo;new site&rdquo; command will create a skeleton of a site. It will give you the basic directory structure and a useable configuration file.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ hugo new site ~/Sites/zafta
+</span></span></code></pre></div><h2 id=some-definitions>Some Definitions</h2><p>There are a few concepts that you need to understand before creating a theme.</p><h3 id=skins>Skins</h3><p>Skins are the files responsible for the look and feel of your site. It’s the CSS that controls colors and fonts, it’s the Javascript that determines actions and reactions. It’s also the rules that Hugo uses to transform your content into the HTML that the site will serve to visitors.</p><p>You have two ways to create a skin. The simplest way is to create it in the <code>layouts/</code> directory. If you do, then you don’t have to worry about configuring Hugo to recognize it. The first place that Hugo will look for rules and files is in the <code>layouts/</code> directory so it will always find the skin.</p><p>Your second choice is to create it in a sub-directory of the <code>themes/</code> directory. If you do, then you must always tell Hugo where to search for the skin. It’s extra work, though, so why bother with it?</p><p>The difference between creating a skin in <code>layouts/</code> and creating it in <code>themes/</code> is very subtle. A skin in <code>layouts/</code> can’t be customized without updating the templates and static files that it is built from. A skin created in <code>themes/</code>, on the other hand, can be and that makes it easier for other people to use it.</p><p>The rest of this tutorial will call a skin created in the <code>themes/</code> directory a theme.</p><p>Note that you can use this tutorial to create a skin in the <code>layouts/</code> directory if you wish to. The main difference will be that you won’t need to update the site’s configuration file to use a theme.</p><h3 id=the-home-page>The Home Page</h3><p>The home page, or landing page, is the first page that many visitors to a site see. It is the index.html file in the root directory of the web site. Since Hugo writes files to the public/ directory, our home page is public/index.html.</p><h3 id=site-configuration-file>Site Configuration File</h3><p>When Hugo runs, it looks for a configuration file that contains settings that override default values for the entire site. The file can use TOML, YAML, or JSON. I prefer to use TOML for my configuration files. If you prefer to use JSON or YAML, you’ll need to translate my examples. You’ll also need to change the name of the file since Hugo uses the extension to determine how to process it.</p><p>Hugo translates Markdown files into HTML. By default, Hugo expects to find Markdown files in your <code>content/</code> directory and template files in your <code>themes/</code> directory. It will create HTML files in your <code>public/</code> directory. You can change this by specifying alternate locations in the configuration file.</p><h3 id=content>Content</h3><p>Content is stored in text files that contain two sections. The first section is the “front matter,” which is the meta-information on the content. The second section contains Markdown that will be converted to HTML.</p><h4 id=front-matter>Front Matter</h4><p>The front matter is information about the content. Like the configuration file, it can be written in TOML, YAML, or JSON. Unlike the configuration file, Hugo doesn’t use the file’s extension to know the format. It looks for markers to signal the type. TOML is surrounded by “<code>---</code>”, YAML by “<code>---</code>”, and JSON is enclosed in curly braces. I prefer to use TOML, so you’ll need to translate my examples if you prefer YAML or JSON.</p><p>The information in the front matter is passed into the template before the content is rendered into HTML.</p><h4 id=markdown>Markdown</h4><p>Content is written in Markdown which makes it easier to create the content. Hugo runs the content through a Markdown engine to create the HTML which will be written to the output file.</p><h3 id=template-files>Template Files</h3><p>Hugo uses template files to render content into HTML. Template files are a bridge between the content and presentation. Rules in the template define what content is published, where it&rsquo;s published to, and how it will rendered to the HTML file. The template guides the presentation by specifying the style to use.</p><p>There are three types of templates: single, list, and partial. Each type takes a bit of content as input and transforms it based on the commands in the template.</p><p>Hugo uses its knowledge of the content to find the template file used to render the content. If it can’t find a template that is an exact match for the content, it will shift up a level and search from there. It will continue to do so until it finds a matching template or runs out of templates to try. If it can’t find a template, it will use the default template for the site.</p><p>Please note that you can use the front matter to influence Hugo’s choice of templates.</p><h4 id=single-template>Single Template</h4><p>A single template is used to render a single piece of content. For example, an article or post would be a single piece of content and use a single template.</p><h4 id=list-template>List Template</h4><p>A list template renders a group of related content. That could be a summary of recent postings or all articles in a category. List templates can contain multiple groups.</p><p>The homepage template is a special type of list template. Hugo assumes that the home page of your site will act as the portal for the rest of the content in the site.</p><h4 id=partial-template>Partial Template</h4><p>A partial template is a template that can be included in other templates. Partial templates must be called using the “partial” template command. They are very handy for rolling up common behavior. For example, your site may have a banner that all pages use. Instead of copying the text of the banner into every single and list template, you could create a partial with the banner in it. That way if you decide to change the banner, you only have to change the partial template.</p><h2 id=create-a-new-site>Create a New Site</h2><p>Let&rsquo;s use Hugo to create a new web site. I&rsquo;m a Mac user, so I&rsquo;ll create mine in my home directory, in the Sites folder. If you&rsquo;re using Linux, you might have to create the folder first.</p><p>The &ldquo;new site&rdquo; command will create a skeleton of a site. It will give you the basic directory structure and a useable configuration file.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ hugo new site ~/Sites/zafta
 </span></span><span class=line><span class=cl>$ <span class=nb>cd</span> ~/Sites/zafta
 </span></span><span class=line><span class=cl>$ ls -l
 </span></span><span class=line><span class=cl>total <span class=m>8</span>
@@ -104,12 +104,12 @@
 </span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff    <span class=m>93</span> Sep <span class=m>29</span> 17:31 themes/zafta/theme.toml
 </span></span><span class=line><span class=cl>$
 </span></span></code></pre></div><p>The skeleton includes templates (the files ending in .html), license file, a description of your theme (the theme.toml file), and an empty archetype.</p><p>Please take a minute to fill out the theme.toml and LICENSE.md files. They&rsquo;re optional, but if you&rsquo;re going to be distributing your theme, it tells the world who to praise (or blame). It&rsquo;s also nice to declare the license so that people will know how they can use the theme.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/theme.toml
-</span></span><span class=line><span class=cl><span class=nv>author</span> <span class=o>=</span> <span class=s2>&#34;michael d henderson&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>description</span> <span class=o>=</span> <span class=s2>&#34;a minimal working template&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>license</span> <span class=o>=</span> <span class=s2>&#34;MIT&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>name</span> <span class=o>=</span> <span class=s2>&#34;zafta&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>source_repo</span> <span class=o>=</span> <span class=s2>&#34;&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>tags</span> <span class=o>=</span> <span class=o>[</span><span class=s2>&#34;tags&#34;</span>, <span class=s2>&#34;categories&#34;</span><span class=o>]</span>
+</span></span><span class=line><span class=cl>author: <span class=s2>&#34;michael d henderson&#34;</span>
+</span></span><span class=line><span class=cl>description: <span class=s2>&#34;a minimal working template&#34;</span>
+</span></span><span class=line><span class=cl>license: <span class=s2>&#34;MIT&#34;</span>
+</span></span><span class=line><span class=cl>name: <span class=s2>&#34;zafta&#34;</span>
+</span></span><span class=line><span class=cl>source_repo: <span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl>tags: <span class=o>[</span><span class=s2>&#34;tags&#34;</span>, <span class=s2>&#34;categories&#34;</span><span class=o>]</span>
 </span></span><span class=line><span class=cl>:wq
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>## also edit themes/zafta/LICENSE.md and change</span>
@@ -122,11 +122,11 @@
 </span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>0</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/partials/header.html
 </span></span><span class=line><span class=cl>$
 </span></span></code></pre></div><h3 id=update-the-configuration-file-to-use-the-theme>Update the Configuration File to Use the Theme</h3><p>Now that we&rsquo;ve got a theme to work with, it&rsquo;s a good idea to add the theme name to the configuration file. This is optional, because you can always add &ldquo;-t zafta&rdquo; on all your commands. I like to put it the configuration file because I like shorter command lines. If you don&rsquo;t put it in the configuration file or specify it on the command line, you won&rsquo;t use the template that you&rsquo;re expecting to.</p><p>Edit the file to add the theme, add a title for the site, and specify that all of our content will use the TOML format.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi config.toml
-</span></span><span class=line><span class=cl><span class=nv>theme</span> <span class=o>=</span> <span class=s2>&#34;zafta&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>baseurl</span> <span class=o>=</span> <span class=s2>&#34;&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>languageCode</span> <span class=o>=</span> <span class=s2>&#34;en-us&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>title</span> <span class=o>=</span> <span class=s2>&#34;zafta - totally refreshing&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>MetaDataFormat</span> <span class=o>=</span> <span class=s2>&#34;toml&#34;</span>
+</span></span><span class=line><span class=cl>theme: <span class=s2>&#34;zafta&#34;</span>
+</span></span><span class=line><span class=cl>baseurl: <span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl>languageCode: <span class=s2>&#34;en-us&#34;</span>
+</span></span><span class=line><span class=cl>title: <span class=s2>&#34;zafta - totally refreshing&#34;</span>
+</span></span><span class=line><span class=cl>MetaDataFormat: <span class=s2>&#34;toml&#34;</span>
 </span></span><span class=line><span class=cl>:wq
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>$
@@ -247,11 +247,11 @@
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>$
 </span></span></code></pre></div><p>That wasn&rsquo;t very nice, was it?</p><p>The &ldquo;new&rdquo; command uses an archetype to create the post file. Hugo created an empty default archetype file, but that causes an error when there&rsquo;s a theme. For me, the workaround was to create an archetypes file specifically for the post type.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/archetypes/post.md
-</span></span><span class=line><span class=cl>+++
-</span></span><span class=line><span class=cl><span class=nv>Description</span> <span class=o>=</span> <span class=s2>&#34;&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>Tags</span> <span class=o>=</span> <span class=o>[]</span>
-</span></span><span class=line><span class=cl><span class=nv>Categories</span> <span class=o>=</span> <span class=o>[]</span>
-</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>Description: <span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl>Tags: <span class=o>[]</span>
+</span></span><span class=line><span class=cl>Categories: <span class=o>[]</span>
+</span></span><span class=line><span class=cl>---
 </span></span><span class=line><span class=cl>:wq
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>$ find themes/zafta/archetypes -type f <span class=p>|</span> xargs ls -l
@@ -278,25 +278,25 @@
 </span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>105</span> Sep <span class=m>29</span> 21:57 second.md
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>$ cat content/post/first.md
-</span></span><span class=line><span class=cl>+++
-</span></span><span class=line><span class=cl><span class=nv>Categories</span> <span class=o>=</span> <span class=o>[]</span>
-</span></span><span class=line><span class=cl><span class=nv>Description</span> <span class=o>=</span> <span class=s2>&#34;&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>Tags</span> <span class=o>=</span> <span class=o>[]</span>
-</span></span><span class=line><span class=cl><span class=nv>date</span> <span class=o>=</span> <span class=s2>&#34;2014-09-29T21:54:53-05:00&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>title</span> <span class=o>=</span> <span class=s2>&#34;first&#34;</span>
+</span></span><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>Categories: <span class=o>[]</span>
+</span></span><span class=line><span class=cl>Description: <span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl>Tags: <span class=o>[]</span>
+</span></span><span class=line><span class=cl>date: <span class=s2>&#34;2014-09-29T21:54:53-05:00&#34;</span>
+</span></span><span class=line><span class=cl>title: <span class=s2>&#34;first&#34;</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl>---
 </span></span><span class=line><span class=cl>my first post
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>$ cat content/post/second.md
-</span></span><span class=line><span class=cl>+++
-</span></span><span class=line><span class=cl><span class=nv>Categories</span> <span class=o>=</span> <span class=o>[]</span>
-</span></span><span class=line><span class=cl><span class=nv>Description</span> <span class=o>=</span> <span class=s2>&#34;&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>Tags</span> <span class=o>=</span> <span class=o>[]</span>
-</span></span><span class=line><span class=cl><span class=nv>date</span> <span class=o>=</span> <span class=s2>&#34;2014-09-29T21:57:09-05:00&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>title</span> <span class=o>=</span> <span class=s2>&#34;second&#34;</span>
+</span></span><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>Categories: <span class=o>[]</span>
+</span></span><span class=line><span class=cl>Description: <span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl>Tags: <span class=o>[]</span>
+</span></span><span class=line><span class=cl>date: <span class=s2>&#34;2014-09-29T21:57:09-05:00&#34;</span>
+</span></span><span class=line><span class=cl>title: <span class=s2>&#34;second&#34;</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl>---
 </span></span><span class=line><span class=cl>my second post
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>$
@@ -469,12 +469,12 @@
 </span></span></code></pre></div><h3 id=create-a-post-listing>Create a Post Listing</h3><p>We have the posts displaying on the home page and on their own page. We also have a file public/post/index.html that is empty. Let&rsquo;s make it show a list of all posts (not just the first ten).</p><p>We need to decide which template to update. This will be a listing, so it should be a list template. Let&rsquo;s take a quick look and see which list templates are available.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ find themes/zafta -name list.html <span class=p>|</span> xargs ls -l
 </span></span><span class=line><span class=cl>-rw-r--r--  <span class=m>1</span> quoha  staff  <span class=m>0</span> Sep <span class=m>29</span> 17:31 themes/zafta/layouts/_default/list.html
 </span></span></code></pre></div><p>As with the single post, we have to decide to update _default/list.html or create post/list.html. We still don&rsquo;t have multiple content types, so let&rsquo;s stay consistent and update the default list template.</p><h2 id=creating-top-level-pages>Creating Top Level Pages</h2><p>Let&rsquo;s add an &ldquo;about&rdquo; page and display it at the top level (as opposed to a sub-level like we did with posts).</p><p>The default in Hugo is to use the directory structure of the content/ directory to guide the location of the generated html in the public/ directory. Let&rsquo;s verify that by creating an &ldquo;about&rdquo; page at the top level:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi content/about.md
-</span></span><span class=line><span class=cl>+++
-</span></span><span class=line><span class=cl><span class=nv>title</span> <span class=o>=</span> <span class=s2>&#34;about&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>description</span> <span class=o>=</span> <span class=s2>&#34;about this site&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>date</span> <span class=o>=</span> <span class=s2>&#34;2014-09-27&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>slug</span> <span class=o>=</span> <span class=s2>&#34;about time&#34;</span>
-</span></span><span class=line><span class=cl>+++
+</span></span><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>title: <span class=s2>&#34;about&#34;</span>
+</span></span><span class=line><span class=cl>description: <span class=s2>&#34;about this site&#34;</span>
+</span></span><span class=line><span class=cl>date: <span class=s2>&#34;2014-09-27&#34;</span>
+</span></span><span class=line><span class=cl>slug: <span class=s2>&#34;about time&#34;</span>
+</span></span><span class=line><span class=cl>---
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>## about us</span>
 </span></span><span class=line><span class=cl>
@@ -527,8 +527,8 @@
 </span></span><span class=line><span class=cl>-rw-rw-r--  <span class=m>1</span> mdhender  staff    <span class=m>342</span> Sep <span class=m>27</span> 15:33 public/post/second-post/index.html
 </span></span></code></pre></div><p>Knowing that hugo is using the slug to generate the file name, the simplest solution is to change the slug. Let&rsquo;s do it the hard way and change the permalink in the configuration file.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi config.toml
 </span></span><span class=line><span class=cl><span class=o>[</span>permalinks<span class=o>]</span>
-</span></span><span class=line><span class=cl>	<span class=nv>page</span> <span class=o>=</span> <span class=s2>&#34;/:title/&#34;</span>
-</span></span><span class=line><span class=cl>	<span class=nv>about</span> <span class=o>=</span> <span class=s2>&#34;/:filename/&#34;</span>
+</span></span><span class=line><span class=cl>	page: <span class=s2>&#34;/:title/&#34;</span>
+</span></span><span class=line><span class=cl>	about: <span class=s2>&#34;/:filename/&#34;</span>
 </span></span></code></pre></div><p>Generate the web site and verify that this didn&rsquo;t work. Hugo lets &ldquo;slug&rdquo; or &ldquo;URL&rdquo; override the permalinks setting in the configuration file. Go ahead and comment out the slug in content/about.md, then generate the web site to get it to be created in the right place.</p><h2 id=sharing-templates>Sharing Templates</h2><p>If you&rsquo;ve been following along, you probably noticed that posts have titles in the browser and the home page doesn&rsquo;t. That&rsquo;s because we didn&rsquo;t put the title in the home page&rsquo;s template (layouts/index.html). That&rsquo;s an easy thing to do, but let&rsquo;s look at a different option.</p><p>We can put the common bits into a shared template that&rsquo;s stored in the themes/zafta/layouts/partials/ directory.</p><h3 id=create-the-header-and-footer-partials>Create the Header and Footer Partials</h3><p>In Hugo, a partial is a sugar-coated template. Normally a template reference has a path specified. Partials are different. Hugo searches for them along a TODO defined search path. This makes it easier for end-users to override the theme&rsquo;s presentation.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>$ vi themes/zafta/layouts/partials/header.html
 </span></span><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
 </span></span><span class=line><span class=cl>&lt;html&gt;

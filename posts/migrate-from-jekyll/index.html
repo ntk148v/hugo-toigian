@@ -19,42 +19,42 @@ With Jekyll, something that looked like</p><div class=highlight><pre tabindex=0 
 </span></span><span class=line><span class=cl>}
 </span></span></code></pre></div><h2 id=convert-jekyll-templates-to-hugo-templates>Convert Jekyll templates to Hugo templates</h2><p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href=http://jekyllrb.com/docs/templates/>Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href=/layout/templates/>Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p><p>As a single reference data point, converting my templates for <a href=http://heyitsalex.net/>heyitsalex.net</a> took me no more than a few hours.</p><h2 id=convert-jekyll-plugins-to-hugo-shortcodes>Convert Jekyll plugins to Hugo shortcodes</h2><p>Jekyll has <a href=http://jekyllrb.com/docs/plugins/>plugins</a>; Hugo has <a href=/doc/shortcodes/>shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p><h3 id=implementation>Implementation</h3><p>As an example, I was using a custom <a href=https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.</p><p>Jekyll&rsquo;s plugin:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-ruby data-lang=ruby><span class=line><span class=cl><span class=k>module</span> <span class=nn>Jekyll</span>
 </span></span><span class=line><span class=cl>  <span class=k>class</span> <span class=nc>ImageTag</span> <span class=o>&lt;</span> <span class=no>Liquid</span><span class=o>::</span><span class=no>Tag</span>
-</span></span><span class=line><span class=cl>    <span class=vi>@url</span> <span class=o>=</span> <span class=kp>nil</span>
-</span></span><span class=line><span class=cl>    <span class=vi>@caption</span> <span class=o>=</span> <span class=kp>nil</span>
-</span></span><span class=line><span class=cl>    <span class=vi>@class</span> <span class=o>=</span> <span class=kp>nil</span>
-</span></span><span class=line><span class=cl>    <span class=vi>@link</span> <span class=o>=</span> <span class=kp>nil</span>
+</span></span><span class=line><span class=cl>    <span class=vi>@url</span><span class=p>:</span> <span class=kp>nil</span>
+</span></span><span class=line><span class=cl>    <span class=vi>@caption</span><span class=p>:</span> <span class=kp>nil</span>
+</span></span><span class=line><span class=cl>    <span class=vi>@class</span><span class=p>:</span> <span class=kp>nil</span>
+</span></span><span class=line><span class=cl>    <span class=vi>@link</span><span class=p>:</span> <span class=kp>nil</span>
 </span></span><span class=line><span class=cl>    <span class=sr>//</span> <span class=no>Patterns</span>
 </span></span><span class=line><span class=cl>    <span class=no>IMAGE_URL_WITH_CLASS_AND_CAPTION</span> <span class=o>=</span>
-</span></span><span class=line><span class=cl>    <span class=no>IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK</span> <span class=o>=</span> <span class=sr>/(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&#34;(.*?)&#34;(\s+)-&gt;((https?:\/\/|\/)(\S+))(\s*)/i</span>
-</span></span><span class=line><span class=cl>    <span class=no>IMAGE_URL_WITH_CAPTION</span> <span class=o>=</span> <span class=sr>/((https?:\/\/|\/)(\S+))(\s+)&#34;(.*?)&#34;/i</span>
-</span></span><span class=line><span class=cl>    <span class=no>IMAGE_URL_WITH_CLASS</span> <span class=o>=</span> <span class=sr>/(\w+)(\s+)((https?:\/\/|\/)(\S+))/i</span>
-</span></span><span class=line><span class=cl>    <span class=no>IMAGE_URL</span> <span class=o>=</span> <span class=sr>/((https?:\/\/|\/)(\S+))/i</span>
+</span></span><span class=line><span class=cl>    <span class=ss>IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK</span><span class=p>:</span> <span class=sr>/(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&#34;(.*?)&#34;(\s+)-&gt;((https?:\/\/|\/)(\S+))(\s*)/i</span>
+</span></span><span class=line><span class=cl>    <span class=ss>IMAGE_URL_WITH_CAPTION</span><span class=p>:</span> <span class=sr>/((https?:\/\/|\/)(\S+))(\s+)&#34;(.*?)&#34;/i</span>
+</span></span><span class=line><span class=cl>    <span class=ss>IMAGE_URL_WITH_CLASS</span><span class=p>:</span> <span class=sr>/(\w+)(\s+)((https?:\/\/|\/)(\S+))/i</span>
+</span></span><span class=line><span class=cl>    <span class=ss>IMAGE_URL</span><span class=p>:</span> <span class=sr>/((https?:\/\/|\/)(\S+))/i</span>
 </span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>initialize</span><span class=p>(</span><span class=n>tag_name</span><span class=p>,</span> <span class=n>markup</span><span class=p>,</span> <span class=n>tokens</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>      <span class=k>super</span>
 </span></span><span class=line><span class=cl>      <span class=k>if</span> <span class=n>markup</span> <span class=o>=~</span> <span class=no>IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK</span>
-</span></span><span class=line><span class=cl>        <span class=vi>@class</span>   <span class=o>=</span> <span class=vg>$1</span>
-</span></span><span class=line><span class=cl>        <span class=vi>@url</span>     <span class=o>=</span> <span class=vg>$3</span>
-</span></span><span class=line><span class=cl>        <span class=vi>@caption</span> <span class=o>=</span> <span class=vg>$7</span>
-</span></span><span class=line><span class=cl>        <span class=vi>@link</span> <span class=o>=</span> <span class=vg>$9</span>
+</span></span><span class=line><span class=cl>        <span class=vi>@class</span>  <span class=p>:</span> <span class=vg>$1</span>
+</span></span><span class=line><span class=cl>        <span class=vi>@url</span>    <span class=p>:</span> <span class=vg>$3</span>
+</span></span><span class=line><span class=cl>        <span class=vi>@caption</span><span class=p>:</span> <span class=vg>$7</span>
+</span></span><span class=line><span class=cl>        <span class=vi>@link</span><span class=p>:</span> <span class=vg>$9</span>
 </span></span><span class=line><span class=cl>      <span class=k>elsif</span> <span class=n>markup</span> <span class=o>=~</span> <span class=no>IMAGE_URL_WITH_CLASS_AND_CAPTION</span>
-</span></span><span class=line><span class=cl>        <span class=vi>@class</span>   <span class=o>=</span> <span class=vg>$1</span>
-</span></span><span class=line><span class=cl>        <span class=vi>@url</span>     <span class=o>=</span> <span class=vg>$3</span>
-</span></span><span class=line><span class=cl>        <span class=vi>@caption</span> <span class=o>=</span> <span class=vg>$7</span>
+</span></span><span class=line><span class=cl>        <span class=vi>@class</span>  <span class=p>:</span> <span class=vg>$1</span>
+</span></span><span class=line><span class=cl>        <span class=vi>@url</span>    <span class=p>:</span> <span class=vg>$3</span>
+</span></span><span class=line><span class=cl>        <span class=vi>@caption</span><span class=p>:</span> <span class=vg>$7</span>
 </span></span><span class=line><span class=cl>      <span class=k>elsif</span> <span class=n>markup</span> <span class=o>=~</span> <span class=no>IMAGE_URL_WITH_CAPTION</span>
-</span></span><span class=line><span class=cl>        <span class=vi>@url</span>     <span class=o>=</span> <span class=vg>$1</span>
-</span></span><span class=line><span class=cl>        <span class=vi>@caption</span> <span class=o>=</span> <span class=vg>$5</span>
+</span></span><span class=line><span class=cl>        <span class=vi>@url</span>    <span class=p>:</span> <span class=vg>$1</span>
+</span></span><span class=line><span class=cl>        <span class=vi>@caption</span><span class=p>:</span> <span class=vg>$5</span>
 </span></span><span class=line><span class=cl>      <span class=k>elsif</span> <span class=n>markup</span> <span class=o>=~</span> <span class=no>IMAGE_URL_WITH_CLASS</span>
-</span></span><span class=line><span class=cl>        <span class=vi>@class</span> <span class=o>=</span> <span class=vg>$1</span>
-</span></span><span class=line><span class=cl>        <span class=vi>@url</span>   <span class=o>=</span> <span class=vg>$3</span>
+</span></span><span class=line><span class=cl>        <span class=vi>@class</span><span class=p>:</span> <span class=vg>$1</span>
+</span></span><span class=line><span class=cl>        <span class=vi>@url</span>  <span class=p>:</span> <span class=vg>$3</span>
 </span></span><span class=line><span class=cl>      <span class=k>elsif</span> <span class=n>markup</span> <span class=o>=~</span> <span class=no>IMAGE_URL</span>
-</span></span><span class=line><span class=cl>        <span class=vi>@url</span> <span class=o>=</span> <span class=vg>$1</span>
+</span></span><span class=line><span class=cl>        <span class=vi>@url</span><span class=p>:</span> <span class=vg>$1</span>
 </span></span><span class=line><span class=cl>      <span class=k>end</span>
 </span></span><span class=line><span class=cl>    <span class=k>end</span>
 </span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>render</span><span class=p>(</span><span class=n>context</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>      <span class=k>if</span> <span class=vi>@class</span>
-</span></span><span class=line><span class=cl>        <span class=n>source</span> <span class=o>=</span> <span class=s2>&#34;&lt;figure class=&#39;</span><span class=si>#{</span><span class=vi>@class</span><span class=si>}</span><span class=s2>&#39;&gt;&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=ss>source</span><span class=p>:</span> <span class=s2>&#34;&lt;figure class=&#39;</span><span class=si>#{</span><span class=vi>@class</span><span class=si>}</span><span class=s2>&#39;&gt;&#34;</span>
 </span></span><span class=line><span class=cl>      <span class=k>else</span>
-</span></span><span class=line><span class=cl>        <span class=n>source</span> <span class=o>=</span> <span class=s2>&#34;&lt;figure&gt;&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=ss>source</span><span class=p>:</span> <span class=s2>&#34;&lt;figure&gt;&#34;</span>
 </span></span><span class=line><span class=cl>      <span class=k>end</span>
 </span></span><span class=line><span class=cl>      <span class=k>if</span> <span class=vi>@link</span>
 </span></span><span class=line><span class=cl>        <span class=n>source</span> <span class=o>+=</span> <span class=s2>&#34;&lt;a href=</span><span class=se>\&#34;</span><span class=si>#{</span><span class=vi>@link</span><span class=si>}</span><span class=se>\&#34;</span><span class=s2>&gt;&#34;</span>
