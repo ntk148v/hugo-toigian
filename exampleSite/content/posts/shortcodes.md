@@ -1,9 +1,9 @@
-+++
-title = "Hugo Shortcodes"
-date = 2022-10-21T17:12:11+07:00
-comment = true
-tags = ["hugo", "tech", "shortcode"]
-+++
+---
+title: "Hugo Shortcodes"
+date: 2022-10-21T17:12:11+07:00
+comment: true
+tags: ["hugo", "tech", "shortcode"]
+---
 
 ## Details
 
@@ -36,7 +36,7 @@ Quote shortcode can be used with 3 colors: `info`, `warn` and `critical`.
 
 ```tpl
 {{</* quote [info|warning|danger] */>}}
-**Markdown content**  
+**Markdown content**
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 {{</* /quote */>}}
@@ -45,19 +45,19 @@ stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 ### Example
 
 {{< quote info >}}
-**Markdown content**  
+**Markdown content**
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 {{< /quote >}}
 
 {{< quote warn >}}
-**Markdown content**  
+**Markdown content**
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 {{< /quote >}}
 
 {{< quote critical >}}
-**Markdown content**  
+**Markdown content**
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 {{< /quote >}}

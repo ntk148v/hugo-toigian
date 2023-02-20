@@ -1,9 +1,9 @@
-+++
-title = "Welcome to Hugo Toigian"
-date = 2022-10-25T18:12:11+07:00
-comment = true
-tags = ["hugo", "tech", "toigian"]
-+++
+---
+title: "Welcome to Hugo Toigian"
+date: 2022-10-25T18:12:11+07:00
+comment: true
+tags: ["hugo", "tech", "toigian"]
+---
 
 {{< quote info >}}
 `Toigian` - `Tối giản` (vietnamese): Minimalist (english)
@@ -66,7 +66,7 @@ npm install
 - Finally, update theme in your configuration `config.toml` file in the root directory of your Hugo website.
 
 ```toml
-theme = "hugo-toigian"
+theme: "hugo-toigian"
 ```
 
 - Run server to see a live preview of it.
@@ -88,58 +88,58 @@ hugo --environment production --minify
 There are a few configuration options that you can add to [config.toml](./exampleSite/config.toml) file.
 
 ```toml
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'Toigian'
-theme = "hugo-toigian"
-themesDir = "../.."
+baseURL: 'http://example.org/'
+languageCode: 'en-us'
+title: 'Toigian'
+theme: "hugo-toigian"
+themesDir: "../.."
 # (Optional) If you provide a Disqus shortname, comments will be enabled on
 # all pages.
-# disqusShortname = "my-site"
+# disqusShortname: "my-site"
 
 [params]
 # (Optional, default true): Controls table of contents visibility on right side of pages.
 # Start and end levels can be controlled with markup.tableOfContents setting.
-toc = true
+toc: true
 # (Optional, default true) Enables comments template on pages
 # By default partials/docs/comments.html includes Disqus template
 # See https://gohugo.io/content-management/comments/#configure-disqus
 # Can be overwritten by same param in page frontmatter
-comments = true
+comments: true
 
 [params.author]
-name = "Kien Nguyen-Tuan"
-email = "kiennt2609@gmail.com"
+name: "Kien Nguyen-Tuan"
+email: "kiennt2609@gmail.com"
 
 [markup]
-  defaultMarkdownHandler = "goldmark"
+  defaultMarkdownHandler: "goldmark"
   # By default, Goldmark trims unsafe outputs which might prevent some shortcodes from rendering.
   # It is recommended to set markup.goldmark.renderer.unsafe=true if you encounter problems.
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true  # Enable user to embed HTML snippets in Markdown content.
+      unsafe: true  # Enable user to embed HTML snippets in Markdown content.
   [markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    lineNos = false
-    noClasses = false
-    tabWidth = 4
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    noClasses: false
+    tabWidth: 4
   [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 4
-    ordered = true
+    startLevel: 2
+    endLevel: 4
+    ordered: true
 
 # The left side navbar at the top
 [menu]
   [[menu.nav]]
-  name = "About"
-  url = "/about"
-  weight = 2
+  name: "About"
+  url: "/about"
+  weight: 2
 
   [[menu.nav]]
-  name = "Posts"
-  url = "/posts"
-  weight = 3
+  name: "Posts"
+  url: "/posts"
+  weight: 3
 ```
 
 ### 3.2. Page configuration
@@ -148,9 +148,9 @@ You can specify additional params in the front matter of individual pages.
 
 ```md
 # Your posts tags
-tags = []
+tags: []
 # If you have enabled comments for the site, you can disable it for specific pages
-comment = true
+comment: true
 ```
 
 ## 4. Shortcodes

@@ -1,9 +1,9 @@
-+++
-title = "Getting Started with Hugo"
-date = 2022-10-26T17:12:11+07:00
-comment = true
-tags = ["hugo"]
-+++
+---
+title: "Getting Started with Hugo"
+date: 2022-10-26T17:12:11+07:00
+comment: true
+tags: ["hugo"]
+---
 
 # Step 1. Install Hugo
 

@@ -1,9 +1,9 @@
-+++
-title = "Hugo Diagrams"
-date = 2022-10-25T17:12:11+07:00
-comment = true
-tags = ["hugo", "tech", "diagrams"]
-+++
+---
+title: "Hugo Diagrams"
+date: 2022-10-25T17:12:11+07:00
+comment: true
+tags: ["hugo", "tech", "diagrams"]
+---
 
 Hugo version >= 0.93.0
 
@@ -129,12 +129,12 @@ Created from <https://arthursonzogni.com/Diagon/#Tree>
 ┌─────┐       ┌───┐
 │Alice│       │Bob│
 └──┬──┘       └─┬─┘
-   │            │  
-   │ Hello Bob! │  
-   │───────────>│  
-   │            │  
-   │Hello Alice!│  
-   │<───────────│  
+   │            │
+   │ Hello Bob! │
+   │───────────>│
+   │            │
+   │Hello Alice!│
+   │<───────────│
 ┌──┴──┐       ┌─┴─┐
 │Alice│       │Bob│
 └─────┘       └───┘
@@ -147,39 +147,39 @@ Created from <https://arthursonzogni.com/Diagon/#Tree>
 <https://arthursonzogni.com/Diagon/#Flowchart>
 
 ```goat
-   _________________                                                              
-  ╱                 ╲                                                     ┌─────┐ 
- ╱ DO YOU UNDERSTAND ╲____________________________________________________│GOOD!│ 
- ╲ FLOW CHARTS?      ╱yes                                                 └──┬──┘ 
-  ╲_________________╱                                                        │    
-           │no                                                               │    
-  _________▽_________                    ______________________              │    
- ╱                   ╲                  ╱                      ╲    ┌────┐   │    
-╱ OKAY, YOU SEE THE   ╲________________╱ ... AND YOU CAN SEE    ╲___│GOOD│   │    
-╲ LINE LABELED 'YES'? ╱yes             ╲ THE ONES LABELED 'NO'? ╱yes└──┬─┘   │    
- ╲___________________╱                  ╲______________________╱       │     │    
-           │no                                     │no                 │     │    
-   ________▽_________                     _________▽__________         │     │    
-  ╱                  ╲    ┌───────────┐  ╱                    ╲        │     │    
- ╱ BUT YOU SEE THE    ╲___│WAIT, WHAT?│ ╱ BUT YOU JUST         ╲___    │     │    
- ╲ ONES LABELED 'NO'? ╱yes└───────────┘ ╲ FOLLOWED THEM TWICE? ╱yes│   │     │    
-  ╲__________________╱                   ╲____________________╱    │   │     │    
-           │no                                     │no             │   │     │    
-       ┌───▽───┐                                   │               │   │     │    
-       │LISTEN.│                                   └───────┬───────┘   │     │    
-       └───┬───┘                                    ┌──────▽─────┐     │     │    
-     ┌─────▽────┐                                   │(THAT WASN'T│     │     │    
-     │I HATE YOU│                                   │A QUESTION) │     │     │    
-     └──────────┘                                   └──────┬─────┘     │     │    
-                                                      ┌────▽───┐       │     │    
-                                                      │SCREW IT│       │     │    
-                                                      └────┬───┘       │     │    
-                                                           └─────┬─────┘     │    
-                                                                 │           │    
-                                                                 └─────┬─────┘    
-                                                               ┌───────▽──────┐   
-                                                               │LET'S GO DRING│   
-                                                               └───────┬──────┘   
+   _________________
+  ╱                 ╲                                                     ┌─────┐
+ ╱ DO YOU UNDERSTAND ╲____________________________________________________│GOOD!│
+ ╲ FLOW CHARTS?      ╱yes                                                 └──┬──┘
+  ╲_________________╱                                                        │
+           │no                                                               │
+  _________▽_________                    ______________________              │
+ ╱                   ╲                  ╱                      ╲    ┌────┐   │
+╱ OKAY, YOU SEE THE   ╲________________╱ ... AND YOU CAN SEE    ╲___│GOOD│   │
+╲ LINE LABELED 'YES'? ╱yes             ╲ THE ONES LABELED 'NO'? ╱yes└──┬─┘   │
+ ╲___________________╱                  ╲______________________╱       │     │
+           │no                                     │no                 │     │
+   ________▽_________                     _________▽__________         │     │
+  ╱                  ╲    ┌───────────┐  ╱                    ╲        │     │
+ ╱ BUT YOU SEE THE    ╲___│WAIT, WHAT?│ ╱ BUT YOU JUST         ╲___    │     │
+ ╲ ONES LABELED 'NO'? ╱yes└───────────┘ ╲ FOLLOWED THEM TWICE? ╱yes│   │     │
+  ╲__________________╱                   ╲____________________╱    │   │     │
+           │no                                     │no             │   │     │
+       ┌───▽───┐                                   │               │   │     │
+       │LISTEN.│                                   └───────┬───────┘   │     │
+       └───┬───┘                                    ┌──────▽─────┐     │     │
+     ┌─────▽────┐                                   │(THAT WASN'T│     │     │
+     │I HATE YOU│                                   │A QUESTION) │     │     │
+     └──────────┘                                   └──────┬─────┘     │     │
+                                                      ┌────▽───┐       │     │
+                                                      │SCREW IT│       │     │
+                                                      └────┬───┘       │     │
+                                                           └─────┬─────┘     │
+                                                                 │           │
+                                                                 └─────┬─────┘
+                                                               ┌───────▽──────┐
+                                                               │LET'S GO DRING│
+                                                               └───────┬──────┘
                                                              ┌─────────▽─────────┐
                                                              │HEY, I SHOULD TRY  │
                                                              │INSTALLING FREEBSD!│
@@ -196,15 +196,15 @@ Created from <https://arthursonzogni.com/Diagon/#Tree>
 ┌────────────────────────────────────────────────┐
 │                                                │
 ├────────────────────────────────────────────────┤
-│SYNTAX     = { PRODUCTION } .                   │
+│SYNTAX    : { PRODUCTION } .                   │
 ├────────────────────────────────────────────────┤
-│PRODUCTION = IDENTIFIER "=" EXPRESSION "." .    │
+│PRODUCTION: IDENTIFIER "=" EXPRESSION "." .    │
 ├────────────────────────────────────────────────┤
-│EXPRESSION = TERM { "|" TERM } .                │
+│EXPRESSION: TERM { "|" TERM } .                │
 ├────────────────────────────────────────────────┤
-│TERM       = FACTOR { FACTOR } .                │
+│TERM      : FACTOR { FACTOR } .                │
 ├────────────────────────────────────────────────┤
-│FACTOR     = IDENTIFIER                         │
+│FACTOR    : IDENTIFIER                         │
 ├────────────────────────────────────────────────┤
 │          | LITERAL                             │
 ├────────────────────────────────────────────────┤
@@ -214,8 +214,8 @@ Created from <https://arthursonzogni.com/Diagon/#Tree>
 ├────────────────────────────────────────────────┤
 │          | "{" EXPRESSION "}" .                │
 ├────────────────────────────────────────────────┤
-│IDENTIFIER = letter { letter } .                │
+│IDENTIFIER: letter { letter } .                │
 ├────────────────────────────────────────────────┤
-│LITERAL    = """" character { character } """" .│
+│LITERAL   : """" character { character } """" .│
 └────────────────────────────────────────────────┘
 ```
