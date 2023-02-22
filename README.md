@@ -1,4 +1,5 @@
 <div align="center">
+ <img src="./static/favicon_io/android-chrome-192x192.png">
  <h1>Hugo Toigian</h1>
  <blockquote align="center">A minimal Hugo theme with Tailwind CSS</blockquote>
  <p>
@@ -169,8 +170,11 @@ You can specify additional params in the front matter of individual pages.
 
 ```md
 # Your posts tags
+
 tags = []
+
 # If you have enabled comments for the site, you can disable it for specific pages
+
 comment = true
 ```
 
@@ -196,6 +200,7 @@ Check out [shortcodes](https://ntk148v.github.io/hugo-toigian/posts/shortcodes).
 | `assets/css/custom.css` | Customize or override css styles |
 
 - For example, you don't like the chosen fonts (Roboto Mono and Barlow fonts), and you want to use your own choice, follow these steps:
+
   - Create `layouts/partials/font.html` to import your fonts:
 
   ```html
@@ -213,8 +218,8 @@ Check out [shortcodes](https://ntk148v.github.io/hugo-toigian/posts/shortcodes).
   ```scss
   // change the default mono font to Overpass
   :root {
-      --font-mono: "Overpass";
-      --font-serif: "Inter";
+    --font-mono: 'Overpass';
+    --font-serif: 'Inter';
   }
   ```
 
