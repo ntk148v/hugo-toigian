@@ -153,7 +153,8 @@ pre > code {
 /* ###################### */
 /* #       Figure       # */
 /* ###################### */
-figure, img {
+figure,
+img {
   @apply block mx-auto;
 }
 
@@ -161,12 +162,12 @@ figure, img {
 /* #       Tag       # */
 /* ################### */
 #tag {
-  @apply text-muted italic underline;
+  @apply p-1 text-muted italic underline;
 }
 
 #tag:before,
 #tag:after {
-  @apply text-muted no-underline;
+  @apply text-muted inline-block no-underline;
 }
 
 #tag:before {
@@ -181,19 +182,21 @@ figure, img {
 /* #       Links       # */
 /* ##################### */
 .content a {
-  @apply italic;
+  @apply italic p-1 underline;
 }
 
 .content a::before {
   content: "{";
+  @apply pr-1 text-muted inline-block no-underline;
 }
 
 .content a::after {
-  content: "}";
+  content: " }";
+  @apply pl-1 text-muted inline-block no-underline;
 }
 
 .content a:hover {
-  @apply underline underline-offset-2;
+  @apply no-underline;
 }
 
 .content ul {
