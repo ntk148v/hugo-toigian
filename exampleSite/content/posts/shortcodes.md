@@ -92,6 +92,8 @@ sequenceDiagram
 
 Hugo is great in many ways. However as a static site generator it doesn’t offer much to embed external content in your pages. Remote-github shortcode helps you to render Github remote content using [Github API](https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#get-repository-content).
 
+This shortcode is inspired from [this issue](https://discourse.gohugo.io/t/include-content-of-a-url/27357).
+
 ```tpl
 {{%/* remote-github "user/repo" "filepath" */%}}
 ```
