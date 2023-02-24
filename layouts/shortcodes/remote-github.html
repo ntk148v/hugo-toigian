@@ -1,0 +1,15 @@
+{{/* remote-github
+
+  Description:
+
+  Fetch and render remote Github content, using Github API:
+  <https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#get-repository-content>
+
+  Usage: {{% remote-github "user/repo" "filepath" %}}
+
+  Example: {{% remote-github "ntk148v/til" "linux/iptables.md" %}}
+*/}}
+{{ $repo := .Get 0 }}
+{{ $path := .Get 1 }}
+{{ $json := getJSON "https://api.github.com/repos/" $repo "/contents" $path }}
+{{ $json.content | base64Decode | markdownify }}

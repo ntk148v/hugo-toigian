@@ -87,3 +87,17 @@ sequenceDiagram
     John->>Bob: How about you?
     Bob-->>John: Jolly good!
 {{< /mermaid >}}
+
+## Remote Github
+
+Hugo is great in many ways. However as a static site generator it doesn’t offer much to embed external content in your pages. Remote-github shortcode helps you to render Github remote content using [Github API](https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#get-repository-content).
+
+```tpl
+{{%/* remote-github "user/repo" "filepath" */%}}
+```
+
+### Example
+
+**The following content is render from my [til post](https://github.com/ntk148v/til/blob/master/linux/iptables.md).**
+
+{{% remote-github "ntk148v/til" "linux/iptables.md" %}}
