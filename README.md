@@ -35,11 +35,11 @@
 
 These screenshots may be outdated. Take a look at [demo site](https://ntk148v.github.io/hugo-toigian) for newest.
 
-| Dark                                                                  | Light                                                                   |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| <img src="images/dark-post.png" alt="dark" style="border-radius:1%"/> | <img src="images/light-post.png" alt="dark" style="border-radius:1%" /> |
-| <img src="images/dark-home.png" alt="dark" style="border-radius:1%"/> | <img src="images/light-home.png" alt="dark" style="border-radius:1%"/>  |
-| <img src="images/dark-list.png" alt="dark" style="border-radius:1%"/> | <img src="images/light-list.png" alt="dark" style="border-radius:1%"/>  |
+| Dark                                                                                                                                | Light                                                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-post.png" alt="dark" style="border-radius:1%"/> | <img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-post.png" alt="dark" style="border-radius:1%" /> |
+| <img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-home.png" alt="dark" style="border-radius:1%"/> | <img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-home.png" alt="dark" style="border-radius:1%"/>  |
+| <img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-list.png" alt="dark" style="border-radius:1%"/> | <img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-list.png" alt="dark" style="border-radius:1%"/>  |
 
 ## 1. Features
 
@@ -218,8 +218,8 @@ Check out [shortcodes](https://ntk148v.github.io/hugo-toigian/posts/shortcodes).
   ```scss
   // change the default mono font to Overpass
   :root {
-    --font-mono: 'Overpass';
-    --font-serif: 'Inter';
+    --font-mono: "Overpass";
+    --font-serif: "Inter";
   }
   ```
 
