@@ -62,7 +62,7 @@ h6 {
 }
 
 p {
-  @apply leading-relaxed;
+  @apply leading-relaxed py-2;
 }
 
 strong {
