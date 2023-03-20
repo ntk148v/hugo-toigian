@@ -35,7 +35,7 @@ Lorem markdownum insigne...
 Quote shortcode can be used with 3 colors: `info`, `warn` and `critical`.
 
 ```tpl
-{{</* quote [info|warning|danger] */>}}
+{{</* quote [info|warn|critical] */>}}
 **Markdown content**
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
