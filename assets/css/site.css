@@ -182,7 +182,7 @@ img {
 /* #       Links       # */
 /* ##################### */
 .content a {
-  @apply italic p-1 underline;
+  @apply italic p-1 font-medium;
 }
 
 .content a::before {
