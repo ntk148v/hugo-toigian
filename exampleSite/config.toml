@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Toigian'
 theme = "hugo-toigian"
 themesDir = "../.."
+enableGitInfo = true
 
 # (Optional) If you provide a Disqus shortname, comments will be enabled on
 # all pages.
@@ -54,3 +55,9 @@ email = "kiennt2609@gmail.com"
 
 [build]
   writeStats = true
+
+[frontmatter]
+  date = ['date', 'publishDate', 'lastmod']
+  expiryDate = ['expiryDate']
+  lastmod = [':git', 'lastmod', 'date', 'publishDate']
+  publishDate = ['publishDate', 'date']

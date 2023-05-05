@@ -1,10 +1,11 @@
 {{ define "main" }}
   <h1>{{ .Title | emojify }}</h1>
   <!-- Post meta -->
-  {{- partial "date" . -}}
+  {{- partial "date" .Date -}}{{ if ne .Date .Lastmod }}<nobr class="text-sm text-muted">&#8674&nbsp;</nobr>{{- partial "date" .Lastmod -}}{{ end }}
+
   {{- partial "tag" . -}}
   <!-- Table of contents -->
-  {{ if default true (default .Site.Params.toc .Params.toc)}}
+  {{ if default true (default .Site.Params.toc .Params.toc) }}
     {{ if gt (.TableOfContents | countwords)
       0
     }}
