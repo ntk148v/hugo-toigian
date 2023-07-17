@@ -207,13 +207,28 @@ img {
   @apply list-decimal ml-6;
 }
 
+/* ##################### */
+/*         Table         */
+/* ##################### */
 .content table {
-  @apply overflow-auto block border-spacing-0 border-collapse my-4;
+  @apply overflow-auto block my-4 min-w-full divide-y-2 text-sm;
+}
+
+.content table thead {
+  @apply ltr:text-left rtl:text-right;
+}
+
+.content table tbody {
+  @apply divide-y;
+}
+
+.content tr th {
+  @apply font-medium;
 }
 
 .content tr th,
 .content tr td {
-  @apply p-3 border-2 border-solid border-muted;
+  @apply px-4 py-2;
 }
 
 .content img {
