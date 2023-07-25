@@ -5,14 +5,14 @@
   --page-gutter: 24px;
   --header-height: 48px;
   --footer-height: 48px;
-  --sidebar-top: 70px;
+  --sidebar-top: 72px;
 
   --content-width: 40rem;
   --content-height: calc(100vh - (var(--page-top) * 2) - var(--footer-height));
 
-  @media (min-width: 640px) {
-    --page-top: 192px;
-    --sidebar-top: 300px;
+  @media (min-width: 1080px) {
+    --page-top: 128px;
+    --sidebar-top: 144px;
     --page-gutter: 48px;
   }
 }
@@ -119,6 +119,12 @@ pre > code {
 /* ################################# */
 /* #       Table of contents       # */
 /* ################################# */
+@media screen and (min-width: 1080px) {
+  #toc {
+    @apply fixed top-0 left-0 z-40 w-1/4 px-page-gutter py-sidebar-top;
+  }
+}
+
 #toc-list ol {
   @apply pl-3 m-1 border-l-2 text-sm text-muted;
   counter-reset: tocitem;
