@@ -1,0 +1,13 @@
+<!-- Table of contents -->
+<div id="toc">
+  {{ if default true (default .Site.Params.toc .Params.toc) }}
+    {{ if gt (.TableOfContents | countwords)
+      0
+    }}
+      <details>
+        <summary>Table of contents</summary>
+        <div id="toc-list">{{ .TableOfContents }}</div>
+      </details>
+    {{ end }}
+  {{ end }}
+</div>
