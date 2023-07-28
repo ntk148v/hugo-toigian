@@ -4,7 +4,7 @@
     {{ if gt (.TableOfContents | countwords)
       0
     }}
-      <details>
+      <details open>
         <summary>Table of contents</summary>
         <div id="toc-list">{{ .TableOfContents }}</div>
       </details>

@@ -108,7 +108,7 @@ code > pre {
 }
 
 pre {
-  @apply overflow-auto p-4 my-5 rounded-lg drop-shadow-lg;;
+  @apply overflow-auto p-4 my-5 rounded-lg drop-shadow-lg;
 }
 
 pre > code {
@@ -121,8 +121,12 @@ pre > code {
 /* ################################# */
 @media screen and (min-width: 1080px) {
   #toc {
-    @apply fixed top-0 left-0 z-40 w-1/4 px-page-gutter py-sidebar-top;
+    @apply fixed top-sidebar-top left-page-gutter z-40 w-1/4 px-page-gutter py-sidebar-top;
   }
+}
+
+#toc summary {
+  @apply font-bold;
 }
 
 #toc-list ol {
