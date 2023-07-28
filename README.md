@@ -199,7 +199,7 @@ Check out [shortcodes](https://ntk148v.github.io/hugo-toigian/posts/shortcodes).
 | ----------------------- | -------------------------------- |
 | `assets/css/custom.css` | Customize or override css styles |
 
-- For example, you don't like the chosen fonts (Roboto Mono and Barlow fonts), and you want to use your own choice, follow these steps:
+- For example, you don't like the chosen font (Inconsolata), and you want to use your own choice, follow these steps:
 
   - Create `layouts/partials/font.html` to import your fonts:
 
@@ -230,7 +230,7 @@ As you already known, I'm not front-end developer. Therefore, if you find anythi
 Primary goals are:
 
 - Keep it simple.
-- Avoid using JS if it can be solved by CSS>
+- Avoid using JS if it can be solved by CSS.
 
 Feel free to open issues if you find missing configuration or customization options.
 
