@@ -100,7 +100,7 @@ section h6 {
 /* Code block */
 code {
   /* Inline code style */
-  @apply rounded p-1 bg-muted text-base font-mono text-sm;
+  @apply rounded-lg p-1 bg-muted text-base font-mono text-sm drop-shadow-lg;
 }
 
 code > pre {
@@ -108,7 +108,7 @@ code > pre {
 }
 
 pre {
-  @apply overflow-auto p-4 my-5 rounded-lg;
+  @apply overflow-auto p-4 my-5 rounded-lg drop-shadow-lg;;
 }
 
 pre > code {
@@ -159,9 +159,14 @@ pre > code {
 /* ###################### */
 /* #       Figure       # */
 /* ###################### */
-figure,
-img {
-  @apply block mx-auto;
+figure {
+  img {
+    @apply block mx-auto rounded-lg drop-shadow-lg;
+  }
+
+  figcaption {
+    @apply px-5 py-3 text-center text-muted italic;
+  }
 }
 
 /* ################### */
