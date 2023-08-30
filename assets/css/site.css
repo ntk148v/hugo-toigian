@@ -41,20 +41,45 @@ h6 {
   @apply font-bold text-xl;
   @apply pt-4 pb-2;
 }
+
 h1 {
   @apply text-3xl;
 }
+
 h2 {
   @apply text-2xl;
+  counter-increment: h2;
+  counter-reset: h3;
 }
+
 h3 {
   @apply text-xl;
+  counter-increment: h3;
+  counter-reset: h4;
 }
+
 h4 {
   @apply text-xl;
 }
+
 h6 {
   @apply font-normal;
+}
+
+/* nested counters */
+h2::before {
+  @apply text-muted;
+  content: counter(h2) ". ";
+}
+
+h3::before {
+  @apply text-muted;
+  content: counter(h2) "." counter(h3) ". ";
+}
+
+h4::before {
+  @apply text-muted;
+  content: counter(h2) "." counter(h3) "." counter(h4) ". ";
 }
 
 [id] {
