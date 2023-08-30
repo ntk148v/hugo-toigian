@@ -47,6 +47,8 @@ These screenshots may be outdated. Take a look at [demo site](https://ntk148v.gi
 - Use the classy minimalist [Rosé Pine](https://github.com/rose-pine/palette) color palette.
 - Customizable.
 - Support light/dark mode.
+- Nested counters for heading.
+- Side floating Table of content.
 - Useful shortcodes.
 - Comments support.
 - Syntax highlighting: use server-side solution (Chroma, hugo built-in), I've added [Rosé Pine styles to Chroma](https://github.com/alecthomas/chroma/pull/689), so everything is the same vibe.
