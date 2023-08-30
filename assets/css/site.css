@@ -18,7 +18,7 @@
 }
 
 html {
-  @apply scroll-smooth font-sans;
+  @apply scroll-smooth font-sans tabular-nums;
 
   @media (prefers-reduced-motion: reduce) {
     @apply scroll-auto;
