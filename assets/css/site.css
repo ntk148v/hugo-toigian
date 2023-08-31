@@ -146,7 +146,7 @@ pre > code {
 /* ################################# */
 @media screen and (min-width: 1080px) {
   #toc {
-    @apply fixed top-sidebar-top left-page-gutter z-40 w-1/4 px-page-gutter py-sidebar-top;
+    @apply fixed top-sidebar-top left-page-gutter z-40 w-1/4 h-3/4 overflow-auto px-page-gutter py-sidebar-top;
   }
 }
 
