@@ -60,6 +60,7 @@ h3 {
 
 h4 {
   @apply text-xl;
+  counter-increment: h4;
 }
 
 h6 {
