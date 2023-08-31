@@ -69,18 +69,18 @@ h6 {
 
 /* nested counters */
 h2::before {
-  @apply text-muted;
-  content: counter(h2) ". ";
+  @apply text-muted mr-2 -ml-3;
+  content: counter(h2);
 }
 
 h3::before {
-  @apply text-muted;
-  content: counter(h2) "." counter(h3) ". ";
+  @apply text-muted mr-2 -ml-3;
+  content: counter(h2) "." counter(h3);
 }
 
 h4::before {
-  @apply text-muted;
-  content: counter(h2) "." counter(h3) "." counter(h4) ". ";
+  @apply text-muted mr-2 -ml-3;
+  content: counter(h2) "." counter(h3) "." counter(h4);
 }
 
 [id] {
