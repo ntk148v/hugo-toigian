@@ -4,16 +4,16 @@
   --page-top: 64px;
   --page-gutter: 24px;
   --header-height: 48px;
-  --footer-height: 48px;
+  --footer-height: 96px;
   --sidebar-top: 72px;
 
   --content-width: 40rem;
   --content-height: calc(100vh - (var(--page-top) * 2) - var(--footer-height));
 
-  @media (min-width: 1080px) {
-    --page-top: 128px;
-    --sidebar-top: 144px;
+  @media (min-width: 640px) {
+    --page-top: 192px;
     --page-gutter: 48px;
+    --footer-height: 48px;
   }
 }
 
