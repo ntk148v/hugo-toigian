@@ -25,6 +25,11 @@ html {
   }
 }
 
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
 body {
   @apply bg-base text-text text-md antialiased selection:bg-subtle selection:text-surface;
 }
