@@ -1,15 +1,24 @@
 {{/* remote-github
 
-  Description:
+Description:
 
-  Fetch and render remote Github content, using Github API:
-  <https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#get-repository-content>
+Fetch and render remote Github content, using Github API:
+<https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#get-repository-content>
 
-  Usage: {{% remote-github "user/repo" "filepath" %}}
+Usage: {{% remote-github "user/repo" "filepath" %}}
 
-  Example: {{% remote-github "ntk148v/til" "linux/iptables.md" %}}
+Example: {{% remote-github "ntk148v/til" "linux/iptables.md" %}}
 */}}
 {{ $repo := .Get 0 }}
 {{ $path := .Get 1 }}
-{{ $json := getJSON "https://api.github.com/repos/" $repo "/contents" $path }}
-{{ $json.content | base64Decode | markdownify }}
+{{ $url := print "https://api.github.com/repos/" $repo "/contents" $path }}
+{{ with resources.GetRemote $url }}
+{{ with .Err }}
+{{ . }}
+{{ else }}
+{{ $data := . | transform.Unmarshal }}
+{{ $data.content | base64Decode | markdownify }}
+{{ end }}
+{{ else }}
+{{ print "Unable to get remote resource %q" $url }}
+{{ end }}

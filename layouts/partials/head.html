@@ -58,7 +58,7 @@
   {{- $styles := resources.Get "css/toigian.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
   {{- $light_theme := resources.Get "css/light.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
   {{- $dark_theme := resources.Get "css/dark.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
-  {{- if not .Site.IsServer }}
+  {{- if not hugo.IsServer }}
     {{- $styles = $styles | minify | fingerprint | resources.PostProcess -}}
     {{- $light_theme = $light_theme | minify | fingerprint | resources.PostProcess -}}
     {{- $dark_theme = $dark_theme | minify | fingerprint | resources.PostProcess -}}
