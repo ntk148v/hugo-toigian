@@ -231,18 +231,27 @@ figure {
   @apply italic p-1 font-medium;
 }
 
+.content a::before,
+a::after {
+  @apply text-muted inline-block no-underline;
+}
+
 .content a::before {
   content: "{";
-  @apply pr-1 text-muted inline-block no-underline;
+  @apply pr-1;
 }
 
 .content a::after {
-  content: " }";
-  @apply pl-1 text-muted inline-block no-underline;
+  content: "}";
+  @apply pl-1;
 }
 
 .content a:hover {
-  @apply no-underline;
+  @apply underline decoration-muted underline-offset-2;
+}
+
+.content a:visited {
+  @apply text-muted;
 }
 
 .content ul {
