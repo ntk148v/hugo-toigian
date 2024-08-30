@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  @apply bg-base text-text text-md antialiased selection:bg-subtle selection:text-surface;
+  @apply bg-base text-text text-md antialiased selection:bg-subtle selection:text-surface break-all;
 }
 
 /* ################################# */
@@ -152,7 +152,7 @@ pre > code {
 /* ################################# */
 @media screen and (min-width: 1080px) {
   #toc {
-    @apply fixed top-sidebar-top left-page-gutter z-40 w-1/5 h-3/4 overflow-auto px-page-gutter py-sidebar-top;
+    @apply fixed top-sidebar-top left-page-gutter z-40 w-1/4 h-3/4 overflow-auto px-page-gutter py-sidebar-top;
   }
 }
 
