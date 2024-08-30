@@ -232,68 +232,69 @@ figure {
   content: "]";
 }
 
-/* ##################### */
-/* #       Links       # */
-/* ##################### */
-.content a {
-  @apply italic p-1 font-medium;
-}
+.content {
+  /* ##################### */
+  /* #       Links       # */
+  /* ##################### */
+  & a {
+    @apply italic p-1 font-medium;
+  }
 
-.content a::before,
-a::after {
-  @apply text-muted inline-block no-underline;
-}
+  a::before,
+  a::after {
+    @apply text-muted inline-block no-underline;
+  }
 
-.content a::before {
-  content: "{";
-  @apply pr-1;
-}
+  a::before {
+    content: "{";
+    @apply pr-1;
+  }
 
-.content a::after {
-  content: "}";
-  @apply pl-1;
-}
+  a::after {
+    content: "}";
+    @apply pl-1;
+  }
 
-.content a:hover {
-  @apply underline decoration-muted underline-offset-2;
-}
+  a:hover {
+    @apply underline decoration-muted underline-offset-2;
+  }
 
-.content a:visited {
-  @apply text-muted;
-}
+  a:visited {
+    @apply text-muted;
+  }
 
-.content ul {
-  @apply list-disc ml-6;
-}
+  /* ##################### */
+  /*         Table         */
+  /* ##################### */
+  table {
+    @apply overflow-auto block my-4 min-w-full divide-y-2 text-sm;
+  }
 
-.content ol {
-  @apply list-decimal ml-6;
-}
+  table thead {
+    @apply ltr:text-left rtl:text-right;
+  }
+  table tbody {
+    @apply divide-y;
+  }
 
-/* ##################### */
-/*         Table         */
-/* ##################### */
-.content table {
-  @apply overflow-auto block my-4 min-w-full divide-y-2 text-sm;
-}
+  tr th {
+    @apply font-medium;
+  }
 
-.content table thead {
-  @apply ltr:text-left rtl:text-right;
-}
+  tr th,
+  tr td {
+    @apply px-4 py-2;
+  }
 
-.content table tbody {
-  @apply divide-y;
-}
+  img {
+    @apply my-4;
+  }
 
-.content tr th {
-  @apply font-medium;
-}
+  ul {
+    @apply list-disc ml-6;
+  }
 
-.content tr th,
-.content tr td {
-  @apply px-4 py-2;
-}
-
-.content img {
-  @apply my-4;
+  ol {
+    @apply list-decimal ml-6;
+  }
 }
