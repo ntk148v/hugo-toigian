@@ -1,18 +1,16 @@
 <div
   class="lowercase italic mx-auto flex w-full max-w-content items-center justify-between"
 >
-  <nav>
+  <nav class="mr-3">
     <ol class="flex text-md items-center">
       {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
     </ol>
   </nav>
-  <nav>
-    <ul class="flex text-md break-keep sm:space-x-6">
+  <nav class="ml-3">
+    <ul class="flex text-md whitespace-nowrap">
       {{ range $.Site.Menus.nav }}
-        <li class="text-text">
-          <a
-            href="{{ .URL | relURL }}"
-            class="tracking-wide hover:underline"
+        <li class="pl-2">
+          <a href="{{ .URL | relURL }}" class="tracking-wide hover:underline"
             >{{ .Name }}</a
           >
         </li>
@@ -27,9 +25,9 @@
   {{ else if not .p1.IsHome }}
     {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 ) }}
   {{ end }}
-  {{ $attr := "text-muted focus:underline focus:outline-none p-0.5 break-keep" }}
+  {{ $attr := "text-muted focus:underline focus:outline-none pr-1 whitespace-nowrap" }}
   {{ if eq .p1 .p2 }}
-    {{ $attr = "focus:underline focus:outline-none font-bold p-0.5 break-words" }}
+    {{ $attr = "focus:underline focus:outline-none font-bold pr-1 hidden md:block" }}
   {{ end }}
   <li>
     {{ $title := .p1.Title }}

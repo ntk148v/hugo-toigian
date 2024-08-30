@@ -31,7 +31,11 @@ html {
 }
 
 body {
-  @apply bg-base text-text text-md antialiased selection:bg-subtle selection:text-surface break-all;
+  @apply bg-base text-text text-md antialiased selection:bg-subtle selection:text-surface break-normal;
+}
+
+& a {
+  @apply break-all;
 }
 
 /* ################################# */
