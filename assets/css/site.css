@@ -160,6 +160,10 @@ pre > code {
   @apply font-bold;
 }
 
+#toc-list ol li {
+  @apply list-outside;
+}
+
 #toc-list ol {
   @apply pl-3 m-1 border-l-2 text-sm text-muted;
   counter-reset: tocitem;
