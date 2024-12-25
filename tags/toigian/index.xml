@@ -1,4 +1,92 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Toigian</title><link>https://ntk148v.github.io/hugo-toigian/tags/toigian/</link><description>Recent content on Toigian</description><generator>Hugo</generator><language>en-us</language><managingEditor>kiennt2609@gmail.com (Kien Nguyen-Tuan)</managingEditor><webMaster>kiennt2609@gmail.com (Kien Nguyen-Tuan)</webMaster><lastBuildDate>Fri, 28 Jul 2023 10:53:33 +0700</lastBuildDate><atom:link href="https://ntk148v.github.io/hugo-toigian/tags/toigian/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to Hugo Toigian</title><link>https://ntk148v.github.io/hugo-toigian/posts/welcome-to-hugo-toigian/</link><pubDate>Tue, 25 Oct 2022 18:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/welcome-to-hugo-toigian/</guid><description>Toigian - Tối giản (vietnamese): Minimalist (english)
-Disclaimer: I&amp;rsquo;m not a front-end developer, just a guy who like tweaking stuff, so my code may not be pretty/clean. I attempt to learn Tailwind CSS, and hugo-toigian is the result.
-0. Showcase Take a look at demo site.
-Dark Light 1. Features Minimalist (tối giản) design. Highly inspired by mellow.dev. Use the classy minimalist Rosé Pine color palette. Customizable. Support light/dark mode.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Toigian</title><link>https://ntk148v.github.io/hugo-toigian/tags/toigian/</link><description>Recent content on Toigian</description><generator>Hugo</generator><language>en-us</language><managingEditor>kiennt2609@gmail.com (Kien Nguyen-Tuan)</managingEditor><webMaster>kiennt2609@gmail.com (Kien Nguyen-Tuan)</webMaster><lastBuildDate>Fri, 28 Jul 2023 10:53:33 +0700</lastBuildDate><atom:link href="https://ntk148v.github.io/hugo-toigian/tags/toigian/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to Hugo Toigian</title><link>https://ntk148v.github.io/hugo-toigian/posts/welcome-to-hugo-toigian/</link><pubDate>Tue, 25 Oct 2022 18:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/welcome-to-hugo-toigian/</guid><description>&lt;blockquote class="my-5 p-4 rounded border-solid border-2 border-foam">
+ &lt;p>&lt;code>Toigian&lt;/code> - &lt;code>Tối giản&lt;/code> (vietnamese): Minimalist (english)&lt;/p>
+&lt;p>&lt;strong>Disclaimer&lt;/strong>: I&amp;rsquo;m not a front-end developer, just a guy who like tweaking stuff, so my code may not be pretty/clean. I attempt to learn &lt;a href="https://tailwindcss.com/">Tailwind CSS&lt;/a>, and hugo-toigian is the result.&lt;/p>
+
+&lt;/blockquote>
+
+&lt;h2 id="0-showcase">0. Showcase&lt;/h2>
+&lt;p>Take a look at &lt;a href="https://ntk148v.github.io/hugo-toigian">demo site&lt;/a>.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Dark&lt;/th>
+ &lt;th>Light&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;figure class="figure">&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-home.png">
+&lt;/figure>
+&lt;/td>
+ &lt;td>&lt;figure class="figure">&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-home.png">
+&lt;/figure>
+&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;figure class="figure">&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-list.png">
+&lt;/figure>
+&lt;/td>
+ &lt;td>&lt;figure class="figure">&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-list.png">
+&lt;/figure>
+&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;figure class="figure">&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-post.png">
+&lt;/figure>
+&lt;/td>
+ &lt;td>&lt;figure class="figure">&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-post.png">
+&lt;/figure>
+&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="1-features">1. Features&lt;/h2>
+&lt;ul>
+&lt;li>Minimalist (&lt;code>tối giản&lt;/code>) design. Highly inspired by &lt;a href="https://mellow.dev/">mellow.dev&lt;/a>.&lt;/li>
+&lt;li>Use the classy minimalist &lt;a href="https://github.com/rose-pine/palette">Rosé Pine&lt;/a> color palette.&lt;/li>
+&lt;li>Customizable.&lt;/li>
+&lt;li>Support light/dark mode.&lt;/li>
+&lt;li>Useful shortcodes.&lt;/li>
+&lt;li>Comments support.&lt;/li>
+&lt;li>Syntax highlighting: use server-side solution (Chroma, hugo built-in), I&amp;rsquo;ve added &lt;a href="https://github.com/alecthomas/chroma/pull/689">Rosé Pine styles to Chroma&lt;/a>, so everything is the same vibe.&lt;/li>
+&lt;/ul>
+&lt;h2 id="2-prerequisites">2. Prerequisites&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>git&lt;/code>, &lt;code>npm&lt;/code> installed.&lt;/li>
+&lt;li>A minimum Hugo &amp;ldquo;extended&amp;rdquo; version of v0.93.0 and above.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">snap install hugo --channel&lt;span class="o">=&lt;/span>extended
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Hugo Pipe’s PostCSS requires the &lt;code>postcss-cli&lt;/code> JavaScript package to be installed in the environment (&lt;code>npm install -g postcss postcss-cli&lt;/code>) along with any PostCSS plugin(s) used (e.g., &lt;code>npm install -g autoprefixer&lt;/code>). If you are using the Hugo Snap package, PostCSS and plugin(s) need to be installed locally within your Hugo site directory, e.g., &lt;code>npm install postcss-cli&lt;/code> without the -g flag.&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-installation">3. Installation&lt;/h2>
+&lt;ul>
+&lt;li>Go to root directory of your Hugo website, or create a new site with:&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo new site hugo-example-site
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> hugo-example-site
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git init
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Add the theme.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">git submodule add https://github.com/ntk148v/hugo-toigian.git themes/hugo-toigian
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Install Nodejs modules.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> themes/hugo-toigian
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">npm install
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Finally, update theme in your configuration &lt;code>config.toml&lt;/code> file in the root directory of your Hugo website.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">theme&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;hugo-toigian&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Run server to see a live preview of it.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo server -DF --disableFastRender
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Build static pages&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo --environment production --minify
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="3-configuration">3. Configuration&lt;/h2>
+&lt;h3 id="31-site-configuration">3.1. Site configuration&lt;/h3>
+&lt;p>There are a few configuration options that you can add to &lt;a href="./exampleSite/config.toml">config.toml&lt;/a> file.&lt;/p></description></item></channel></rss>
