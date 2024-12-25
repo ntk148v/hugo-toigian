@@ -3,19 +3,19 @@
   <div class="content">{{ .Content | emojify }}</div>
   {{ range .Pages.GroupByDate "2006" }}
     <div class="content">
-      <div
-        class="text-2xl font-bold my-4 border-b border-dashed"
-      >
+      <div class="text-2xl font-bold my-4 border-b border-dashed">
         {{ .Key }}
       </div>
       <div class="flex-grow">
-        {{ range (where .Pages.ByLastmod.Reverse "Section" "!=" "")  }}
+        {{ range (where .Pages.ByLastmod.Reverse "Section" "!=" "") }}
           <div class="grid grid-cols-3 gap-4 my-2">
             <a href="{{ .RelPermalink }}" class="col-span-2">{{ .Title }}</a>
-            <div class="flex justify-end">{{- partial "date" .Date -}}</div>
+            <div class="flex justify-end font-mono">
+              {{- partial "date" .Date -}}
+            </div>
           </div>
         {{ end }}
-        </div>
+      </div>
     </div>
   {{ end }}
 {{ end }}

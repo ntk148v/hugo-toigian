@@ -1,6 +1,6 @@
 :root {
-  --font-sans: "Overpass";
-  --font-mono: "Overpass Mono";
+  --font-sans: "Roboto";
+  --font-mono: "Roboto Mono";
   --page-top: 64px;
   --page-gutter: 24px;
   --header-height: 48px;
