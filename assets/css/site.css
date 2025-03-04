@@ -1,6 +1,7 @@
 :root {
-  --font-sans: "Roboto";
-  --font-mono: "Roboto Mono";
+  --font-sans: "'sans-serif'";
+  --font-mono: "'monospace'";
+  --font-serif: "'serif'";
   --page-top: 64px;
   --page-gutter: 24px;
   --header-height: 48px;
