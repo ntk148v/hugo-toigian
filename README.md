@@ -15,6 +15,7 @@
  </p><br>
 </div>
 
+> [!Important]
 > `Toigian` - `Tối giản` (vietnamese): Minimalist (english)
 >
 > **Disclaimer**: I'm not a front-end developer, just a guy who like tweaking stuff, so my code may not be pretty/clean. I attempt to learn [Tailwind CSS](https://tailwindcss.com/), and hugo-toigian is the result.
