@@ -10,7 +10,7 @@
         {{ range (where .Pages.ByLastmod.Reverse "Section" "!=" "") }}
           <div class="grid grid-cols-3 gap-4 my-2">
             <a href="{{ .RelPermalink }}" class="col-span-2">{{ .Title }}</a>
-            <div class="flex justify-end font-mono">
+            <div class="flex justify-end">
               {{- partial "date" .Date -}}
             </div>
           </div>

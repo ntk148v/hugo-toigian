@@ -1,3 +1,5 @@
-<time class="text-sm italic tabular-nums text-muted"
+<time
+  datetime="{{ . | time.Format "2006/01/02" }}"
+  class="mr-1 text-sm italic tabular-nums text-muted"
   >{{ . | time.Format "2006/01/02" }}&nbsp;</time
 >
