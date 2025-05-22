@@ -1,4 +1,4 @@
-@import "assets/css/chroma/rose-pine-dawn.css";
+@import "assets/css/chroma/rose-pine.css";
 
 :root.dark {
   --base: var(--rp-main-base);
