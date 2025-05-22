@@ -11,7 +11,7 @@ tags: ["hugo", "tech", "toigian"]
 **Disclaimer**: I'm not a front-end developer, just a guy who like tweaking stuff, so my code may not be pretty/clean. I attempt to learn [Tailwind CSS](https://tailwindcss.com/), and hugo-toigian is the result.
 {{< /quote >}}
 
-## 0. Showcase
+## Showcase
 
 Take a look at [demo site](https://ntk148v.github.io/hugo-toigian).
 
@@ -21,7 +21,7 @@ Take a look at [demo site](https://ntk148v.github.io/hugo-toigian).
 | {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-list.png" class="figure" >}} | {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-list.png" class="figure" >}} |
 | {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-post.png" class="figure" >}} | {{< figure src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-post.png" class="figure" >}} |
 
-## 1. Features
+## Features
 
 - Minimalist (`tối giản`) design. Highly inspired by [mellow.dev](https://mellow.dev/).
 - Use the classy minimalist [Rosé Pine](https://github.com/rose-pine/palette) color palette.
@@ -31,7 +31,7 @@ Take a look at [demo site](https://ntk148v.github.io/hugo-toigian).
 - Comments support.
 - Syntax highlighting: use server-side solution (Chroma, hugo built-in), I've added [Rosé Pine styles to Chroma](https://github.com/alecthomas/chroma/pull/689), so everything is the same vibe.
 
-## 2. Prerequisites
+## Prerequisites
 
 - `git`, `npm` installed.
 - A minimum Hugo "extended" version of v0.93.0 and above.
@@ -42,7 +42,7 @@ snap install hugo --channel=extended
 
 - Hugo Pipe’s PostCSS requires the `postcss-cli` JavaScript package to be installed in the environment (`npm install -g postcss postcss-cli`) along with any PostCSS plugin(s) used (e.g., `npm install -g autoprefixer`). If you are using the Hugo Snap package, PostCSS and plugin(s) need to be installed locally within your Hugo site directory, e.g., `npm install postcss-cli` without the -g flag.
 
-## 3. Installation
+## Installation
 
 - Go to root directory of your Hugo website, or create a new site with:
 
@@ -83,9 +83,9 @@ hugo server -DF --disableFastRender
 hugo --environment production --minify
 ```
 
-## 3. Configuration
+## Configuration
 
-### 3.1. Site configuration
+### Site configuration
 
 There are a few configuration options that you can add to [config.toml](./exampleSite/config.toml) file.
 
@@ -144,7 +144,7 @@ email = "kiennt2609@gmail.com"
   weight = 3
 ```
 
-### 3.2. Page configuration
+### Page configuration
 
 You can specify additional params in the front matter of individual pages.
 
@@ -158,11 +158,11 @@ tags = []
 comment = true
 ```
 
-## 4. Shortcodes
+## Shortcodes
 
 Check out [shortcodes](https://ntk148v.github.io/hugo-toigian/posts/shortcodes).
 
-## 5. Customization
+## Customization
 
 - Partials: There are layout partials available for you to easily override components of the theme in `layouts/partials/`.
 
@@ -203,7 +203,7 @@ Check out [shortcodes](https://ntk148v.github.io/hugo-toigian/posts/shortcodes).
   }
   ```
 
-## 6. Contributing
+## Contributing
 
 As you already known, I'm not front-end developer. Therefore, if you find anything wrong or want to make improvement, don't hesitate to open an issue/pull request.
 
@@ -214,7 +214,7 @@ Primary goals are:
 
 Feel free to open issues if you find missing configuration or customization options.
 
-## 7. Credits
+## Credits
 
 - [hugo-book](https://github.com/alex-shpak/hugo-book)
 - [dirkolbrich/hugo-tailwindcss-starter-theme](https://github.com/dirkolbrich/hugo-tailwindcss-starter-theme)
