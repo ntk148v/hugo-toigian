@@ -1,7 +1,7 @@
 :root {
-  --font-sans: "'sans-serif'";
-  --font-mono: "'monospace'";
-  --font-serif: "'serif'";
+  --font-sans: sans-serif;
+  --font-mono: monospace, monospace;
+  --font-serif: serif;
   --page-top: 64px;
   --page-gutter: 24px;
   --header-height: 48px;
