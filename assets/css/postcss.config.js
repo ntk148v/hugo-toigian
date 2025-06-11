@@ -1,10 +1,10 @@
 const themeDir = __dirname + "/../../";
 
 module.exports = {
-  plugins: {
-    "postcss-import": { path: [themeDir] },
-    "tailwindcss/nesting": {},
-    tailwindcss: { config: themeDir + "assets/css/tailwind.config.js" },
-    autoprefixer: { path: [themeDir] },
-  },
+  plugins: [
+    require("postcss-import")({ path: [themeDir] }),
+    require("tailwindcss/nesting"),
+    require("tailwindcss")(themeDir + "assets/css/tailwind.config.js"),
+    require("autoprefixer")({ path: [themeDir] }),
+  ],
 };
