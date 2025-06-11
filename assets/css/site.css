@@ -136,7 +136,7 @@ section h6 {
 /* Code block */
 code {
   /* Inline code style */
-  @apply rounded-lg p-1 bg-muted text-base font-mono text-sm drop-shadow-lg border border-muted;
+  @apply rounded-lg px-1 bg-muted font-mono text-sm drop-shadow-lg border border-muted;
 }
 
 code > pre {
@@ -144,7 +144,7 @@ code > pre {
 }
 
 pre {
-  @apply overflow-auto p-4 my-5 rounded-lg drop-shadow-lg border border-muted;
+  @apply overflow-auto p-3 my-4 rounded-lg drop-shadow-lg border border-muted;
 }
 
 pre > code {
@@ -258,10 +258,6 @@ figure {
 
   a:hover {
     @apply underline decoration-muted underline-offset-2;
-  }
-
-  a:visited {
-    @apply text-muted;
   }
 
   /* ##################### */
