@@ -139,11 +139,11 @@ section h6 {
 /* Code block */
 code {
   /* Inline code style */
-  @apply rounded px-2 py-1 bg-text font-mono text-base shadow-sm;
+  @apply rounded px-2 py-1 bg-text font-mono text-base text-md shadow-sm;
 }
 
 code > pre {
-  @apply font-mono;
+  @apply font-mono text-md;
 }
 
 pre {
@@ -152,7 +152,7 @@ pre {
 
 pre > code {
   /* Disable inline code style */
-  @apply rounded-none p-0 bg-transparent font-mono border-0 shadow-none;
+  @apply rounded-none p-0 bg-transparent font-mono text-md border-0 shadow-none;
 }
 
 /* ################################# */
