@@ -83,17 +83,21 @@ h6 {
 /* nested counters */
 h2::before {
   @apply text-muted mr-2 -ml-3;
-  content: counter(h2);
+  content: counter(h2) ". ";
 }
 
 h3::before {
   @apply text-muted mr-2 -ml-3;
-  content: counter(h2) "." counter(h3);
+  content: counter(h2) "." counter(h3) ". ";
 }
 
 h4::before {
   @apply text-muted mr-2 -ml-3;
-  content: counter(h2) "." counter(h3) "." counter(h4);
+  content: counter(h2) "." counter(h3) "." counter(h4) ". ";
+}
+
+h5::before {
+  content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
 }
 
 [id] {
@@ -192,7 +196,7 @@ pre > code {
 
 #toc-list li > a::before {
   @apply mr-2 -ml-3 font-semibold;
-  content: counters(tocitem, ".");
+  content: counters(tocitem, ".") ".";
 }
 
 #toc-list li > a {
