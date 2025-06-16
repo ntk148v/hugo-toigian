@@ -4,12 +4,19 @@
 name = "toigian"
 license = "Apache 2"
 licenselink = "https://github.com/ntk148v/hugo-toigian/blob/master/LICENSE"
-description = ""
-homepage = ""
-tags = ["minimal"]
-features = []
-min_version = "0.93.0"
+description = "A minimal Hugo theme with Tailwind CSS that covers all of the essentials. All you have to do is start typing!"
+# The home page of the theme, where the source can be found.
+homepage = "https://github.com/ntk148v/hugo-toigian"
+# If you have a running demo of the theme.
+demosite = "https://ntk148v.github.io/hugo-toigian"
+tags = ["minimalist", "blog", "simple", "clean"]
+features = ["responsive", "darkmode"]
 
 [author]
   name = "Kien Nguyen-Tuan"
   homepage = "https://github.com/ntk148v"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.93.0"
