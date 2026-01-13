@@ -1,190 +1,190 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Toigian</title><link>https://ntk148v.github.io/hugo-toigian/tags/hugo/</link><description>Recent content in Hugo on Toigian</description><generator>Hugo</generator><language>en-us</language><managingEditor>kiennt2609@gmail.com (Kien Nguyen-Tuan)</managingEditor><webMaster>kiennt2609@gmail.com (Kien Nguyen-Tuan)</webMaster><lastBuildDate>Thu, 22 May 2025 09:51:57 +0700</lastBuildDate><atom:link href="https://ntk148v.github.io/hugo-toigian/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started with Hugo</title><link>https://ntk148v.github.io/hugo-toigian/posts/hugoisforlovers/</link><pubDate>Wed, 26 Oct 2022 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/hugoisforlovers/</guid><description>&lt;h1 id="step-1-install-hugo">Step 1. Install Hugo&lt;/h1>
-&lt;p>Go to &lt;a href="https://github.com/spf13/hugo/releases">Hugo releases&lt;/a> and download the
-appropriate version for your OS and architecture.&lt;/p>
-&lt;p>Save it somewhere specific as we will be using it in the next step.&lt;/p>
-&lt;p>More complete instructions are available at &lt;a href="https://gohugo.io/getting-started/installing/">Install Hugo&lt;/a>&lt;/p>
-&lt;h2 id="step-2-build-the-docs">Step 2. Build the Docs&lt;/h2>
-&lt;p>Hugo has its own example site which happens to also be the documentation site
-you are reading right now.&lt;/p>
-&lt;p>Follow the following steps:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">1. Clone the [Hugo repository](http://github.com/spf13/hugo)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2. Go into the repo
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">3. Run hugo in server mode and build the docs
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">4. Open your browser to http://localhost:1313
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Corresponding pseudo commands:&lt;/p></description></item><item><title>Welcome to Hugo Toigian</title><link>https://ntk148v.github.io/hugo-toigian/posts/welcome-to-hugo-toigian/</link><pubDate>Tue, 25 Oct 2022 18:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/welcome-to-hugo-toigian/</guid><description>&lt;blockquote class="my-5 p-4 rounded border-solid border-2 border-foam">
- &lt;p>&lt;code>Toigian&lt;/code> - &lt;code>Tối giản&lt;/code> (vietnamese): Minimalist (english)&lt;/p>
-&lt;p>&lt;strong>Disclaimer&lt;/strong>: I&amp;rsquo;m not a front-end developer, just a guy who like tweaking stuff, so my code may not be pretty/clean. I attempt to learn &lt;a href="https://tailwindcss.com/">Tailwind CSS&lt;/a>, and hugo-toigian is the result.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Toigian</title><link>https://ntk148v.github.io/hugo-toigian/tags/hugo/</link><description>Recent content in Hugo on Toigian</description><generator>Hugo</generator><language>en-us</language><managingEditor>kiennt2609@gmail.com (Kien Nguyen-Tuan)</managingEditor><webMaster>kiennt2609@gmail.com (Kien Nguyen-Tuan)</webMaster><lastBuildDate>Tue, 13 Jan 2026 13:17:35 +0700</lastBuildDate><atom:link href="https://ntk148v.github.io/hugo-toigian/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started with Hugo</title><link>https://ntk148v.github.io/hugo-toigian/posts/hugoisforlovers/</link><pubDate>Wed, 26 Oct 2022 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/hugoisforlovers/</guid><description>&lt;h1 id="step-1-install-hugo"&gt;Step 1. Install Hugo&lt;/h1&gt;
+&lt;p&gt;Go to &lt;a href="https://github.com/spf13/hugo/releases"&gt;Hugo releases&lt;/a&gt; and download the
+appropriate version for your OS and architecture.&lt;/p&gt;
+&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
+&lt;p&gt;More complete instructions are available at &lt;a href="https://gohugo.io/getting-started/installing/"&gt;Install Hugo&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="step-2-build-the-docs"&gt;Step 2. Build the Docs&lt;/h2&gt;
+&lt;p&gt;Hugo has its own example site which happens to also be the documentation site
+you are reading right now.&lt;/p&gt;
+&lt;p&gt;Follow the following steps:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;1. Clone the [Hugo repository](http://github.com/spf13/hugo)
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2. Go into the repo
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;3. Run hugo in server mode and build the docs
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;4. Open your browser to http://localhost:1313
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Corresponding pseudo commands:&lt;/p&gt;</description></item><item><title>Welcome to Hugo Toigian</title><link>https://ntk148v.github.io/hugo-toigian/posts/welcome-to-hugo-toigian/</link><pubDate>Tue, 25 Oct 2022 18:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/welcome-to-hugo-toigian/</guid><description>&lt;blockquote class="my-5 p-4 rounded border-solid border-2 border-foam"&gt;
+ &lt;p&gt;&lt;code&gt;Toigian&lt;/code&gt; - &lt;code&gt;Tối giản&lt;/code&gt; (vietnamese): Minimalist (english)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;: I&amp;rsquo;m not a front-end developer, just a guy who like tweaking stuff, so my code may not be pretty/clean. I attempt to learn &lt;a href="https://tailwindcss.com/"&gt;Tailwind CSS&lt;/a&gt;, and hugo-toigian is the result.&lt;/p&gt;
 
-&lt;/blockquote>
+&lt;/blockquote&gt;
 
-&lt;h2 id="showcase">Showcase&lt;/h2>
-&lt;p>Take a look at &lt;a href="https://ntk148v.github.io/hugo-toigian">demo site&lt;/a>.&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Dark&lt;/th>
- &lt;th>Light&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>&lt;figure class="figure">&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-home.png">
-&lt;/figure>
-&lt;/td>
- &lt;td>&lt;figure class="figure">&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-home.png">
-&lt;/figure>
-&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;figure class="figure">&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-list.png">
-&lt;/figure>
-&lt;/td>
- &lt;td>&lt;figure class="figure">&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-list.png">
-&lt;/figure>
-&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;figure class="figure">&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-post.png">
-&lt;/figure>
-&lt;/td>
- &lt;td>&lt;figure class="figure">&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-post.png">
-&lt;/figure>
-&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h2 id="features">Features&lt;/h2>
-&lt;ul>
-&lt;li>Minimalist (&lt;code>tối giản&lt;/code>) design. Highly inspired by &lt;a href="https://mellow.dev/">mellow.dev&lt;/a>.&lt;/li>
-&lt;li>Use the classy minimalist &lt;a href="https://github.com/rose-pine/palette">Rosé Pine&lt;/a> color palette.&lt;/li>
-&lt;li>Customizable.&lt;/li>
-&lt;li>Support light/dark mode.&lt;/li>
-&lt;li>Useful shortcodes.&lt;/li>
-&lt;li>Comments support.&lt;/li>
-&lt;li>Syntax highlighting: use server-side solution (Chroma, hugo built-in), I&amp;rsquo;ve added &lt;a href="https://github.com/alecthomas/chroma/pull/689">Rosé Pine styles to Chroma&lt;/a>, so everything is the same vibe.&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;ul>
-&lt;li>&lt;code>git&lt;/code>, &lt;code>npm&lt;/code> installed.&lt;/li>
-&lt;li>A minimum Hugo &amp;ldquo;extended&amp;rdquo; version of v0.93.0 and above.&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">snap install hugo --channel&lt;span class="o">=&lt;/span>extended
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>Hugo Pipe’s PostCSS requires the &lt;code>postcss-cli&lt;/code> JavaScript package to be installed in the environment (&lt;code>npm install -g postcss postcss-cli&lt;/code>) along with any PostCSS plugin(s) used (e.g., &lt;code>npm install -g autoprefixer&lt;/code>). If you are using the Hugo Snap package, PostCSS and plugin(s) need to be installed locally within your Hugo site directory, e.g., &lt;code>npm install postcss-cli&lt;/code> without the -g flag.&lt;/li>
-&lt;/ul>
-&lt;h2 id="installation">Installation&lt;/h2>
-&lt;ul>
-&lt;li>Go to root directory of your Hugo website, or create a new site with:&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo new site hugo-example-site
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> hugo-example-site
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git init
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>Add the theme.&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">git submodule add https://github.com/ntk148v/hugo-toigian.git themes/hugo-toigian
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>Install Nodejs modules.&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> themes/hugo-toigian
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">npm install
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>Finally, update theme in your configuration &lt;code>config.toml&lt;/code> file in the root directory of your Hugo website.&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">theme&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;hugo-toigian&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>Run server to see a live preview of it.&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo server -DF --disableFastRender
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>Build static pages&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo --environment production --minify
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="configuration">Configuration&lt;/h2>
-&lt;h3 id="site-configuration">Site configuration&lt;/h3>
-&lt;p>There are a few configuration options that you can add to &lt;a href="./exampleSite/config.toml">config.toml&lt;/a> file.&lt;/p></description></item><item><title>Hugo Diagrams</title><link>https://ntk148v.github.io/hugo-toigian/posts/diagrams/</link><pubDate>Tue, 25 Oct 2022 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/diagrams/</guid><description>&lt;p>Hugo version &amp;gt;= 0.93.0&lt;/p>
-&lt;h2 id="goat-diagrams-ascii">GoAT Diagrams (Ascii)&lt;/h2>
-&lt;p>Hugo! supports &lt;a href="https://github.com/bep/goat">GoAT&lt;/a> natively. This means that this code block:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">```goat
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> . . . .--- 1 .-- 1 / 1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> / \ | | .---+ .-+ +
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> / \ .---+---. .--+--. | &amp;#39;--- 2 | &amp;#39;-- 2 / \ 2
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + + | | | | ---+ ---+ +
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> / \ / \ .-+-. .-+-. .+. .+. | .--- 3 | .-- 3 \ / 3
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> / \ / \ | | | | | | | | &amp;#39;---+ &amp;#39;-+ +
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1 2 3 4 1 2 3 4 1 2 3 4 &amp;#39;--- 4 &amp;#39;-- 4 \ 4
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">```
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Will be rendered as:&lt;/p></description></item><item><title>Hugo Shortcodes</title><link>https://ntk148v.github.io/hugo-toigian/posts/shortcodes/</link><pubDate>Fri, 21 Oct 2022 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/shortcodes/</guid><description>&lt;h2 id="details">Details&lt;/h2>
-&lt;p>Details shortcode is a helper for &lt;code>details&lt;/code> html5 element. It is going to replace &lt;code>expand&lt;/code> shortcode.&lt;/p>
-&lt;h3 id="example">Example&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-tpl" data-lang="tpl">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">{{&lt;/span>&lt;span class="o">&amp;lt;&lt;/span> &lt;span class="na">details&lt;/span> &lt;span class="s2">&amp;#34;Title&amp;#34;&lt;/span> &lt;span class="o">[&lt;/span>&lt;span class="na">open&lt;/span>&lt;span class="o">]&lt;/span> &lt;span class="o">&amp;gt;&lt;/span>&lt;span class="cp">}}&lt;/span>&lt;span class="x">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="x">## Markdown content
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="x">Lorem markdownum insigne...
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="x">&lt;/span>&lt;span class="cp">{{&lt;/span>&lt;span class="o">&amp;lt;&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="na">details&lt;/span> &lt;span class="o">&amp;gt;&lt;/span>&lt;span class="cp">}}&lt;/span>&lt;span class="x">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-tpl" data-lang="tpl">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">{{&lt;/span>&lt;span class="o">&amp;lt;&lt;/span> &lt;span class="na">details&lt;/span> &lt;span class="na">title&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;Title&amp;#34;&lt;/span> &lt;span class="na">open&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">true&lt;/span> &lt;span class="o">&amp;gt;&lt;/span>&lt;span class="cp">}}&lt;/span>&lt;span class="x">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="x">## Markdown content
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="x">Lorem markdownum insigne...
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="x">&lt;/span>&lt;span class="cp">{{&lt;/span>&lt;span class="o">&amp;lt;&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="na">details&lt;/span> &lt;span class="o">&amp;gt;&lt;/span>&lt;span class="cp">}}&lt;/span>&lt;span class="x">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;details >&lt;summary>Title&lt;/summary>
- &lt;div>
- &lt;h2 id="markdown-content">Markdown content&lt;/h2>
-&lt;p>Lorem markdownum insigne&amp;hellip;&lt;/p>
- &lt;/div>
-&lt;/details>
+&lt;h2 id="showcase"&gt;Showcase&lt;/h2&gt;
+&lt;p&gt;Take a look at &lt;a href="https://ntk148v.github.io/hugo-toigian"&gt;demo site&lt;/a&gt;.&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Dark&lt;/th&gt;
+ &lt;th&gt;Light&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;figure class="figure"&gt;&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-home.png"&gt;
+&lt;/figure&gt;
+&lt;/td&gt;
+ &lt;td&gt;&lt;figure class="figure"&gt;&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-home.png"&gt;
+&lt;/figure&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;figure class="figure"&gt;&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-list.png"&gt;
+&lt;/figure&gt;
+&lt;/td&gt;
+ &lt;td&gt;&lt;figure class="figure"&gt;&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-list.png"&gt;
+&lt;/figure&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;figure class="figure"&gt;&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/dark-post.png"&gt;
+&lt;/figure&gt;
+&lt;/td&gt;
+ &lt;td&gt;&lt;figure class="figure"&gt;&lt;img src="https://raw.githubusercontent.com/ntk148v/hugo-toigian/master/images/light-post.png"&gt;
+&lt;/figure&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="features"&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Minimalist (&lt;code&gt;tối giản&lt;/code&gt;) design. Highly inspired by &lt;a href="https://mellow.dev/"&gt;mellow.dev&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Use the classy minimalist &lt;a href="https://github.com/rose-pine/palette"&gt;Rosé Pine&lt;/a&gt; color palette.&lt;/li&gt;
+&lt;li&gt;Customizable.&lt;/li&gt;
+&lt;li&gt;Support light/dark mode.&lt;/li&gt;
+&lt;li&gt;Useful shortcodes.&lt;/li&gt;
+&lt;li&gt;Comments support.&lt;/li&gt;
+&lt;li&gt;Syntax highlighting: use server-side solution (Chroma, hugo built-in), I&amp;rsquo;ve added &lt;a href="https://github.com/alecthomas/chroma/pull/689"&gt;Rosé Pine styles to Chroma&lt;/a&gt;, so everything is the same vibe.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git&lt;/code&gt;, &lt;code&gt;npm&lt;/code&gt; installed.&lt;/li&gt;
+&lt;li&gt;A minimum Hugo &amp;ldquo;extended&amp;rdquo; version of v0.93.0 and above.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;snap install hugo --channel&lt;span class="o"&gt;=&lt;/span&gt;extended
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Hugo Pipe’s PostCSS requires the &lt;code&gt;postcss-cli&lt;/code&gt; JavaScript package to be installed in the environment (&lt;code&gt;npm install -g postcss postcss-cli&lt;/code&gt;) along with any PostCSS plugin(s) used (e.g., &lt;code&gt;npm install -g autoprefixer&lt;/code&gt;). If you are using the Hugo Snap package, PostCSS and plugin(s) need to be installed locally within your Hugo site directory, e.g., &lt;code&gt;npm install postcss-cli&lt;/code&gt; without the -g flag.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="installation"&gt;Installation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to root directory of your Hugo website, or create a new site with:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo new site hugo-example-site
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; hugo-example-site
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Add the theme.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git submodule add https://github.com/ntk148v/hugo-toigian.git themes/hugo-toigian
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Install Nodejs modules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; themes/hugo-toigian
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;npm install
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Finally, update theme in your configuration &lt;code&gt;config.toml&lt;/code&gt; file in the root directory of your Hugo website.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-toml" data-lang="toml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;theme&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;hugo-toigian&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Run server to see a live preview of it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo server -DF --disableFastRender
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Build static pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo --environment production --minify
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="configuration"&gt;Configuration&lt;/h2&gt;
+&lt;h3 id="site-configuration"&gt;Site configuration&lt;/h3&gt;
+&lt;p&gt;There are a few configuration options that you can add to &lt;a href="./exampleSite/config.toml"&gt;config.toml&lt;/a&gt; file.&lt;/p&gt;</description></item><item><title>Hugo Diagrams</title><link>https://ntk148v.github.io/hugo-toigian/posts/diagrams/</link><pubDate>Tue, 25 Oct 2022 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/diagrams/</guid><description>&lt;p&gt;Hugo version &amp;gt;= 0.93.0&lt;/p&gt;
+&lt;h2 id="goat-diagrams-ascii"&gt;GoAT Diagrams (Ascii)&lt;/h2&gt;
+&lt;p&gt;Hugo! supports &lt;a href="https://github.com/bep/goat"&gt;GoAT&lt;/a&gt; natively. This means that this code block:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;```goat
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; . . . .--- 1 .-- 1 / 1
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; / \ | | .---+ .-+ +
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; / \ .---+---. .--+--. | &amp;#39;--- 2 | &amp;#39;-- 2 / \ 2
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; + + | | | | ---+ ---+ +
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; / \ / \ .-+-. .-+-. .+. .+. | .--- 3 | .-- 3 \ / 3
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; / \ / \ | | | | | | | | &amp;#39;---+ &amp;#39;-+ +
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; 1 2 3 4 1 2 3 4 1 2 3 4 &amp;#39;--- 4 &amp;#39;-- 4 \ 4
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;```
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Will be rendered as:&lt;/p&gt;</description></item><item><title>Hugo Shortcodes</title><link>https://ntk148v.github.io/hugo-toigian/posts/shortcodes/</link><pubDate>Fri, 21 Oct 2022 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/shortcodes/</guid><description>&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;Details shortcode is a helper for &lt;code&gt;details&lt;/code&gt; html5 element. It is going to replace &lt;code&gt;expand&lt;/code&gt; shortcode.&lt;/p&gt;
+&lt;h3 id="example"&gt;Example&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-tpl" data-lang="tpl"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="na"&gt;details&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Title&amp;#34;&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="na"&gt;open&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="x"&gt;## Markdown content
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="x"&gt;Lorem markdownum insigne...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="na"&gt;details&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-tpl" data-lang="tpl"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="na"&gt;details&lt;/span&gt; &lt;span class="na"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Title&amp;#34;&lt;/span&gt; &lt;span class="na"&gt;open&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="x"&gt;## Markdown content
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="x"&gt;Lorem markdownum insigne...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="na"&gt;details&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;details &gt;&lt;summary&gt;Title&lt;/summary&gt;
+ &lt;div&gt;
+ &lt;h2 id="markdown-content"&gt;Markdown content&lt;/h2&gt;
+&lt;p&gt;Lorem markdownum insigne&amp;hellip;&lt;/p&gt;
+ &lt;/div&gt;
+&lt;/details&gt;
 
-&lt;h2 id="quote">Quote&lt;/h2>
-&lt;p>Quote shortcode can be used with 3 colors: &lt;code>info&lt;/code>, &lt;code>warn&lt;/code> and &lt;code>critical&lt;/code>.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-tpl" data-lang="tpl">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">{{&lt;/span>&lt;span class="o">&amp;lt;&lt;/span> &lt;span class="na">quote&lt;/span> &lt;span class="o">[&lt;/span>&lt;span class="na">info&lt;/span>&lt;span class="o">|&lt;/span>&lt;span class="na">warn&lt;/span>&lt;span class="o">|&lt;/span>&lt;span class="na">critical&lt;/span>&lt;span class="o">]&lt;/span> &lt;span class="o">&amp;gt;&lt;/span>&lt;span class="cp">}}&lt;/span>&lt;span class="x">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="x">**Markdown content**
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="x">Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="x">stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="x">&lt;/span>&lt;span class="cp">{{&lt;/span>&lt;span class="o">&amp;lt;&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="na">quote&lt;/span> &lt;span class="o">&amp;gt;&lt;/span>&lt;span class="cp">}}&lt;/span>&lt;span class="x">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="example-1">Example&lt;/h3>
+&lt;h2 id="quote"&gt;Quote&lt;/h2&gt;
+&lt;p&gt;Quote shortcode can be used with 3 colors: &lt;code&gt;info&lt;/code&gt;, &lt;code&gt;warn&lt;/code&gt; and &lt;code&gt;critical&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-tpl" data-lang="tpl"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="na"&gt;quote&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="na"&gt;info&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="na"&gt;warn&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="na"&gt;critical&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="x"&gt;**Markdown content**
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="x"&gt;Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="x"&gt;stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="na"&gt;quote&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="example-1"&gt;Example&lt;/h3&gt;
  
 
  
 
-&lt;blockquote class="my-5 p-4 rounded border-solid border-2 border-foam">
- &lt;strong>Markdown content&lt;/strong>
+&lt;blockquote class="my-5 p-4 rounded border-solid border-2 border-foam"&gt;
+ &lt;strong&gt;Markdown content&lt;/strong&gt;
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-&lt;/blockquote>
+&lt;/blockquote&gt;
 
  
 
  
 
-&lt;blockquote class="my-5 p-4 rounded border-solid border-2 border-gold">
- &lt;strong>Markdown content&lt;/strong>
+&lt;blockquote class="my-5 p-4 rounded border-solid border-2 border-gold"&gt;
+ &lt;strong&gt;Markdown content&lt;/strong&gt;
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-&lt;/blockquote>
+&lt;/blockquote&gt;
 
  
 
  
 
-&lt;blockquote class="my-5 p-4 rounded border-solid border-2 border-love">
- &lt;strong>Markdown content&lt;/strong>
+&lt;blockquote class="my-5 p-4 rounded border-solid border-2 border-love"&gt;
+ &lt;strong&gt;Markdown content&lt;/strong&gt;
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-&lt;/blockquote>
+&lt;/blockquote&gt;
 
-&lt;h2 id="mermaid">Mermaid&lt;/h2>
-&lt;p>&lt;a href="https://mermaidjs.github.io/">Mermaid&lt;/a> is a library helping you to generate diagram and flowcharts from text, in a similar manner as Markdown.&lt;/p></description></item><item><title>Introduce Hugo</title><link>https://ntk148v.github.io/hugo-toigian/posts/introduce-hugo/</link><pubDate>Thu, 20 Oct 2022 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/introduce-hugo/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>This tutorial will show you how to create a simple theme in &lt;a href="https://github.com/gohugoio/hugo">Hugo&lt;/a>. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p>
-&lt;p>We&amp;rsquo;ll start with creating a new site with a very basic template. Then we&amp;rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.&lt;/p></description></item><item><title>Creating a New Theme</title><link>https://ntk148v.github.io/hugo-toigian/posts/creating-a-new-theme/</link><pubDate>Fri, 22 Oct 2021 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/creating-a-new-theme/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p>
-&lt;p>We&amp;rsquo;ll start with creating a new site with a very basic template. Then we&amp;rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.&lt;/p></description></item><item><title>Migrate to Hugo from Jekyll</title><link>https://ntk148v.github.io/hugo-toigian/posts/migrate-from-jekyll/</link><pubDate>Fri, 22 Oct 2021 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/migrate-from-jekyll/</guid><description>&lt;h2 id="move-static-content-to-static">Move static content to &lt;code>static&lt;/code>&lt;/h2>
-&lt;p>Jekyll has a rule that any directory not starting with &lt;code>_&lt;/code> will be copied as-is to the &lt;code>_site&lt;/code> output. Hugo keeps all static content under &lt;code>static&lt;/code>. You should therefore move it all there.
-With Jekyll, something that looked like&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">▾ &amp;lt;root&amp;gt;/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ▾ images/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> logo.png
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>should become&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">▾ &amp;lt;root&amp;gt;/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ▾ static/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ▾ images/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> logo.png
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as &lt;code>CNAME&lt;/code>) to be moved to &lt;code>static&lt;/code>.&lt;/p></description></item></channel></rss>
+&lt;h2 id="mermaid"&gt;Mermaid&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://mermaidjs.github.io/"&gt;Mermaid&lt;/a&gt; is a library helping you to generate diagram and flowcharts from text, in a similar manner as Markdown.&lt;/p&gt;</description></item><item><title>Introduce Hugo</title><link>https://ntk148v.github.io/hugo-toigian/posts/introduce-hugo/</link><pubDate>Thu, 20 Oct 2022 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/introduce-hugo/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in &lt;a href="https://github.com/gohugoio/hugo"&gt;Hugo&lt;/a&gt;. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll start with creating a new site with a very basic template. Then we&amp;rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.&lt;/p&gt;</description></item><item><title>Creating a New Theme</title><link>https://ntk148v.github.io/hugo-toigian/posts/creating-a-new-theme/</link><pubDate>Fri, 22 Oct 2021 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/creating-a-new-theme/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll start with creating a new site with a very basic template. Then we&amp;rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.&lt;/p&gt;</description></item><item><title>Migrate to Hugo from Jekyll</title><link>https://ntk148v.github.io/hugo-toigian/posts/migrate-from-jekyll/</link><pubDate>Fri, 22 Oct 2021 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/migrate-from-jekyll/</guid><description>&lt;h2 id="move-static-content-to-static"&gt;Move static content to &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Jekyll has a rule that any directory not starting with &lt;code&gt;_&lt;/code&gt; will be copied as-is to the &lt;code&gt;_site&lt;/code&gt; output. Hugo keeps all static content under &lt;code&gt;static&lt;/code&gt;. You should therefore move it all there.
+With Jekyll, something that looked like&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;▾ &amp;lt;root&amp;gt;/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ▾ images/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; logo.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;should become&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;▾ &amp;lt;root&amp;gt;/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ▾ static/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ▾ images/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; logo.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as &lt;code&gt;CNAME&lt;/code&gt;) to be moved to &lt;code&gt;static&lt;/code&gt;.&lt;/p&gt;</description></item></channel></rss>
