@@ -102,4 +102,4 @@ This shortcode is inspired from [this issue](https://discourse.gohugo.io/t/inclu
 
 **The following content is render from my [til post](https://github.com/ntk148v/til/blob/master/linux/iptables.md).**
 
-{{% remote-github "ntk148v/til" "linux/iptables.md" %}}
+<!-- remote-github user="ntk148v" repo="til" file="linux/iptables.md" lang="markdown" -->
