@@ -14,17 +14,19 @@ window.addEventListener("DOMContentLoaded", function () {
     dark_mode_btn.classList.remove("hidden");
   }
 
-  dark_mode_btn.addEventListener("click", function () {
-    localStorage.theme = "dark";
-    document.documentElement.classList.add("dark");
-    dark_mode_btn.classList.add("hidden");
-    light_mode_btn.classList.remove("hidden");
-  });
+  const header_theme_btn = document.getElementById("header-theme-button");
 
-  light_mode_btn.addEventListener("click", function () {
-    localStorage.theme = "light";
-    document.documentElement.classList.remove("dark");
-    light_mode_btn.classList.add("hidden");
-    dark_mode_btn.classList.remove("hidden");
+  header_theme_btn.addEventListener("click", function () {
+    if (document.documentElement.classList.contains("dark")) {
+      localStorage.theme = "light";
+      document.documentElement.classList.remove("dark");
+      light_mode_btn.classList.add("hidden");
+      dark_mode_btn.classList.remove("hidden");
+    } else {
+      localStorage.theme = "dark";
+      document.documentElement.classList.add("dark");
+      dark_mode_btn.classList.add("hidden");
+      light_mode_btn.classList.remove("hidden");
+    }
   });
 });
