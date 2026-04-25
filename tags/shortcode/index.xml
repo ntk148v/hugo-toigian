@@ -1,6 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shortcode on Toigian</title><link>https://ntk148v.github.io/hugo-toigian/tags/shortcode/</link><description>Recent content in Shortcode on Toigian</description><generator>Hugo</generator><language>en-us</language><managingEditor>kiennt2609@gmail.com (Kien Nguyen-Tuan)</managingEditor><webMaster>kiennt2609@gmail.com (Kien Nguyen-Tuan)</webMaster><lastBuildDate>Tue, 13 Jan 2026 13:17:35 +0700</lastBuildDate><atom:link href="https://ntk148v.github.io/hugo-toigian/tags/shortcode/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Shortcodes</title><link>https://ntk148v.github.io/hugo-toigian/posts/shortcodes/</link><pubDate>Fri, 21 Oct 2022 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/shortcodes/</guid><description>&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shortcode on Toigian</title><link>https://ntk148v.github.io/hugo-toigian/tags/shortcode/</link><description>Recent content in Shortcode on Toigian</description><generator>Hugo</generator><language>en-us</language><managingEditor>kiennt2609@gmail.com (Kien Nguyen-Tuan)</managingEditor><webMaster>kiennt2609@gmail.com (Kien Nguyen-Tuan)</webMaster><lastBuildDate>Tue, 13 Jan 2026 13:17:35 +0700</lastBuildDate><atom:link href="https://ntk148v.github.io/hugo-toigian/tags/shortcode/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Shortcodes</title><link>https://ntk148v.github.io/hugo-toigian/posts/shortcodes/</link><pubDate>Fri, 21 Oct 2022 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/shortcodes/</guid><description>&lt;h2 id="details"&gt;
+ Details
+&lt;/h2&gt;
 &lt;p&gt;Details shortcode is a helper for &lt;code&gt;details&lt;/code&gt; html5 element. It is going to replace &lt;code&gt;expand&lt;/code&gt; shortcode.&lt;/p&gt;
-&lt;h3 id="example"&gt;Example&lt;/h3&gt;
+
+
+&lt;h3 id="example"&gt;
+ Example
+&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-tpl" data-lang="tpl"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="na"&gt;details&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Title&amp;#34;&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="na"&gt;open&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="x"&gt;## Markdown content
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="x"&gt;Lorem markdownum insigne...
@@ -11,19 +17,29 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="na"&gt;details&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;details &gt;&lt;summary&gt;Title&lt;/summary&gt;
  &lt;div&gt;
- &lt;h2 id="markdown-content"&gt;Markdown content&lt;/h2&gt;
+ &lt;h2 id="markdown-content"&gt;
+ Markdown content
+&lt;/h2&gt;
 &lt;p&gt;Lorem markdownum insigne&amp;hellip;&lt;/p&gt;
  &lt;/div&gt;
 &lt;/details&gt;
 
-&lt;h2 id="quote"&gt;Quote&lt;/h2&gt;
+
+
+&lt;h2 id="quote"&gt;
+ Quote
+&lt;/h2&gt;
 &lt;p&gt;Quote shortcode can be used with 3 colors: &lt;code&gt;info&lt;/code&gt;, &lt;code&gt;warn&lt;/code&gt; and &lt;code&gt;critical&lt;/code&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-tpl" data-lang="tpl"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="na"&gt;quote&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="na"&gt;info&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="na"&gt;warn&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="na"&gt;critical&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="x"&gt;**Markdown content**
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="x"&gt;Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="x"&gt;stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="na"&gt;quote&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="example-1"&gt;Example&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id="example-1"&gt;
+ Example
+&lt;/h3&gt;
  
 
  
@@ -54,5 +70,9 @@ Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 &lt;/blockquote&gt;
 
-&lt;h2 id="mermaid"&gt;Mermaid&lt;/h2&gt;
+
+
+&lt;h2 id="mermaid"&gt;
+ Mermaid
+&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://mermaidjs.github.io/"&gt;Mermaid&lt;/a&gt; is a library helping you to generate diagram and flowcharts from text, in a similar manner as Markdown.&lt;/p&gt;</description></item></channel></rss>

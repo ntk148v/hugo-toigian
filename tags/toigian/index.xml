@@ -4,7 +4,11 @@
 
 &lt;/blockquote&gt;
 
-&lt;h2 id="showcase"&gt;Showcase&lt;/h2&gt;
+
+
+&lt;h2 id="showcase"&gt;
+ Showcase
+&lt;/h2&gt;
 &lt;p&gt;Take a look at &lt;a href="https://ntk148v.github.io/hugo-toigian"&gt;demo site&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -40,7 +44,11 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id="features"&gt;Features&lt;/h2&gt;
+
+
+&lt;h2 id="features"&gt;
+ Features
+&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Minimalist (&lt;code&gt;tối giản&lt;/code&gt;) design. Highly inspired by &lt;a href="https://mellow.dev/"&gt;mellow.dev&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Use the classy minimalist &lt;a href="https://github.com/rose-pine/palette"&gt;Rosé Pine&lt;/a&gt; color palette.&lt;/li&gt;
@@ -50,7 +58,11 @@
 &lt;li&gt;Comments support.&lt;/li&gt;
 &lt;li&gt;Syntax highlighting: use server-side solution (Chroma, hugo built-in), I&amp;rsquo;ve added &lt;a href="https://github.com/alecthomas/chroma/pull/689"&gt;Rosé Pine styles to Chroma&lt;/a&gt;, so everything is the same vibe.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+
+
+&lt;h2 id="prerequisites"&gt;
+ Prerequisites
+&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;git&lt;/code&gt;, &lt;code&gt;npm&lt;/code&gt; installed.&lt;/li&gt;
 &lt;li&gt;A minimum Hugo &amp;ldquo;extended&amp;rdquo; version of v0.93.0 and above.&lt;/li&gt;
@@ -59,7 +71,11 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Hugo Pipe’s PostCSS requires the &lt;code&gt;postcss-cli&lt;/code&gt; JavaScript package to be installed in the environment (&lt;code&gt;npm install -g postcss postcss-cli&lt;/code&gt;) along with any PostCSS plugin(s) used (e.g., &lt;code&gt;npm install -g autoprefixer&lt;/code&gt;). If you are using the Hugo Snap package, PostCSS and plugin(s) need to be installed locally within your Hugo site directory, e.g., &lt;code&gt;npm install postcss-cli&lt;/code&gt; without the -g flag.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="installation"&gt;Installation&lt;/h2&gt;
+
+
+&lt;h2 id="installation"&gt;
+ Installation
+&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Go to root directory of your Hugo website, or create a new site with:&lt;/li&gt;
 &lt;/ul&gt;
@@ -87,6 +103,14 @@
 &lt;li&gt;Build static pages&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo --environment production --minify
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="configuration"&gt;Configuration&lt;/h2&gt;
-&lt;h3 id="site-configuration"&gt;Site configuration&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id="configuration"&gt;
+ Configuration
+&lt;/h2&gt;
+
+
+&lt;h3 id="site-configuration"&gt;
+ Site configuration
+&lt;/h3&gt;
 &lt;p&gt;There are a few configuration options that you can add to &lt;a href="./exampleSite/config.toml"&gt;config.toml&lt;/a&gt; file.&lt;/p&gt;</description></item></channel></rss>

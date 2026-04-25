@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Diagrams on Toigian</title><link>https://ntk148v.github.io/hugo-toigian/tags/diagrams/</link><description>Recent content in Diagrams on Toigian</description><generator>Hugo</generator><language>en-us</language><managingEditor>kiennt2609@gmail.com (Kien Nguyen-Tuan)</managingEditor><webMaster>kiennt2609@gmail.com (Kien Nguyen-Tuan)</webMaster><lastBuildDate>Mon, 20 Feb 2023 11:05:02 +0700</lastBuildDate><atom:link href="https://ntk148v.github.io/hugo-toigian/tags/diagrams/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Diagrams</title><link>https://ntk148v.github.io/hugo-toigian/posts/diagrams/</link><pubDate>Tue, 25 Oct 2022 17:12:11 +0700</pubDate><author>kiennt2609@gmail.com (Kien Nguyen-Tuan)</author><guid>https://ntk148v.github.io/hugo-toigian/posts/diagrams/</guid><description>&lt;p&gt;Hugo version &amp;gt;= 0.93.0&lt;/p&gt;
-&lt;h2 id="goat-diagrams-ascii"&gt;GoAT Diagrams (Ascii)&lt;/h2&gt;
+
+
+&lt;h2 id="goat-diagrams-ascii"&gt;
+ GoAT Diagrams (Ascii)
+&lt;/h2&gt;
 &lt;p&gt;Hugo! supports &lt;a href="https://github.com/bep/goat"&gt;GoAT&lt;/a&gt; natively. This means that this code block:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;```goat
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; . . . .--- 1 .-- 1 / 1
