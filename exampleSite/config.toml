@@ -1,5 +1,5 @@
 baseURL = 'http://example.org/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Toigian'
 theme = "hugo-toigian"
 themesDir = "../.."
@@ -52,6 +52,11 @@ email = "kiennt2609@gmail.com"
   name = "Posts"
   url = "/posts"
   weight = 3
+
+[security]
+  [security.node]
+    [security.node.permissions]
+      disable = true
 
 [build]
   writeStats = true
