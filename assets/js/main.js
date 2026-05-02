@@ -1,4 +1,8 @@
+import { initTOC } from "./toc.js";
+
 window.addEventListener("DOMContentLoaded", function () {
+  initTOC();
+
   const dark_mode_btn = document.getElementById("dark_mode_btn");
   const light_mode_btn = document.getElementById("light_mode_btn");
 
