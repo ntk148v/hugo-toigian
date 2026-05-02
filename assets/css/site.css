@@ -83,23 +83,22 @@ h6 {
 /* nested counters */
 h2:not(.manual-number)::before {
   @apply text-muted mr-2 -ml-3;
-  content: counter(h2) ". ";
+  content: counter(h2) '. ';
 }
 
 h3:not(.manual-number)::before {
   @apply text-muted mr-2 -ml-3;
-  content: counter(h2) "." counter(h3) ". ";
+  content: counter(h2) '.' counter(h3) '. ';
 }
 
 h4:not(.manual-number)::before {
   @apply text-muted mr-2 -ml-3;
-  content: counter(h2) "." counter(h3) "." counter(h4) ". ";
+  content: counter(h2) '.' counter(h3) '.' counter(h4) '. ';
 }
 
 h5:not(.manual-number)::before {
-  content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
+  content: counter(h2) '.' counter(h3) '.' counter(h4) '.' counter(h5) '. ';
 }
-
 
 [id] {
   @apply scroll-mt-header-height;
@@ -178,7 +177,7 @@ pre > code {
 }
 
 #toc-list ol {
-  @apply pl-3 m-1 border-l-2 text-sm text-muted;
+  @apply pl-3 m-1 text-sm text-muted;
   counter-reset: tocitem;
 }
 
@@ -197,7 +196,7 @@ pre > code {
 
 #toc-list li > a::before {
   @apply mr-2 -ml-3 font-semibold;
-  content: counters(tocitem, ".") ".";
+  content: counters(tocitem, '.') '.';
 }
 
 #toc-list li > a {
@@ -234,11 +233,11 @@ figure {
 }
 
 #tag:before {
-  content: "[#";
+  content: '[#';
 }
 
 #tag:after {
-  content: "]";
+  content: ']';
 }
 
 .content {
@@ -255,12 +254,12 @@ figure {
   }
 
   a::before {
-    content: "{";
+    content: '{';
     @apply pr-1;
   }
 
   a::after {
-    content: "}";
+    content: '}';
     @apply pl-1;
   }
 
