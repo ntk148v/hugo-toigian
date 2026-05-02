@@ -57,7 +57,7 @@ export function initTOC() {
   // 3. Toggle Expansion on Click (Accessibility/Mobile)
   container.addEventListener('click', (e) => {
     // Prevent toggle if clicking a link
-    if (e.target.tagName === 'A') return;
+    if (e.target.closest('a')) return;
     container.classList.toggle('is-expanded');
   });
 }
