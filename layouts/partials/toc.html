@@ -1,13 +1,15 @@
-<!-- Table of contents -->
-<div id="toc">
-  {{ if default true (default .Site.Params.toc .Params.toc) }}
-    {{ if gt (.TableOfContents | countwords)
-      0
-    }}
-      <details open>
-        <summary>Table of contents</summary>
+<!-- Floating Table of contents -->
+{{ if default true (default .Site.Params.toc .Params.toc) }}
+  {{ if gt (.TableOfContents | countwords) 0 }}
+    <aside id="floating-toc" class="toc-container toc-collapsed hidden md:block">
+      <!-- Minimal bars for collapsed state (populated by JS) -->
+      <div id="toc-bars" class="toc-bars"></div>
+      
+      <!-- Expanded TOC content (Hugo native) -->
+      <div id="toc-expanded" class="toc-expanded">
+        <div class="toc-header">Table of contents</div>
         <div id="toc-list">{{ .TableOfContents }}</div>
-      </details>
-    {{ end }}
+      </div>
+    </aside>
   {{ end }}
-</div>
+{{ end }}
