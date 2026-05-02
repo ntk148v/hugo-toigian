@@ -20,14 +20,14 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
+          hugo-version: '0.160.1'
           extended: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
-          cache: "npm"
+          node-version: '20'
+          cache: 'npm'
 
       - name: Composite package.json
         working-directory: exampleSite
@@ -42,7 +42,8 @@ jobs:
 
       - name: Build
         working-directory: exampleSite
-        run: hugo --themesDir=../.. --minify --environment production -b https://ntk148v.github.io/hugo-toigian
+        run: hugo --themesDir=../.. --minify --environment production -b
+          https://ntk148v.github.io/hugo-toigian
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
