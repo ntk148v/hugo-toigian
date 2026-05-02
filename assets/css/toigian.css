@@ -14,6 +14,7 @@
 
 /* Floating TOC Styles */
 .toc-container {
+  display: none;
   position: fixed;
   left: 1rem;
   top: 50%;
@@ -21,8 +22,13 @@
   z-index: 100;
   transition: width 0.3s ease, transform 0.3s ease;
   max-height: 80vh;
-  display: flex;
   align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .toc-container {
+    display: flex;
+  }
 }
 
 .toc-bars {
@@ -72,6 +78,61 @@
 .toc-container:hover .toc-bars,
 .toc-container.is-expanded .toc-bars {
   display: none;
+}
+
+/* Mobile TOC Styles */
+.mobile-toc {
+  border-bottom: 1px solid var(--surface);
+  padding-bottom: 1rem;
+}
+
+.mobile-toc summary::-webkit-details-marker {
+  display: none;
+}
+
+.mobile-toc summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mobile-toc summary::before {
+  content: '{';
+  color: var(--muted);
+}
+
+.mobile-toc summary::after {
+  content: '}';
+  color: var(--muted);
+}
+
+.mobile-toc #TableOfContents ul,
+.mobile-toc #TableOfContents ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mobile-toc #TableOfContents ul ul,
+.mobile-toc #TableOfContents ul ol,
+.mobile-toc #TableOfContents ol ul,
+.mobile-toc #TableOfContents ol ol {
+  padding-left: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.mobile-toc #TableOfContents a {
+  color: var(--text);
+  opacity: 0.7;
+  text-decoration: none;
+  padding: 0.25rem 0;
+  display: inline-block;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.mobile-toc #TableOfContents a:hover {
+  opacity: 1;
+  color: var(--iris);
 }
 
 .toc-header {
